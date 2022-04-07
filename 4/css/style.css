@@ -1,0 +1,42 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+.page {
+  height: 100%;
+}
+
+.page-body {
+  font-style: normal;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  background-color: #ffffff;
+}
+
+.showcase {
+  color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: url("../img/back-mobile.jpg") 50% 0 no-repeat, #1d2631;
+}
+/*# sourceMappingURL=style.css.map */
