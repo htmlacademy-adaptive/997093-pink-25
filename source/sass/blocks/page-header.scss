@@ -1,0 +1,7 @@
+@import "../common/variables";
+
+.page-header {
+  width: $mobile-width;
+  color: $basic-white;
+  background-color: transparentize($basic-black, 0.7);
+}

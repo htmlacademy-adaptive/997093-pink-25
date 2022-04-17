@@ -1,6 +1,13 @@
+@import "../common/variables";
+
 .page-body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-style: normal;
   font-family: "Open Sans", "Verdana", sans-serif;
+  overflow-x: hidden;
 
   background-color: $basic-white;
 }

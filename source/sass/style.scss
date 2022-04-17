@@ -1,6 +1,21 @@
+@import "common/normalize";
 @import "common/fonts";
-@import "common/variables";
+@import "common/global";
 
+@import "blocks/visually-hidden";
 @import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/page-main";
 @import "blocks/page-body";
 @import "blocks/showcase";
+@import "blocks/slogans";
+@import "blocks/features";
+@import "blocks/round-diagram";
+@import "blocks/reviews";
+@import "blocks/tariffs";
+@import "blocks/main-nav";
+@import "blocks/content";
+@import "blocks/toggles-box";
+@import "blocks/slider";
+@import "blocks/tariffs";
+@import "blocks/table-tariffs";

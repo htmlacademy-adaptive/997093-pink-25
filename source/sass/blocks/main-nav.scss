@@ -1,0 +1,78 @@
+@import "../common/variables";
+
+.main-nav__toggle {
+  position: relative;
+
+  width: 50px;
+  height: 24px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__menu-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: $basic-white;
+  border-radius: 1px;
+  box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 23px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $basic-white;
+  }
+
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav.main-nav--opened {
+  background-color: $cian;
+}
+
+.main-nav.main-nav--opened .main-nav__menu-box {
+  height: 69px;
+  border-bottom: 1px solid $basic-black;
+}
+
+.main-nav--closed .page-header__site-nav-list {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}

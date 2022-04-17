@@ -1,0 +1,10 @@
+@import "../common/variables";
+
+.tariffs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $basic-gray;
+  padding-top: 75px;
+  padding-bottom: 47px;
+}
