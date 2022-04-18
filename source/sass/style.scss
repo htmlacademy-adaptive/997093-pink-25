@@ -1,6 +1,7 @@
 @import "common/normalize";
 @import "common/fonts";
 @import "common/global";
+@import "common/variables";
 
 @import "blocks/visually-hidden";
 @import "blocks/page";
@@ -17,7 +18,6 @@
 @import "blocks/content";
 @import "blocks/toggles-box";
 @import "blocks/slider";
-@import "blocks/tariffs";
 @import "blocks/table-tariffs";
 @import "blocks/contacts";
 @import "blocks/communication";

@@ -1,15 +1,13 @@
-@import "../common/variables";
-
 .map {
   position: relative;
 
   min-height: 200px;
 
-  background: url("../img/map-mobile.jpg") 50% 50% / 100% no-repeat, $basic-white;
+  background: url("../img/map-mobile.jpg") 50% 50% / 320px no-repeat, $basic-white;
 
   iframe {
     display: block;
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     background: transparent;
     border: none;

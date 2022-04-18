@@ -1,5 +1,3 @@
-@import "../common/variables";
-
 .main-nav__toggle {
   position: relative;
 
@@ -69,10 +67,36 @@
   border-bottom: 1px solid $basic-black;
 }
 
-.main-nav--closed .page-header__site-nav-list {
+.main-nav--closed .main-nav__site-nav-list {
   display: none;
 }
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+.main-nav__site-nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__site-nav-item {
+  text-align: center;
+}
+
+.main-nav__site-nav-link {
+  display: block;
+  padding: 10px 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  border-top: 1px solid transparentize($basic-white, 0.85);
+  border-bottom: 1px solid $basic-black;
 }

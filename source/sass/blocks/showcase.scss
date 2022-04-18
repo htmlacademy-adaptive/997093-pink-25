@@ -1,5 +1,3 @@
-@import "../common/variables";
-
 .showcase {
   color: $basic-white;
   font-family: $title-font;
@@ -10,8 +8,7 @@
   text-align: center;
   padding-top: 89px;
   padding-bottom: 32px;
-
-  background: url("../img/mobile-slogan-background.jpg") 50% 0 no-repeat, $dark-cian;
+  background: url("../img/mobile-slogan-background.jpg") 50% 0 / 100% no-repeat, $dark-cian;
 }
 
 .showcase__lead {
