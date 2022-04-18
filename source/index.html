@@ -43,7 +43,7 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--nojs main-nav--closed ">
+    <nav class="main-nav main-nav--nojs main-nav--opened">
       <div class="main-nav__menu-box content">
         <a class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк">
           <picture>
@@ -302,13 +302,14 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Интерактивная карта Яндекс</h2>
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
-        width="320" height="200"></iframe>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
+          width="320" height="200">
+        </iframe>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper content">
       <a class="page-footer__logo pink-logo pink-logo--whole-direct">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
@@ -322,7 +323,7 @@
             aria-label="Мы в Контакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://www.facebook.com/htmlacademy"
+          <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy"
             aria-label="Мы в Телеграмме"></a>
         </li>
         <li class="social__item">
