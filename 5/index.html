@@ -55,24 +55,24 @@
         </a>
         <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
       </div>
-      <ul class="page-header__site-nav-list">
-        <li class="page-header__site-nav-item page-header__site-nav-item--active">
-          <a class="page-header__site-nav-link">
+      <ul class="main-nav__site-nav-list">
+        <li class="main-nav__site-nav-item main-nav__site-nav-item--active">
+          <a class="main-nav__site-nav-link">
             Главная
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="catalog.html" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="catalog.html" class="main-nav__site-nav-link">
             Фотографии
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="form.html" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="form.html" class="main-nav__site-nav-link">
             Конкурс
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__site-nav-link">
             HTML Academy
           </a>
         </li>
@@ -194,70 +194,73 @@
     </section>
     <section class="tariffs">
       <h2 class="visually-hidden">Стоимость сервиса</h2>
-      <table class="table-tariffs">
-        <thead>
-        <tr class="table-tariffs__header-row">
-          <th class="table-tariffs__table-header table-tariffs__table-header--up-to-mobile" scope="col">
-          </th>
-          <th class="table-tariffs__table-header" scope="col">
-            <span class="table-tariffs__tariff-name">БАЗА</span>
-            <span class="table-tariffs__rate">1,99&#8239;USD</span>
-          </th>
-          <th class="table-tariffs__table-header table-tariffs__table-header--badge">
-            <span class="table-tariffs__tariff-name">СТАНДАРТ</span>
-            <span class="table-tariffs__rate">3,99&#8239;USD</span>
-          </th>
-          <th class="table-tariffs__table-header">
-            <span class="table-tariffs__tariff-name">АНЛИМ</span>
-            <span class="table-tariffs__rate">9,99&#8239;USD</span>
-          </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="table-tariffs__body-row">
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
-            Розовый фильтр
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
-            <span class="table-tariffs__tariff-option">Розовый фильтр</span>
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
-            <span class="table-tariffs__tariff-option">Розовый фильтр</span>
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
-            <span class="table-tariffs__tariff-option">Розовый фильтр</span>
-          </td>
-        </tr>
-        <tr class="table-tariffs__body-row">
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
-            Смайлики
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
-            <span class="table-tariffs__tariff-option">Смайлики</span>
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
-            <span class="table-tariffs__tariff-option">Смайлики</span>
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
-            <span class="table-tariffs__tariff-option">Смайлики</span>
-          </td>
-        </tr>
-        <tr class="table-tariffs__body-row">
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
-            Комментарии
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
-            <span class="table-tariffs__tariff-option">Комментарии</span>
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
-            <span class="table-tariffs__tariff-option">Комментарии</span>
-          </td>
-          <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
-            <span class="table-tariffs__tariff-option ">Комментарии</span>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+      <div class="table-tariffs__wrapper">
+        <table class="table-tariffs">
+          <thead>
+          <tr class="table-tariffs__header-row">
+            <th class="table-tariffs__table-header table-tariffs__table-header--up-to-mobile" scope="col">
+            </th>
+            <th class="table-tariffs__table-header" scope="col">
+              <span class="table-tariffs__tariff-name">БАЗА</span>
+              <span class="table-tariffs__rate">1,99&#8239;USD</span>
+            </th>
+            <th class="table-tariffs__table-header table-tariffs__table-header--badge">
+              <span class="table-tariffs__tariff-name">СТАНДАРТ</span>
+              <span class="table-tariffs__rate">3,99&#8239;USD</span>
+            </th>
+            <th class="table-tariffs__table-header">
+              <span class="table-tariffs__tariff-name">АНЛИМ</span>
+              <span class="table-tariffs__rate">9,99&#8239;USD</span>
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="table-tariffs__body-row">
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
+              Розовый фильтр
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Розовый фильтр</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Розовый фильтр</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Розовый фильтр</span>
+            </td>
+          </tr>
+          <tr class="table-tariffs__body-row">
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
+              Смайлики
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
+              <span class="table-tariffs__tariff-option">Смайлики</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Смайлики</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Смайлики</span>
+            </td>
+          </tr>
+          <tr class="table-tariffs__body-row">
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
+              Комментарии
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
+              <span class="table-tariffs__tariff-option">Комментарии</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
+              <span class="table-tariffs__tariff-option">Комментарии</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option ">Комментарии</span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="toggles-box">
         <button class="toggles-box__toggle" type="button"></button>
         <button class="toggles-box__toggle toggles-box__toggle--current" type="button"></button>
@@ -313,9 +316,9 @@
     <div class="page-footer__wrapper content">
       <a class="page-footer__logo pink-logo pink-logo--whole-direct">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-blue-tablet.svg">
-          <img src="img/logo-blue-tablet.svg" alt="Логотип приложения PINK">
+          <source media="(min-width: 1200px)" srcset="../img/logo-for-desktop.svg">
+          <source media="(min-width: 660px)" srcset="../img/logo-blue-tablet.svg">
+          <img src="../img/logo-blue-tablet.svg" alt="Логотип приложения PINK">
         </picture>
       </a>
       <ul class="page-footer__social social">
