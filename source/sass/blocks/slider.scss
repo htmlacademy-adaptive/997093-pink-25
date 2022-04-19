@@ -1,19 +1,19 @@
 .slider {
   position: relative;
-  padding-top: 32px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-top: 32px;
   text-align: center;
 
   background-color: transparent;
 }
 
 .slider__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 

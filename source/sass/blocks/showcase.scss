@@ -1,13 +1,15 @@
 .showcase {
-  color: $basic-white;
-  font-family: $title-font;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: center;
   padding-top: 89px;
   padding-bottom: 32px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: $title-font;
+  text-align: center;
+  color: $basic-white;
+  letter-spacing: 0;
+
   background: url("../img/mobile-slogan-background.jpg") 50% 0 / 100% no-repeat, $dark-cian;
 }
 
@@ -40,11 +42,12 @@
 }
 
 .showcase__download-refs-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    margin: 33px auto 0;
-    width: 240px;
+  display: grid;
+  align-items: center;
+  width: 240px;
+  margin: 33px auto 0;
+
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .showcase__download-refs-description {

@@ -1,18 +1,18 @@
 .table-tariffs__wrapper {
-  overflow-x: clip;
-  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 320px;
+  overflow-x: clip;
 }
 
 .table-tariffs {
   width: 832px;
   min-height: 277px;
+  margin-bottom: 22px;
 
   border-collapse: collapse;
   color: $basic-white;
-  margin-bottom: 22px;
 }
 
 .table-tariffs__table-header {
