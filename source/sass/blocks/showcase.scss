@@ -1,5 +1,5 @@
 .showcase {
-  padding-top: 89px;
+  //padding-top: 89px;
   padding-bottom: 32px;
 
   font-weight: 300;
@@ -10,11 +10,7 @@
   color: $basic-white;
   letter-spacing: 0;
 
-  background: url("../img/mobile-slogan-background.jpg") 50% 0 / 100% no-repeat, $dark-cian;
-}
-
-.showcase__lead {
-  margin: 0 10px;
+  background-color: $dark-cian;
 }
 
 .showcase__refs-block {
