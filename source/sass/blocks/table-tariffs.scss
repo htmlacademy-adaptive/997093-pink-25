@@ -1,0 +1,127 @@
+.table-tariffs__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  overflow-x: clip;
+}
+
+.table-tariffs {
+  width: 832px;
+  min-height: 277px;
+  margin-bottom: 22px;
+
+  border-collapse: collapse;
+  color: $basic-white;
+}
+
+.table-tariffs__table-header {
+  position: relative;
+
+  height: 83px;
+  padding-bottom: 14px;
+
+  background-color: $cian;
+  background-clip: padding-box;
+  border-bottom: none;
+
+  &:not(:first-child) {
+    border-left: $basic-white 2px solid;
+  }
+
+  &:not(:last-child) {
+    border-right: $basic-white 2px solid;
+  }
+
+  &--badge {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2px;
+
+      width: 74px;
+      height: 74px;
+
+      background-image: url("../img/hit-badge.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--up-to-mobile {
+    display: none;
+  }
+}
+
+.table-tariffs__header-row {
+  height: 99px;
+}
+
+.table-tariffs__body-row {
+  height: 61px;
+}
+
+.table-tariffs__table-definition {
+  position: relative;
+
+  padding: 14px 19px 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  color: $cian;
+  text-transform: uppercase;
+
+  background-color: $basic-white;
+  background-clip: padding-box;
+  border: $basic-smoky 2px solid;
+  border-top: none;
+
+  &--available::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 228px;
+
+    width: 74px;
+    height: 74px;
+
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--unavailable::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 229px;
+
+    width: 74px;
+    height: 74px;
+
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--up-to-mobile {
+    display: none;
+  }
+}
+
+.table-tariffs__tariff-name {
+  display: block;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.table-tariffs__rate {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}

@@ -1,0 +1,20 @@
+.page-footer {
+  background-color: $basic-white;
+  height: 284px;
+
+  padding-top: 39px;
+}
+
+.page-footer__wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__social {
+  margin-top: 36px;
+}
+
+.page-footer__copyright {
+  margin-top: 20px;
+}

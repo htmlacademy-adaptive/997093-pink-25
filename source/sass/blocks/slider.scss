@@ -1,0 +1,53 @@
+.slider {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  text-align: center;
+
+  background-color: transparent;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__left {
+  display: none;
+}
+
+.slider__right {
+  display: none;
+}
+
+.slider__quote {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 0;
+}
+
+.slider__participant-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.slider__participant-extra {
+  display: none;
+}
+
+.slider__text {
+  margin-top: 13px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}

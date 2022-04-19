@@ -1,12 +1,64 @@
 .showcase {
-  color: $basic-white;
-  font-family: $title-font;
-  font-size: 24px;
+  padding-top: 89px;
+  padding-bottom: 32px;
+
   font-weight: 300;
+  font-size: 24px;
   line-height: 29px;
-  letter-spacing: 0em;
+  font-family: $title-font;
   text-align: center;
+  color: $basic-white;
+  letter-spacing: 0;
 
-  background: url("../img/back-mobile.jpg") 50% 0 no-repeat, $dark-cian;
+  background: url("../img/mobile-slogan-background.jpg") 50% 0 / 100% no-repeat, $dark-cian;
+}
 
+.showcase__lead {
+  margin: 0 10px;
+}
+
+.showcase__refs-block {
+  margin-top: 342px;
+}
+
+.showcase__default-ref {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  margin-top: 26px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  text-align: center;
+  color: $basic-white;
+
+  border: 3px solid $basic-white;
+  border-radius: 29px;
+}
+
+.showcase__download-refs-box {
+  display: grid;
+  align-items: center;
+  width: 240px;
+  margin: 33px auto 0;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.showcase__download-refs-description {
+  width: 230px;
+  margin: 14px auto 0;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  text-align: center;
+  color: $basic-white;
 }

@@ -1,0 +1,22 @@
+.features {
+  background: url("../img/mobile-smile.png") 50% bottom no-repeat, $basic-gray;
+  padding-bottom: 286px;
+  padding-top: 53px;
+  text-align: center;
+}
+
+.features__feature-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.features__feature-description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.features__article {
+  margin-bottom: 33px;
+}

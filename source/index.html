@@ -8,12 +8,42 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch-icon-iphone.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("tools/pixel-glass/Mobile.png");
+    }
+
+    /* Tablet */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("tools/pixel-glass/Mobile.png");
+      }
+    }
+
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("tools/pixel-glass/Mobile.png");
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="tools/pixel-glass/styles.css">
+  <script src="tools/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--nojs main-nav--opened ">
+    <nav class="main-nav main-nav--nojs main-nav--opened">
       <div class="main-nav__menu-box content">
         <a class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк">
           <picture>
@@ -24,24 +54,24 @@
         </a>
         <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
       </div>
-      <ul class="page-header__site-nav-list">
-        <li class="page-header__site-nav-item page-header__site-nav-item--active">
-          <a class="page-header__site-nav-link">
+      <ul class="main-nav__site-nav-list">
+        <li class="main-nav__site-nav-item main-nav__site-nav-item--active">
+          <a class="main-nav__site-nav-link">
             Главная
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="catalog.html" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="catalog.html" class="main-nav__site-nav-link">
             Фотографии
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="form.html" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="form.html" class="main-nav__site-nav-link">
             Конкурс
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__site-nav-link">
             HTML Academy
           </a>
         </li>
@@ -50,39 +80,41 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
-    <section class="showcase showcase--closer-background-picture showcase--mobile-in-hand">
-      <h2 class="visually-hidden">Скачайте наше приложение</h2>
-      <p class="showcase__lead">
-        Взгляните на жизнь
-        иначе!
-      </p>
-      <div class="showcase__refs-block">
-        <a href="https://www.apple.com/ru/app-store/" class="showcase__default-ref"
-          aria-label="скачивание из источника по умолчанию">
-          Скачать приложение
-        </a>
-        <div class="showcase__download-refs-box">
-          <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
-            aria-label="скачивание из магазина эпл">
-            <img src="img/apple-logo.svg" alt="логотип эпл">
-          </a>
-          <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
-            aria-label="скачивание из магазина гугл">
-            <img src="img/android-logo.svg" alt="логотип андроид">
-          </a>
-          <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
-            aria-label="скачивание из магазина майкрософт">
-            <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
-          </a>
-        </div>
-        <p class="showcase__download-refs-description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+    <section class="showcase">
+      <div class="content">
+        <h2 class="visually-hidden">Скачайте наше приложение</h2>
+        <p class="showcase__lead">
+          Взгляните на жизнь
+          иначе!
         </p>
+        <div class="showcase__refs-block">
+          <a href="https://www.apple.com/ru/app-store/" class="showcase__default-ref"
+            aria-label="скачивание из источника по умолчанию">
+            Скачать приложение
+          </a>
+          <div class="showcase__download-refs-box">
+            <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
+              aria-label="скачивание из магазина эпл">
+              <img src="img/apple-logo.svg" alt="логотип эпл">
+            </a>
+            <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
+              aria-label="скачивание из магазина гугл">
+              <img src="img/android-logo.svg" alt="логотип андроид">
+            </a>
+            <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
+              aria-label="скачивание из магазина майкрософт">
+              <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
+            </a>
+          </div>
+          <p class="showcase__download-refs-description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </div>
     </section>
     <section class="slogans">
-      <h2 class="visually-hidden">Наша миссия</h2>
-      <div class="slogans__wrapper">
+      <div class="content">
+        <h2 class="visually-hidden">Наша миссия</h2>
         <p class="slogans__slogan">
           Устали от серости мегаполиса?
         </p>
@@ -92,36 +124,38 @@
       </div>
     </section>
     <section class="features">
-      <h2 class="visually-hidden">Для чего наше приложение</h2>
-      <div class="features__wrapper">
-        <article class="features__article">
-          <h3 class="features__feature-title">
-            Поднимает настроение
-          </h3>
-          <p class="features__feature-description">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
-        </article>
-        <article class="features__article">
-          <h3 class="features__feature-title">
-            Меняет мир вокруг
-          </h3>
-          <p class="features__feature-description">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
-          </p>
-        </article>
-        <article class="features__article">
-          <h3 class="features__feature-title">
-            Заводит новых друзей
-          </h3>
-          <p class="features__feature-description">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </article>
+      <div class="content">
+        <h2 class="visually-hidden">Для чего наше приложение</h2>
+        <div class="features__wrapper">
+          <article class="features__article">
+            <h3 class="features__feature-title">
+              Поднимает настроение
+            </h3>
+            <p class="features__feature-description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </article>
+          <article class="features__article">
+            <h3 class="features__feature-title">
+              Меняет мир вокруг
+            </h3>
+            <p class="features__feature-description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
+            </p>
+          </article>
+          <article class="features__article">
+            <h3 class="features__feature-title">
+              Заводит новых друзей
+            </h3>
+            <p class="features__feature-description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </article>
+        </div>
       </div>
     </section>
     <section class="round-diagram">
-      <div class="round-diagram__description-box">
+      <div class="round-diagram__description-box content">
         <h2 class="visually-hidden">Научные факты</h2>
         <h3 class="round-diagram__title">Эффект на&nbsp;24&nbsp;часа!</h3>
         <p class="round-diagram__text">
@@ -133,8 +167,8 @@
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы наших участников</h2>
-      <div class="reviews__wrapper content slider">
-        <ul class="reviews__list slider__list">
+      <div class="content slider">
+        <ul class="slider__list">
           <li class="slider__item">
             <blockquote class="slider__quote">
               <cite class="slider__cite">
@@ -148,10 +182,10 @@
             </blockquote>
           </li>
         </ul>
-        <div class="slider__toggles-box reviews__slider-position">
-          <button class="slider__toggle slider__toggle--current" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
+        <div class="toggles-box">
+          <button class="toggles-box__toggle toggles-box__toggle--current" type="button"></button>
+          <button class="toggles-box__toggle" type="button"></button>
+          <button class="toggles-box__toggle" type="button"></button>
         </div>
         <button class="slider__left"></button>
         <button class="slider__right"></button>
@@ -159,7 +193,7 @@
     </section>
     <section class="tariffs">
       <h2 class="visually-hidden">Стоимость сервиса</h2>
-      <div class="tariffs__wrapper slider">
+      <div class="table-tariffs__wrapper">
         <table class="table-tariffs">
           <thead>
           <tr class="table-tariffs__header-row">
@@ -224,16 +258,17 @@
           </tr>
           </tbody>
         </table>
-        <div class="slider__toggles-box tariffs__slider-position">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle slider__toggle--current" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-        </div>
+      </div>
+
+      <div class="toggles-box">
+        <button class="toggles-box__toggle" type="button"></button>
+        <button class="toggles-box__toggle toggles-box__toggle--current" type="button"></button>
+        <button class="toggles-box__toggle" type="button"></button>
       </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты для связи</h2>
-      <div class="contacts__wrapper">
+      <div class="content">
         <p class="contacts__text">
           Остались вопросы?
         </p>
@@ -270,13 +305,14 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Интерактивная карта Яндекс</h2>
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
-        width="320" height="200"></iframe>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
+          width="320" height="200">
+        </iframe>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper content">
       <a class="page-footer__logo pink-logo pink-logo--whole-direct">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
@@ -290,7 +326,7 @@
             aria-label="Мы в Контакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://www.facebook.com/htmlacademy"
+          <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy"
             aria-label="Мы в Телеграмме"></a>
         </li>
         <li class="social__item">
@@ -302,11 +338,11 @@
       Разработано
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__copyright-ref"
         aria-label="переход на страницу интенсива HTML Academy">
-        <img src="img/html-academy-logo.svg " width="27" height="34" alt="">
+        <img src="img/html-academy-logo.svg" width="27" height="34" alt="">
       </a>
     </span>
     </div>
   </footer>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

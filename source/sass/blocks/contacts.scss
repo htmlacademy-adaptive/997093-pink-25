@@ -1,0 +1,23 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+.contacts__text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 33px;
+  padding: 0 0 0 0;
+}

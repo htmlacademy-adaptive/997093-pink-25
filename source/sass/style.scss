@@ -1,6 +1,27 @@
+@import "common/normalize";
 @import "common/fonts";
+@import "common/global";
 @import "common/variables";
 
+@import "blocks/visually-hidden";
 @import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/page-main";
 @import "blocks/page-body";
 @import "blocks/showcase";
+@import "blocks/slogans";
+@import "blocks/features";
+@import "blocks/round-diagram";
+@import "blocks/reviews";
+@import "blocks/tariffs";
+@import "blocks/main-nav";
+@import "blocks/content";
+@import "blocks/toggles-box";
+@import "blocks/slider";
+@import "blocks/table-tariffs";
+@import "blocks/contacts";
+@import "blocks/communication";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
