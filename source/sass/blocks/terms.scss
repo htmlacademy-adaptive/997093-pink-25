@@ -1,0 +1,22 @@
+.terms {
+  padding: 44px 0 0 0;
+
+  background-color: $basic-white;
+}
+
+.terms__text {
+  width: 273px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  text-align: center;
+}
+
+.terms__text--additional {
+  display: none;
+}

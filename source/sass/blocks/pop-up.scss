@@ -1,0 +1,70 @@
+.pop-up {
+  position: fixed;
+  top: calc(50vh - 190px);
+  left: calc(50% - 160px);
+
+  display: none;
+  width: 320px;
+
+  font-family: "Open Sans", "Verdana", sans-serif;
+
+  background-color: $basic-white;
+  box-shadow: 0 7px 15px;
+}
+
+.pop-up--show {
+  display: block;
+}
+
+.pop-up__message {
+  margin-top: 47px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.pop-up__message-wide {
+  margin: 24px 0 0 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.pop-up__footer--success {
+  margin: 35px 0 0 0;
+  padding: 50px 20px;
+
+  background-color: $basic-gray;
+}
+
+.pop-up__footer--failure {
+  margin: 15px 0 0 0;
+  padding: 28px 20px 50px;
+
+  background-color: $basic-white;
+}
+
+.pop-up__button {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  background-color: $basic-green;
+  border: none;
+  border-radius: 3px;
+}
