@@ -1,0 +1,17 @@
+.catalog {
+  margin: 0 0 0 0;
+  padding: 51px 0 0 0;
+
+  font-family: "Open Sans", "Verdana", sans-serif;
+
+  border: none;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  list-style: none;
+}
