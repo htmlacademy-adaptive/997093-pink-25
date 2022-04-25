@@ -902,6 +902,7 @@ a {
 
 .page-footer {
   padding-top: 39px;
+  padding-bottom: 40px;
   background-color: #ffffff;
 }
 
@@ -1344,7 +1345,7 @@ a {
 
 .catalog {
   margin: 0 0 0 0;
-  padding: 51px 0 0 0;
+  padding: 35px 0 0 0;
   font-family: "Open Sans", "Verdana", sans-serif;
   border: none;
 }
@@ -1354,6 +1355,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 0;
   list-style: none;
 }
 
@@ -1367,13 +1369,13 @@ a {
 
 .product-card--selected {
   position: relative;
-  padding-bottom: 18px;
   width: auto;
+  padding: 0 0 18px 0;
 }
 .product-card--selected::after {
   content: " ";
   position: absolute;
-  right: 40px;
+  right: 20px;
   top: 0;
   width: 140px;
   height: 36px;
@@ -1458,7 +1460,7 @@ a {
 }
 
 .catalog-slogan {
-  padding: 17px 0 43px 0;
+  padding: 0 0 43px 0;
   background-color: #ffffff;
 }
 
