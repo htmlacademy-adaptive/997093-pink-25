@@ -1,7 +1,7 @@
 .showcase {
-  padding-top: 89px;
   padding-bottom: 32px;
 
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -10,11 +10,17 @@
   color: $basic-white;
   letter-spacing: 0;
 
-  background: url("../img/mobile-slogan-background.jpg") 50% 0 / 100% no-repeat, $dark-cian;
+  background: url("../img/back-mobile.jpg") left top / 100% no-repeat, $dark-cian;
 }
 
-.showcase__lead {
-  margin: 0 10px;
+.showcase__title {
+  min-height: 205px;
+  margin: 0;
+  padding: 94px 10px 12px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
 }
 
 .showcase__refs-block {
@@ -33,8 +39,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Open Sans", "Verdana", sans-serif;
-  text-align: center;
   color: $basic-white;
 
   border: 3px solid $basic-white;
@@ -54,11 +58,6 @@
   width: 230px;
   margin: 14px auto 0;
 
-  font-style: normal;
-  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Open Sans", "Verdana", sans-serif;
-  text-align: center;
-  color: $basic-white;
 }

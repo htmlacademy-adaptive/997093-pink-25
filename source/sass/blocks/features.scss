@@ -1,20 +1,24 @@
 .features {
-  background: url("../img/mobile-smile.png") 50% bottom no-repeat, $basic-gray;
-  padding-bottom: 286px;
   padding-top: 53px;
+  padding-bottom: 286px;
+
   text-align: center;
+
+  background: url("../img/mobile-smile.png") 50% bottom no-repeat, $basic-gray;
 }
 
 .features__feature-title {
+  margin: 0;
+
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
 }
 
 .features__feature-description {
+  margin-top: 10px;
+
   font-size: 14px;
   line-height: 24px;
-  margin-top: 10px;
 }
 
 .features__article {

@@ -9,6 +9,37 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch-icon-iphone.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("tools/pixel-glass/mobile-catalog.png");
+    }
+
+    /* Tablet */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("tools/pixel-glass/mobile-catalog--tablet.png");
+      }
+    }
+
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("tools/pixel-glass/mobile-catalog--desktop.png");
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="tools/pixel-glass/styles.css">
+  <script src="tools/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
 </head>
 <body class="page-body">
   <header class="page-header">
@@ -31,33 +62,33 @@
         </a>
         <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
       </div>
-      <ul class="page-header__site-nav-list">
-        <li class="page-header__site-nav-item page-header__site-nav-item--active">
-          <a href="index.html" class="page-header__site-nav-link">
+      <ul class="main-nav__site-nav-list">
+        <li class="main-nav__site-nav-item main-nav__site-nav-item--active">
+          <a href="index.html" class="main-nav__site-nav-link">
             Главная
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a class="main-nav__site-nav-link">
             Фотографии
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="form.html" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="form.html" class="main-nav__site-nav-link">
             конкурс
           </a>
         </li>
-        <li class="page-header__site-nav-item">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__site-nav-link">
+        <li class="main-nav__site-nav-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__site-nav-link">
             html academy
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="showcase showcase--distant-background-picture">
-      <h1 class="showcase__title">
+  <main class="page-main">
+    <section class="showcase">
+      <h1 class="showcase__title content">
         Фотографии
         пользователей
       </h1>
@@ -71,9 +102,9 @@
       <h2 class="visually-hidden">Каталог фотографий</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <article class="product-card product-card--selected">
-            <a class="product-card__img-wrapper" href="img/panorama-tablet.jpg">
-              <img src="img/panorama-tablet.jpg" class="product-card__image"
+          <article class="product-card product-card--selected content">
+            <a class="product-card__img-wrapper" href="img/catalog/panorama-tablet.jpg">
+              <img src="img/catalog/panorama-tablet.jpg" class="product-card__image"
                 alt="Висячий мост через ущелье" width="320" height="137">
             </a>
             <div class="product-card__annotation">
@@ -95,9 +126,9 @@
           </article>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
-            <a class="product-card__img-wrapper" href="img/photo-1-mobile.jpg">
-              <img class="product-card__image" src="img/photo-1-mobile.jpg" alt="Белый автомобиль на съёмочной площадке"
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-1-mobile.jpg">
+              <img class="product-card__image" src="img/catalog/photo-1-mobile.jpg" alt="Белый автомобиль на съёмочной площадке"
                 width="280" height="180">
             </a>
             <div class="product-card__annotation">
@@ -118,9 +149,9 @@
           </article>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
-            <a class="product-card__img-wrapper" href="img/photo-2-mobile.jpg">
-              <img class="product-card__image" src="img/photo-2-mobile.jpg" alt="Ударная установка" width="280"
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-2-mobile.jpg">
+              <img class="product-card__image" src="img/catalog/photo-2-mobile.jpg" alt="Ударная установка" width="280"
                 height="180">
             </a>
             <div class="product-card__annotation">
@@ -141,9 +172,9 @@
           </article>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
-            <a class="product-card__img-wrapper" href="img/photo-3-tablet.jpg">
-              <img class="product-card__image" src="img/photo-3-tablet.jpg" alt="Вид на небоскрёбы" width="280"
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-3-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-3-tablet.jpg" alt="Вид на небоскрёбы" width="280"
                 height="180">
             </a>
             <div class="product-card__annotation">
@@ -164,9 +195,9 @@
           </article>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
-            <a class="product-card__img-wrapper" href="img/photo-4-tablet.jpg">
-              <img class="product-card__image" src="img/photo-4-tablet.jpg" alt="Площадь ярмарки под ярким тентом"
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-4-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-4-tablet.jpg" alt="Площадь ярмарки под ярким тентом"
                 width="280" height="180">
             </a>
             <div class="product-card__annotation">
@@ -187,9 +218,9 @@
           </article>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
-            <a class="product-card__img-wrapper" href="img/photo-5-tablet.jpg">
-              <img class="product-card__image" src="img/photo-5-tablet.jpg" alt="Свешенные над обрывом ноги" width="280"
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-5-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-5-tablet.jpg" alt="Свешенные над обрывом ноги" width="280"
                 height="180">
             </a>
             <div class="product-card__annotation">
@@ -210,9 +241,9 @@
           </article>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
-            <a class="product-card__img-wrapper" href="img/photo-6-tablet.jpg">
-              <img class="product-card__image" src="img/photo-6-tablet.jpg" alt="Крыло самолёта в лучах солнца"
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-6-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-6-tablet.jpg" alt="Крыло самолёта в лучах солнца"
                 width="280" height="180">
             </a>
             <div class="product-card__annotation">
@@ -241,8 +272,8 @@
     </div>
     <form class="image-editor">
       <h2 class="visually-hidden">Редактор фотографии</h2>
-      <div class="image-editor__image-wrapper">
-        <img src="img/photo-7-tablet.jpg" alt="Зимняя дорога" class="image-editor__modified-photo" width="280"
+      <div class="image-editor__image-wrapper content">
+        <img src="img/catalog/photo-7-tablet.jpg" alt="Зимняя дорога" class="image-editor__modified-photo" width="280"
           height="374">
       </div>
       <div class="image-editor__tools">
@@ -279,7 +310,7 @@
           </div>
         </div>
       </div>
-      <div class="image-editor__buttons-box flex-column-center">
+      <div class="image-editor__buttons-box content flex-column-center">
         <button class="image-editor__button image-editor__button--upload" type="submit">Запостить</button>
         <button class="image-editor__button image-editor__button--cancel" type="reset">Отмена</button>
       </div>
@@ -315,15 +346,15 @@
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"
             aria-label="Мы в Твиттере"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+          <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy"
             aria-label="Мы в Фейсбуке"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
             aria-label="Мы в Ютьюбе"></a>
         </li>
       </ul>

@@ -16,14 +16,14 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* Mobile layout by default */
-      background-image: url("tools/pixel-glass/Mobile.png");
+      background-image: url("tools/pixel-glass/mobile-index.png");
     }
 
     /* Tablet */
     @media ( min-width: 760px ) {
       HTML {
         /* Tablet layout */
-        background-image: url("tools/pixel-glass/Mobile.png");
+        background-image: url("tools/pixel-glass/mobile-index--tablet.png");
       }
     }
 
@@ -31,7 +31,7 @@
     @media ( min-width: 960px ) {
       HTML {
         /* Desktop layout */
-        background-image: url("tools/pixel-glass/Mobile.png");
+        background-image: url("tools/pixel-glass/mobile-index--desktop.png");
       }
     }
   </style>
@@ -79,37 +79,35 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
     <section class="showcase">
-      <div class="content">
-        <h2 class="visually-hidden">Скачайте наше приложение</h2>
-        <p class="showcase__lead">
-          Взгляните на жизнь
-          иначе!
-        </p>
-        <div class="showcase__refs-block">
-          <a href="https://www.apple.com/ru/app-store/" class="showcase__default-ref"
-            aria-label="скачивание из источника по умолчанию">
-            Скачать приложение
+      <h1 class="showcase__title visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
+      <figure class="illustration">
+        <figcaption class="illustration__caption">Взгляните на жизнь иначе!</figcaption>
+        <img class="illustration__picture" src="img/hand-with-mobile.png" width="320" height="286"
+          alt="Телефон, отображающий на экране картинку, обработанную при помощи приложения Пинк">
+      </figure>
+      <div class="showcase__refs-block content">
+        <a href="https://www.apple.com/ru/app-store/" class="showcase__default-ref"
+          aria-label="скачивание из источника по умолчанию">
+          Скачать приложение
+        </a>
+        <div class="showcase__download-refs-box">
+          <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
+            aria-label="скачивание из магазина эпл">
+            <img src="img/apple-logo.svg" alt="логотип эпл">
           </a>
-          <div class="showcase__download-refs-box">
-            <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
-              aria-label="скачивание из магазина эпл">
-              <img src="img/apple-logo.svg" alt="логотип эпл">
-            </a>
-            <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
-              aria-label="скачивание из магазина гугл">
-              <img src="img/android-logo.svg" alt="логотип андроид">
-            </a>
-            <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
-              aria-label="скачивание из магазина майкрософт">
-              <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
-            </a>
-          </div>
-          <p class="showcase__download-refs-description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+          <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
+            aria-label="скачивание из магазина гугл">
+            <img src="img/android-logo.svg" alt="логотип андроид">
+          </a>
+          <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
+            aria-label="скачивание из магазина майкрософт">
+            <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
+          </a>
         </div>
+        <p class="showcase__download-refs-description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </div>
     </section>
     <section class="slogans">
@@ -193,7 +191,7 @@
     </section>
     <section class="tariffs">
       <h2 class="visually-hidden">Стоимость сервиса</h2>
-      <div class="table-tariffs__wrapper">
+      <div class="table-tariffs-wrapper">
         <table class="table-tariffs">
           <thead>
           <tr class="table-tariffs__header-row">
@@ -305,10 +303,10 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Интерактивная карта Яндекс</h2>
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
-          width="320" height="200">
-        </iframe>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
+        width="320" height="200">
+      </iframe>
     </section>
   </main>
   <footer class="page-footer">

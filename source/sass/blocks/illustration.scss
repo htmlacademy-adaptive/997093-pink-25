@@ -1,0 +1,19 @@
+.illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 373px;
+  margin: 0;
+  padding-top: 89px;
+}
+
+.illustration__picture {
+  width: 320px;
+  height: 286px;
+  margin-top: 29px;
+}
+
+.illustration__caption {
+  margin: 0 10px;
+}

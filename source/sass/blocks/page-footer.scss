@@ -1,14 +1,14 @@
 .page-footer {
-  background-color: $basic-white;
-  height: 284px;
-
   padding-top: 39px;
+  padding-bottom: 40px;
+
+  background-color: $basic-white;
 }
 
 .page-footer__wrapper {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .page-footer__social {

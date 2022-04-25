@@ -2,18 +2,19 @@
 @import "common/fonts";
 @import "common/global";
 @import "common/variables";
-
 @import "blocks/visually-hidden";
 @import "blocks/page";
 @import "blocks/page-header";
 @import "blocks/page-main";
 @import "blocks/page-body";
 @import "blocks/showcase";
+@import "blocks/illustration";
 @import "blocks/slogans";
 @import "blocks/features";
 @import "blocks/round-diagram";
 @import "blocks/reviews";
 @import "blocks/tariffs";
+@import "blocks/table-tariffs-wrapper";
 @import "blocks/main-nav";
 @import "blocks/content";
 @import "blocks/toggles-box";
@@ -25,3 +26,10 @@
 @import "blocks/page-footer";
 @import "blocks/social";
 @import "blocks/copyright";
+@import "blocks/terms";
+@import "blocks/form";
+@import "blocks/pop-up";
+@import "blocks/catalog";
+@import "blocks/product-card";
+@import "blocks/catalog-slogan";
+@import "blocks/image-editor";

@@ -1,0 +1,150 @@
+.image-editor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 42px;
+
+  background-color: $basic-gray;
+}
+
+.image-editor__tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-editor__tool-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 206px;
+  margin-top: 38px;
+}
+
+.image-editor__crop-tool {
+  width: 44px;
+  height: 44px;
+
+  background: url("../img/crop.svg") 0 0 / 44px 44px $basic-gray;
+  border: none;
+  cursor: pointer;
+}
+
+.image-editor__fill-tool-button {
+  width: 48px;
+  height: 43px;
+  margin-left: 35px;
+
+  background: url("../img/fill.svg") 0 0 / 48px 43px $basic-gray;
+  border: none;
+  cursor: pointer;
+}
+
+.image-editor__contrast-tool-button {
+  width: 32px;
+  height: 32px;
+  margin-left: 35px;
+
+  background: url("../img/contrast.svg") 0 0 / 32px 32px $basic-gray;
+  border: none;
+  cursor: pointer;
+}
+
+.image-editor__slider-label {
+  display: block;
+  width: 240px;
+  height: 24px;
+}
+
+.image-editor__tool-slider {
+  width: 100%;
+
+  color: transparent;
+
+  background: transparent;
+  border-color: transparent;
+
+  appearance: none;
+
+  &::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    margin-top: -6px;
+
+    background: $basic-white;
+    border: 2px solid $basic-red;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    margin-top: -6px;
+
+    background: $basic-white;
+    border: 2px solid $basic-red;
+    border-radius: 50%;
+    cursor: pointer;
+
+    appearance: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    box-sizing: border-box;
+    width: 240px;
+    height: 2px;
+    margin-bottom: 5px;
+
+    background: $basic-black;
+    cursor: pointer;
+  }
+
+  &::-moz-range-track {
+    box-sizing: border-box;
+    width: 240px;
+    height: 2px;
+
+    background: $basic-black;
+    cursor: pointer;
+  }
+}
+
+.image-editor__sliders-box {
+  margin-top: 30px;
+  padding-bottom: 22px;
+
+  border-bottom: 2px solid transparentize($cian, 0.9);
+}
+
+.image-editor__button {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 15px 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: capitalize;
+
+  border: 3px solid;
+  border-radius: 30px;
+
+  &--upload {
+    color: $basic-red;
+  }
+
+  &--cancel {
+    margin-top: 13px;
+
+    color: transparentize($cian, 0.9);
+  }
+}
+
+.image-editor__buttons-box {
+  margin-top: 37px;
+}
