@@ -10,7 +10,7 @@
   color: $basic-white;
   letter-spacing: 0;
 
-  background: url("../img/back-mobile.jpg") left top / 100% no-repeat, $dark-cian;
+  background-color: $dark-cian;
 }
 
 .showcase__title {
@@ -23,15 +23,27 @@
   line-height: 33px;
 }
 
+.showcase__slogan-box {
+  height: 462px;
+
+  background: url("../img/hand-with-mobile.png") 50% 176px no-repeat, url("../img/back-mobile.jpg") left top / 100% no-repeat, $dark-cian;
+}
+
+.showcase__slogan {
+  margin: 0;
+  padding: 90px 10px 342px;
+}
+
 .showcase__refs-block {
-  margin-top: 342px;
+  padding-top: 26px;
+
+  background-color: $dark-cian;
 }
 
 .showcase__default-ref {
   display: block;
   box-sizing: border-box;
   width: 280px;
-  margin-top: 26px;
   padding-top: 17px;
   padding-bottom: 15px;
 
