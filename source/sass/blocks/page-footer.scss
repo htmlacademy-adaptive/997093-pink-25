@@ -5,7 +5,9 @@
   background-color: $basic-white;
 }
 
-.page-footer__wrapper {
+.page-footer__content-box {
+  @include content-position;
+
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -15,3 +15,17 @@
     @content;
   }
 }
+
+@mixin content-position {
+  @include for-tablet-portrait-up {
+    width: $tablet-width;
+    padding-right: $content-padding--mobile;
+    padding-left: $content-padding--mobile;
+  }
+
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-right: $content-padding--mobile;
+  padding-left: $content-padding--mobile;
+}

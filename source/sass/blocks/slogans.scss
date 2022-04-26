@@ -15,3 +15,7 @@
   text-align: center;
   color: $cian;
 }
+
+.slogans__content-box {
+  @include content-position;
+}

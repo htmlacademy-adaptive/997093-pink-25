@@ -1,4 +1,8 @@
 .showcase {
+  @include for-tablet-portrait-up {
+    background: url("../img/back-tablet.jpg") left top / 100% no-repeat, $dark-cian;
+  }
+
   padding-bottom: 32px;
 
   font-style: normal;
@@ -24,20 +28,28 @@
 }
 
 .showcase__slogan-box {
+  @include for-tablet-portrait-up {
+    background: transparent;
+  }
+
   height: 462px;
 
   background: url("../img/hand-with-mobile.png") 50% 176px no-repeat, url("../img/back-mobile.jpg") left top / 100% no-repeat, $dark-cian;
 }
 
 .showcase__slogan {
-  margin: 0;
+  @include content-position;
+
   padding: 90px 10px 342px;
 }
 
 .showcase__refs-block {
-  padding-top: 26px;
+  @include content-position;
 
-  background-color: $dark-cian;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 26px;
 }
 
 .showcase__default-ref {

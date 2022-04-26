@@ -7,6 +7,10 @@
   background: url("../img/mobile-smile.png") 50% bottom no-repeat, $basic-gray;
 }
 
+.features__content-box {
+  @include content-position;
+}
+
 .features__feature-title {
   margin: 0;
 

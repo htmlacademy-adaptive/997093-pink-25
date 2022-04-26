@@ -10,12 +10,14 @@
   cursor: pointer;
 }
 
-.main-nav__menu-box {
+.main-nav__content-box {
   @include for-tablet-portrait-up {
     height: 110px;
     padding-top: 26px;
     padding-bottom: 41px;
   }
+
+  @include content-position;
 
   display: flex;
   justify-content: space-between;

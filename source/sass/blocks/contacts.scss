@@ -3,6 +3,10 @@
   padding-bottom: 16px;
 }
 
+contacts__content-box {
+  @include content-position;
+}
+
 .contacts__text {
   margin: 0;
 

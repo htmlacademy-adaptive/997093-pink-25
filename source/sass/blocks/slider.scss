@@ -1,4 +1,5 @@
 .slider {
+  @include content-position;
   position: relative;
 
   display: flex;
