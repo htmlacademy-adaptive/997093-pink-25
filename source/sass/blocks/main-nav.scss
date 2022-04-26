@@ -1,6 +1,7 @@
 .main-nav__toggle {
   position: relative;
 
+  align-self: end;
   width: 50px;
   height: 24px;
 
@@ -10,8 +11,15 @@
 }
 
 .main-nav__menu-box {
+  @include for-tablet-portrait-up {
+    height: 110px;
+    padding-top: 26px;
+    padding-bottom: 41px;
+  }
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 21px;
   padding-bottom: 20px;
 }
@@ -63,8 +71,6 @@
 }
 
 .main-nav.main-nav--opened .main-nav__menu-box {
-  height: 69px;
-
   border-bottom: 1px solid $basic-black;
 }
 
@@ -88,6 +94,10 @@
 }
 
 .main-nav__site-nav-link {
+  @include for-tablet-portrait-up {
+    padding: 15px 0;
+  }
+
   display: block;
   padding: 10px 0;
 
