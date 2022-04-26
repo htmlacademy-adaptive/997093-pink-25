@@ -1,6 +1,10 @@
 .showcase {
   @include for-tablet-portrait-up {
-    background: url("../img/back-tablet.jpg") left top / 100% no-repeat, $dark-cian;
+    padding-bottom: 115px;
+
+    background: url("../img/hand-with-mobile--tablet.png") 50% bottom no-repeat,
+    url("../img/back-tablet.jpg") left top / 100% no-repeat,
+    $dark-cian;
   }
 
   padding-bottom: 32px;
@@ -14,7 +18,7 @@
   color: $basic-white;
   letter-spacing: 0;
 
-  background-color: $dark-cian;
+  background: url("../img/back-mobile.jpg") left top / 100% 462px no-repeat, $dark-cian;
 }
 
 .showcase__title {
@@ -27,24 +31,50 @@
   line-height: 33px;
 }
 
-.showcase__slogan-box {
+.showcase__content-box {
+  @include content-position;
   @include for-tablet-portrait-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 200px;
+    padding-right: 340px;
+
     background: transparent;
   }
 
-  height: 462px;
+  padding-top: 89px;
 
-  background: url("../img/hand-with-mobile.png") 50% 176px no-repeat, url("../img/back-mobile.jpg") left top / 100% no-repeat, $dark-cian;
+  background: url("../img/hand-with-mobile.png") 50% 176px no-repeat;
+}
+
+.showcase__slogan-box {
+  @include for-tablet-portrait-up {
+    padding: 3px 20px 0;
+
+    background: transparent;
+  }
+  //height: 462px;
+
+  padding-bottom: 315px;
 }
 
 .showcase__slogan {
-  @include content-position;
+  @include for-tablet-portrait-up {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+  }
 
-  padding: 90px 10px 342px;
+  margin: 0 10px 0;
+  //padding: 90px 10px 342px;
 }
 
 .showcase__refs-block {
-  @include content-position;
+  @include for-tablet-portrait-up {
+    padding-top: 29px;
+  }
 
   display: flex;
   flex-direction: column;
@@ -53,6 +83,10 @@
 }
 
 .showcase__default-ref {
+  @include for-tablet-portrait-up {
+    width: 300px;
+  }
+
   display: block;
   box-sizing: border-box;
   width: 280px;
@@ -70,6 +104,10 @@
 }
 
 .showcase__download-refs-box {
+  @include for-tablet-portrait-up {
+    margin: 47px auto 0;
+  }
+
   display: grid;
   align-items: center;
   width: 240px;
@@ -79,8 +117,17 @@
 }
 
 .showcase__download-refs-description {
-  width: 230px;
-  margin: 14px auto 0;
+  @include for-tablet-portrait-up {
+    //font-family: Open Sans;
+    font-size: 18px;
+    //font-weight: 300;
+    line-height: 24px;
+    //letter-spacing: 0em;
+    //text-align: center;
+  }
+  //width: 230px;
+
+  margin: 26px 0 0;
 
   font-size: 14px;
   line-height: 24px;
