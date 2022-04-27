@@ -1,11 +1,21 @@
 .slogans {
-  padding-top: 40px;
-  padding-bottom: 32px;
+  @include for-tablet-portrait-up {
+    padding-bottom: 29px;
+  }
 
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='32'%3E%3Cpolygon points='0,32 320,0 320,32' fill='#{$basic-gray-svg}' /%3E%3C/svg%3E") bottom / 100% 32px no-repeat;
+  padding-top: 40px;
 }
 
 .slogans__slogan {
+  @include for-tablet-portrait-up {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
   margin: 0 0 29px 0;
 
   font-style: normal;
@@ -17,5 +27,9 @@
 }
 
 .slogans__content-box {
+  @include for-tablet-portrait-up {
+    padding-top: 6px;
+  }
+
   @include content-position;
 }

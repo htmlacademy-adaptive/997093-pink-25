@@ -1,5 +1,10 @@
 .slider {
   @include content-position;
+
+  @include for-tablet-portrait-up {
+    padding-top: 76px;
+  }
+
   position: relative;
 
   display: flex;
@@ -33,6 +38,12 @@
 }
 
 .slider__participant-name {
+  @include for-tablet-portrait-up {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -41,14 +52,35 @@
 }
 
 .slider__participant-extra {
+    @include for-tablet-portrait-up {
+      display: block;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+    }
   display: none;
 }
 
 .slider__text {
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    //text-align: center;
+  }
+
   margin-top: 13px;
 
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+}
+
+.slider__cite {
+  @include for-tablet-portrait-up {
+    order: 2;
+    margin: 17px auto;
+  }
 }

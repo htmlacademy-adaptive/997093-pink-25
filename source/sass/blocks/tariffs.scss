@@ -1,9 +1,16 @@
 .tariffs {
+  @include for-tablet-portrait-up {
+    padding-top: 100px;
+    padding-bottom: 37px;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 75px;
+  padding-top: 103px;
   padding-bottom: 47px;
 
-  background-color: $basic-gray;
+  background:
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='22'%3E%3Cpolygon points='0,0 320,0 0,22' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat,
+          $basic-gray;
 }

@@ -1,3 +1,50 @@
 .round-diagram {
+  @include for-tablet-portrait-up {
+    display: block;
+    padding-top: 47px;
+    background: url("../img/timer.svg") 20px 54px / 238px 276px no-repeat, $basic-white;
+    padding-bottom: 25px;
+  }
+
   display: none;
+}
+
+.round-diagram__description-box {
+  @include content-position;
+  @include for-tablet-portrait-up {
+    padding-top: 18px;
+    padding-left: 330px;
+  }
+}
+
+.round-diagram__title {
+  @include for-tablet-portrait-up {
+    width: 290px;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.round-diagram__text {
+  @include for-tablet-portrait-up {
+    margin-top: 5px;
+    margin-bottom: 11px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.round-diagram__ref {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $basic-red;
+
+  text-decoration-line: underline;
 }
