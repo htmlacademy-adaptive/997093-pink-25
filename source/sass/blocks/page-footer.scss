@@ -1,4 +1,10 @@
 .page-footer {
+  @include for-tablet-portrait-up {
+    height: 119px;
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+
   padding-top: 39px;
   padding-bottom: 40px;
 
@@ -7,6 +13,10 @@
 
 .page-footer__content-box {
   @include content-position;
+  @include for-tablet-portrait-up {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   display: flex;
   flex-direction: column;
@@ -14,9 +24,17 @@
 }
 
 .page-footer__social {
+  @include for-tablet-portrait-up {
+    margin-top: 30px;
+  }
+
   margin-top: 36px;
 }
 
 .page-footer__copyright {
+  @include for-tablet-portrait-up {
+    margin-top: 14px;
+  }
+
   margin-top: 20px;
 }

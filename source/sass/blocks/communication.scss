@@ -28,6 +28,10 @@
 }
 
 .communication__attribute-text {
+  @include for-tablet-portrait-up {
+    margin: 3px 0 0 0;
+  }
+
   color: $basic-red;
   font-size: 24px;
   font-weight: 300;

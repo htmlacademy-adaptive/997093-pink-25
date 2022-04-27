@@ -1,11 +1,20 @@
 .map {
+  @include for-tablet-portrait-up {
+    //min-height: 374px;
+    background: url("../img/map--tablet.jpg") 50% 50% / 100% no-repeat, $basic-white;
+  }
+
   position: relative;
 
   min-height: 200px;
 
-  background: url("../img/map-mobile.jpg") 50% 50% / 320px no-repeat, $basic-white;
+  background: url("../img/map--mobile.jpg") 50% 50% / 100% no-repeat, $basic-white;
 
-  iframe {
+  .map__frame {
+    @include for-tablet-portrait-up {
+      height: 374px;
+    }
+
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -15,6 +24,11 @@
   }
 
   &::after {
+    @include for-tablet-portrait-up {
+      background: url("../img/triangle.svg") top left/100%  67px no-repeat;
+      height: 67px;
+    }
+
     content: "";
     position: absolute;
     top: 0;
@@ -22,6 +36,7 @@
 
     width: 100%;
     height: 32px;
+
 
     background: url("../img/triangle.svg") top left/100% 32px no-repeat;
   }

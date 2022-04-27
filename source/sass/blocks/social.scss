@@ -1,4 +1,9 @@
 .social {
+  @include for-tablet-portrait-up {
+    padding-right: 15px;
+    gap: 11px;
+  }
+
   display: flex;
   justify-content: space-between;
   min-width: 187px;
@@ -29,5 +34,8 @@
 }
 
 .social__item {
+  @include for-tablet-portrait-up {
+    padding: 0;
+  }
   padding: 0 3px 0 3px;
 }
