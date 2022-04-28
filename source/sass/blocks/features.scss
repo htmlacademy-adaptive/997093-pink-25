@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 7px;
+    padding-bottom: 33px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='27'%3E%3Cpolygon points='0,0 320,0 0,27' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
   }
 
@@ -97,6 +98,7 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 357px;
+    margin-bottom: 0;
 
     &:nth-of-type(1) {
       background: url("../img/basket-bw.png") 50% top no-repeat transparent;
