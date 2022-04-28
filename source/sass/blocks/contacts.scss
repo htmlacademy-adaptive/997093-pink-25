@@ -4,6 +4,10 @@
     padding-top: 45px;
     padding-bottom: 0px;
   }
+  @include for-desktop-up {
+    min-height: 307px;
+    padding-top: 58px;
+  }
 
   padding-top: 40px;
   padding-bottom: 16px;
@@ -19,6 +23,12 @@ contacts__content-box {
     font-weight: 300;
     font-size: 40px;
     line-height: 54px;
+  }
+  @include for-desktop-up {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
   }
 
   margin: 0;
@@ -37,6 +47,14 @@ contacts__content-box {
 
     grid-template-columns: 1fr 1fr;
     row-gap: 41px;
+  }
+  @include for-desktop-up {
+    width: 900px;
+    margin: 41px auto 0;
+
+    column-gap: 63px;
+
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   display: flex;

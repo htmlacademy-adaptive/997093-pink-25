@@ -7,6 +7,12 @@
   justify-content: flex-start;
 
   &:last-child {
+    @include for-desktop-up {
+      order: 2;
+
+      grid-column: auto;
+    }
+
     grid-column: 1 / 3;
     order: 4;
   }
@@ -21,6 +27,9 @@
 }
 
 .communication__appeal {
+  @include for-desktop-up {
+    margin-bottom: 19px;
+  }
 
   font-size: 18px;
   font-weight: 700;
