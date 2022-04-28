@@ -2,6 +2,9 @@
   @include for-tablet-portrait-up {
     padding-bottom: 29px;
   }
+  @include for-desktop-up {
+    padding-bottom: 50px;
+  }
 
   padding-top: 40px;
 }
@@ -14,6 +17,11 @@
     font-weight: 300;
     font-size: 40px;
     line-height: 54px;
+  }
+  @include for-desktop-up {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
   }
 
   margin: 0 0 29px 0;
@@ -29,6 +37,9 @@
 .slogans__content-box {
   @include for-tablet-portrait-up {
     padding-top: 6px;
+  }
+  @include for-desktop-up {
+    padding-top: 23px;
   }
 
   @include content-position;
