@@ -86,11 +86,25 @@
 }
 
 .main-nav.main-nav--opened {
+  @include for-desktop-up {
+    background-color: transparent;
+  }
+
   background-color: $cian;
 }
 
 .main-nav.main-nav--opened .main-nav__menu-box {
   border-bottom: 1px solid $basic-black;
+}
+
+.main-nav--opened .main-nav__site-nav-list {
+  @include for-desktop-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 618px;
+    margin-left: 44px;
+  }
 }
 
 .main-nav--closed .main-nav__site-nav-list {
