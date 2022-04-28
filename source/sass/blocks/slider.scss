@@ -1,8 +1,10 @@
 .slider {
   @include content-position;
+
   @include for-tablet-portrait-up {
     padding-top: 76px;
   }
+
   @include for-desktop-up {
     padding-top: 170px;
   }
@@ -78,6 +80,7 @@
     font-size: 20px;
     line-height: 30px;
   }
+
   @include for-desktop-up {
     font-style: normal;
     font-weight: 700;
@@ -101,6 +104,7 @@
     font-size: 14px;
     line-height: 30px;
   }
+
   @include for-desktop-up {
     margin-top: 3px;
 
@@ -119,6 +123,7 @@
     font-size: 18px;
     line-height: 30px;
   }
+
   @include for-desktop-up {
     margin-top: 6px;
 

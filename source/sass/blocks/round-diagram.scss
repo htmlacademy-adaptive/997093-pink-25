@@ -6,6 +6,7 @@
 
     background: url("../img/timer.svg") calc(50% - 190px) 54px / 238px 276px no-repeat, $basic-white;
   }
+
   @include for-desktop-up {
     background-color: $basic-gray;
     background-position: calc(50% - 320px) 15px;
@@ -19,10 +20,12 @@
 
 .round-diagram__description-box {
   @include content-position;
+
   @include for-tablet-portrait-up {
     padding-top: 18px;
     padding-left: 330px;
   }
+
   @include for-desktop-up {
     padding-left: 500px;
   }
@@ -37,6 +40,7 @@
     font-size: 30px;
     line-height: 36px;
   }
+
   @include for-desktop-up {
     width: 350px;
     margin: 0 0 23px;
@@ -52,6 +56,7 @@
     font-size: 14px;
     line-height: 24px;
   }
+
   @include for-desktop-up {
     width: 530px;
     margin: 0 0 30px;

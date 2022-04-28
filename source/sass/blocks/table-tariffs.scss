@@ -4,6 +4,7 @@
     min-height: 218px;
     margin: 0 auto;
   }
+
   @include for-desktop-up {
     width: 940px;
     min-height: 282px;
@@ -36,6 +37,7 @@
       background: transparent;
     }
   }
+
   @include for-desktop-up {
     width: 233px;
     height: 80px;
@@ -57,41 +59,43 @@
   &:not(:last-child) {
     border-right: $basic-white 2px solid;
   }
+}
 
-  &--badge {
-    &::after {
-      @include for-tablet-portrait-up {
-        top: 0;
-        left: 0;
-
-        background-image: url("../img/badge-up-to-tablet.svg");
-        background-size: 60px 60px;
-      }
-      @include for-desktop-up {
-        background-size: 70px 70px;
-      }
-
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -2px;
-
-      width: 74px;
-      height: 74px;
-
-      background-image: url("../img/hit-badge.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
-  &--up-to-mobile {
+.table-tariffs__table-header--badge {
+  &::after {
     @include for-tablet-portrait-up {
-      display: table-cell;
+      top: 0;
+      left: 0;
+
+      background-image: url("../img/badge-up-to-tablet.svg");
+      background-size: 60px 60px;
     }
 
-    display: none;
+    @include for-desktop-up {
+      background-size: 70px 70px;
+    }
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+
+    width: 74px;
+    height: 74px;
+
+    background-image: url("../img/hit-badge.svg");
+    background-repeat: no-repeat;
   }
 }
+
+.table-tariffs__table-header--up-to-mobile {
+  @include for-tablet-portrait-up {
+    display: table-cell;
+  }
+
+  display: none;
+}
+
 
 .table-tariffs__header-row {
   @include for-tablet-portrait-up {
@@ -135,6 +139,7 @@
       top: 12px;
       left: 60px;
     }
+
     @include for-desktop-up {
       top: 19px;
       left: 100px;
@@ -157,6 +162,7 @@
       top: 8px;
       left: 62px;
     }
+
     @include for-desktop-up {
       top: 16px;
       left: 102px;
@@ -190,6 +196,7 @@
       background-clip: padding-box;
       border: $basic-smoky 2px solid;
     }
+
     @include for-desktop-up {
       padding: 0 0 0 21px;
 
@@ -210,6 +217,7 @@
     font-weight: 700;
     line-height: 30px;
   }
+
   @include for-desktop-up {
     font-style: normal;
     font-weight: 700;

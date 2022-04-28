@@ -1,6 +1,5 @@
 .map {
   @include for-tablet-portrait-up {
-    //min-height: 374px;
     background: url("../img/map--tablet.jpg") 50% 50% / 100% no-repeat, $basic-white;
   }
 
@@ -14,6 +13,7 @@
     @include for-tablet-portrait-up {
       height: 374px;
     }
+
     @include for-desktop-up {
       height: 503px;
     }
@@ -31,6 +31,7 @@
       background: url("../img/triangle.svg") top left/100%  67px no-repeat;
       height: 67px;
     }
+
     @include for-desktop-up {
       background: url("../img/triangle.svg") top left/100%  105px no-repeat;
       height: 105px;

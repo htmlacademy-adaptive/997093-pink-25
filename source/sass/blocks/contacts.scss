@@ -2,8 +2,9 @@
   @include for-tablet-portrait-up {
     min-height: 360px;
     padding-top: 45px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
+
   @include for-desktop-up {
     min-height: 307px;
     padding-top: 58px;
@@ -13,9 +14,11 @@
   padding-bottom: 16px;
 }
 
-contacts__content-box {
+
+.contacts__content-box {
   @include content-position;
 }
+
 
 .contacts__text {
   @include for-tablet-portrait-up {
@@ -24,6 +27,7 @@ contacts__content-box {
     font-size: 40px;
     line-height: 54px;
   }
+
   @include for-desktop-up {
     font-style: normal;
     font-weight: 300;
@@ -39,15 +43,18 @@ contacts__content-box {
   text-align: center;
 }
 
+
 .contacts__address {
   @include for-tablet-portrait-up {
     display: grid;
-    width: 642px;
+    //width: 642px;
     margin: 32px auto 0;
 
     grid-template-columns: 1fr 1fr;
     row-gap: 41px;
+    column-gap: 20px;
   }
+
   @include for-desktop-up {
     width: 900px;
     margin: 41px auto 0;

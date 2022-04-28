@@ -1,6 +1,6 @@
 .main-nav {
-  @include content-position;
   @include for-desktop-up {
+    @include content-position;
     display: flex;
     justify-content: space-between;
   }
@@ -23,13 +23,17 @@
 }
 
 .main-nav__content-box {
+  @include content-position;
+
   @include for-tablet-portrait-up {
-    height: 43px;
     padding-top: 26px;
     padding-bottom: 41px;
   }
+
   @include for-desktop-up {
     padding: 26px 0 40px;
+    margin: 0;
+    width: auto;
   }
 
   display: flex;

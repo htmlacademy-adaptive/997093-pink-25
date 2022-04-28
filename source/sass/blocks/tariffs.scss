@@ -7,9 +7,7 @@
   @include for-desktop-up {
     padding-top: 157px;
     padding-bottom: 95px;
-    background:
-            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='27'%3E%3Cpolygon points='0,0 320,0 0,27' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat,
-            $basic-gray;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='27'%3E%3Cpolygon points='0,0 320,0 0,27' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
   }
 
   display: flex;
@@ -18,7 +16,5 @@
   padding-top: 103px;
   padding-bottom: 47px;
 
-  background:
-          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='22'%3E%3Cpolygon points='0,0 320,0 0,22' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat,
-          $basic-gray;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='22'%3E%3Cpolygon points='0,0 320,0 0,22' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
 }

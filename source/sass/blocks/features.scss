@@ -3,10 +3,9 @@
     padding-top: 58px;
     padding-bottom: 6px;
 
-    background: url("../img/mobile-smile--tablet.png") calc(50% - 176px) bottom no-repeat,
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='26'%3E%3Cpolygon points='0,0 320,0 0,26' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat,
-    $basic-gray;
+    background: url("../img/mobile-smile--tablet.png") calc(50% - 176px) bottom no-repeat, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='26'%3E%3Cpolygon points='0,0 320,0 0,26' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
   }
+
   @include for-desktop-up {
     display: flex;
     flex-direction: column;
@@ -22,24 +21,24 @@
 
   text-align: center;
 
-  background: url("../img/mobile-smile--mobile.png") 50% bottom no-repeat,
-  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='32'%3E%3Cpolygon points='0,0 320,0 0,32' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat,
-  $basic-gray;
+  background: url("../img/mobile-smile--mobile.png") 50% bottom no-repeat, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='32'%3E%3Cpolygon points='0,0 320,0 0,32' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
 }
 
 .features__content-box {
   @include content-position;
+
   @include for-tablet-portrait-up {
     padding-top: 18px;
     padding-left: 330px;
   }
+
   @include for-desktop-up {
     width: 1150px;
     padding-right: $content-padding--desktop;
     padding-left: $content-padding--desktop;
     display: flex;
     justify-content: space-between;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   padding-top: 32px;
@@ -49,6 +48,7 @@
   @include for-tablet-portrait-up {
     text-align: left;
   }
+
   @include for-desktop-up {
     width: 230px;
     margin: 0 0 13px 0;
@@ -70,6 +70,7 @@
   @include for-tablet-portrait-up {
     text-align: left;
   }
+
   @include for-desktop-up {
     width: 249px;
 
@@ -90,6 +91,7 @@
   @include for-tablet-portrait-up {
     margin-bottom: 37px;
   }
+
   @include for-desktop-up {
     position: relative;
 
