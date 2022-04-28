@@ -4,6 +4,10 @@
     min-height: 218px;
     margin: 0 auto;
   }
+  @include for-desktop-up {
+    width: 940px;
+    min-height: 282px;
+  }
 
   width: 832px;
   min-height: 277px;
@@ -31,7 +35,11 @@
     &:first-child {
       background: transparent;
     }
-
+  }
+  @include for-desktop-up {
+    width: 233px;
+    height: 80px;
+    padding: 0 0 5px;
   }
 
   position: relative;
@@ -58,6 +66,9 @@
 
         background-image: url("../img/badge-up-to-tablet.svg");
         background-size: 60px 60px;
+      }
+      @include for-desktop-up {
+        background-size: 70px 70px;
       }
 
       content: "";
@@ -124,6 +135,10 @@
       top: 12px;
       left: 60px;
     }
+    @include for-desktop-up {
+      top: 19px;
+      left: 100px;
+    }
 
     content: "";
     position: absolute;
@@ -141,6 +156,10 @@
     @include for-tablet-portrait-up {
       top: 8px;
       left: 62px;
+    }
+    @include for-desktop-up {
+      top: 16px;
+      left: 102px;
     }
 
     content: "";
@@ -171,6 +190,15 @@
       background-clip: padding-box;
       border: $basic-smoky 2px solid;
     }
+    @include for-desktop-up {
+      padding: 0 0 0 21px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      height: 26px;
+    }
 
     display: none;
   }
@@ -180,6 +208,12 @@
   @include for-tablet-portrait-up {
     font-size: 16px;
     font-weight: 700;
+    line-height: 30px;
+  }
+  @include for-desktop-up {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 30px;
   }
 
@@ -192,6 +226,12 @@
 }
 
 .table-tariffs__rate {
+  @include for-desktop-up {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+  }
 
   font-style: normal;
   font-weight: 300;
