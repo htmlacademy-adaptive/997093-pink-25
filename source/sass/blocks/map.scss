@@ -14,6 +14,9 @@
     @include for-tablet-portrait-up {
       height: 374px;
     }
+    @include for-desktop-up {
+      height: 503px;
+    }
 
     display: block;
     width: 100%;
@@ -27,6 +30,10 @@
     @include for-tablet-portrait-up {
       background: url("../img/triangle.svg") top left/100%  67px no-repeat;
       height: 67px;
+    }
+    @include for-desktop-up {
+      background: url("../img/triangle.svg") top left/100%  105px no-repeat;
+      height: 105px;
     }
 
     content: "";
