@@ -2,6 +2,11 @@
   @include for-tablet-portrait-up {
     padding-bottom: 13px;
   }
+  @include for-desktop-up {
+    padding-bottom: 14px;
+
+    background: url("../img/quotes.svg") 50% 74px  / 79px 63px no-repeat, $basic-white;
+  }
 
   padding-top: 9px;
   padding-bottom: 35px;

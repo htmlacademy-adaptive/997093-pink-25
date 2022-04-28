@@ -1,4 +1,8 @@
 .toggles-box {
+  @include for-desktop-up {
+    display: none;
+  }
+
   display: flex;
   justify-content: space-between;
   width: 62px;

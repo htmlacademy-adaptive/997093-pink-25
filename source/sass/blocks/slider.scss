@@ -1,8 +1,10 @@
 .slider {
   @include content-position;
-
   @include for-tablet-portrait-up {
     padding-top: 76px;
+  }
+  @include for-desktop-up {
+    padding-top: 170px;
   }
 
   position: relative;
@@ -11,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 32px;
+
   text-align: center;
 
   background-color: transparent;
@@ -24,14 +27,46 @@
 }
 
 .slider__left {
+  @include for-desktop-up {
+    position: absolute;
+    top: 204px;
+    left: 130px;
+
+    display: block;
+    width: 22px;
+    height: 41px;
+
+    background: url("../img/left-arrow.svg") no-repeat transparent;
+    border: none;
+    cursor: pointer;
+  }
+
   display: none;
 }
 
 .slider__right {
+  @include for-desktop-up {
+    position: absolute;
+    top: 204px;
+    right: 130px;
+
+    display: block;
+    width: 22px;
+    height: 41px;
+
+    background: url("../img/right-arrow.svg") no-repeat transparent;
+    border: none;
+    cursor: pointer;
+  }
   display: none;
 }
 
 .slider__quote {
+  @include for-desktop-up {
+    margin: 0 auto;
+    padding: 0 80px 0;
+  }
+
   display: flex;
   flex-direction: column;
   margin: 0 0 0 0;
@@ -39,8 +74,14 @@
 
 .slider__participant-name {
   @include for-tablet-portrait-up {
-    font-size: 20px;
     font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @include for-desktop-up {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
     line-height: 30px;
   }
 
@@ -52,22 +93,39 @@
 }
 
 .slider__participant-extra {
-    @include for-tablet-portrait-up {
-      display: block;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 30px;
-    }
+  @include for-tablet-portrait-up {
+    display: block;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @include for-desktop-up {
+    margin-top: 3px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   display: none;
 }
 
 .slider__text {
   @include for-tablet-portrait-up {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     line-height: 30px;
-    //text-align: center;
+  }
+  @include for-desktop-up {
+    margin-top: 6px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   margin-top: 13px;
