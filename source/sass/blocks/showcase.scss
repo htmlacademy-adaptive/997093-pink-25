@@ -7,6 +7,15 @@
     $dark-cian;
   }
 
+  @include for-desktop-up {
+    height: 737px;
+    padding-bottom: 115px;
+
+    background: url("../img/hand-with-mobile--desktop.png") calc(50% + 157px)  bottom no-repeat,
+    url("../img/back-desktop.jpg") left top / 100% no-repeat,
+    $dark-cian;
+  }
+
   padding-bottom: 32px;
 
   font-style: normal;
@@ -43,10 +52,14 @@
 
     background: transparent;
   }
+  @include for-desktop-up {
+    padding-top: 207px;
+    padding-right: 768px;
+  }
 
   padding-top: 89px;
 
-  background: url("../img/hand-with-mobile.png") 50% 176px no-repeat;
+  background: url("../img/hand-with-mobile--mobile.png") 50% 176px no-repeat;
 }
 
 .showcase__slogan-box {
@@ -65,6 +78,12 @@
     font-size: 40px;
     line-height: 48px;
   }
+  @include for-desktop-up {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+    letter-spacing: 0em;
+  }
 
   margin: 0 10px 0;
 }
@@ -72,6 +91,9 @@
 .showcase__refs-block {
   @include for-tablet-portrait-up {
     padding-top: 29px;
+  }
+  @include for-desktop-up {
+    padding-top: 35px;
   }
 
   display: flex;
@@ -83,6 +105,11 @@
 .showcase__default-ref {
   @include for-tablet-portrait-up {
     width: 300px;
+  }
+  @include for-desktop-up {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
   }
 
   display: block;
@@ -105,6 +132,9 @@
   @include for-tablet-portrait-up {
     margin: 47px auto 0;
   }
+  @include for-desktop-up {
+    margin: 69px auto 0;
+  }
 
   display: grid;
   align-items: center;
@@ -119,6 +149,9 @@
     font-size: 18px;
     line-height: 24px;
     margin: 27px 0 0;
+  }
+  @include for-desktop-up {
+    margin-top: 45px;
   }
 
   margin: 15px 0 0;

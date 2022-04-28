@@ -1,4 +1,16 @@
+.main-nav {
+  @include content-position;
+  @include for-desktop-up {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-nav__toggle {
+  @include for-desktop-up {
+    display: none;
+  }
+
   position: relative;
 
   align-self: end;
@@ -12,12 +24,13 @@
 
 .main-nav__content-box {
   @include for-tablet-portrait-up {
-    height: 110px;
+    height: 43px;
     padding-top: 26px;
     padding-bottom: 41px;
   }
-
-  @include content-position;
+  @include for-desktop-up {
+    padding: 26px 0 40px;
+  }
 
   display: flex;
   justify-content: space-between;
@@ -77,6 +90,14 @@
 }
 
 .main-nav--closed .main-nav__site-nav-list {
+  @include for-desktop-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 618px;
+    margin-left: 44px;
+  }
+
   display: none;
 }
 
@@ -100,6 +121,14 @@
     padding: 15px 0;
   }
 
+  @include for-desktop-up {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    border: none;
+  }
+
   display: block;
   padding: 10px 0;
 
@@ -112,4 +141,11 @@
 
   border-top: 1px solid transparentize($basic-white, 0.85);
   border-bottom: 1px solid $basic-black;
+}
+
+.main-nav__site-nav-item--active {
+  @include for-desktop-up {
+    box-sizing: border-box;
+    border-bottom: $basic-white solid 2px;
+  }
 }

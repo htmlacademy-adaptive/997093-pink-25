@@ -2,8 +2,9 @@
   @include for-tablet-portrait-up {
     display: block;
     padding-top: 47px;
-    background: url("../img/timer.svg") 20px 54px / 238px 276px no-repeat, $basic-white;
     padding-bottom: 25px;
+
+    background: url("../img/timer.svg") calc(50% - 190px) 54px / 238px 276px no-repeat, $basic-white;
   }
 
   display: none;
