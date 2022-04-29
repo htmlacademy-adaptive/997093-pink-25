@@ -1,12 +1,18 @@
 .copyright {
-  align-items: center;
+  @include for-desktop-up {
+    width: 153px;
+
+    font-size: 18px;
+  }
+
   display: flex;
-  font-family: "Open Sans", "Verdana", sans-serif;
-  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  width: 131px;
 
   font-style: normal;
   font-weight: 400;
-  justify-content: space-between;
+  font-size: 14px;
   line-height: 18px;
-  width: 131px;
+  font-family: "Open Sans", "Verdana", sans-serif;
 }

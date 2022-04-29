@@ -1,13 +1,65 @@
 .features {
+  @include for-tablet-portrait-up {
+    padding-top: 58px;
+    padding-bottom: 6px;
+
+    background: url("../img/mobile-smile--tablet.png") calc(50% - 176px) bottom no-repeat, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='26'%3E%3Cpolygon points='0,0 320,0 0,26' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
+  }
+
+  @include for-desktop-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 33px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='27'%3E%3Cpolygon points='0,0 320,0 0,27' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
+  }
+
   padding-top: 53px;
   padding-bottom: 286px;
 
   text-align: center;
 
-  background: url("../img/mobile-smile.png") 50% bottom no-repeat, $basic-gray;
+  background: url("../img/mobile-smile--mobile.png") 50% bottom no-repeat, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='32'%3E%3Cpolygon points='0,0 320,0 0,32' fill='#{$basic-white-svg}' /%3E%3C/svg%3E") top / 100% no-repeat, $basic-gray;
+}
+
+.features__content-box {
+  @include content-position;
+
+  @include for-tablet-portrait-up {
+    padding-top: 18px;
+    padding-left: 330px;
+  }
+
+  @include for-desktop-up {
+    width: 1150px;
+    padding-right: $content-padding--desktop;
+    padding-left: $content-padding--desktop;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  padding-top: 32px;
 }
 
 .features__feature-title {
+  @include for-tablet-portrait-up {
+    text-align: left;
+  }
+
+  @include for-desktop-up {
+    width: 230px;
+    margin: 0 0 13px 0;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
   margin: 0;
 
   font-size: 18px;
@@ -15,6 +67,20 @@
 }
 
 .features__feature-description {
+  @include for-tablet-portrait-up {
+    text-align: left;
+  }
+
+  @include for-desktop-up {
+    width: 249px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
   margin-top: 10px;
 
   font-size: 14px;
@@ -22,5 +88,32 @@
 }
 
 .features__article {
+  @include for-tablet-portrait-up {
+    margin-bottom: 37px;
+  }
+
+  @include for-desktop-up {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 357px;
+    margin-bottom: 0;
+
+    &:nth-of-type(1) {
+      background: url("../img/basket-bw.png") 50% top no-repeat transparent;
+    }
+
+    &:nth-of-type(2) {
+      background: url("../img/basket-pink.png") 50% top no-repeat transparent;
+    }
+
+    &:nth-of-type(3) {
+      background: url("../img/basket-smile.png") 50% top no-repeat transparent;
+    }
+  }
+
   margin-bottom: 33px;
 }

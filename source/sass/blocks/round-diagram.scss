@@ -1,3 +1,86 @@
 .round-diagram {
+  @include for-tablet-portrait-up {
+    display: block;
+    padding-top: 47px;
+    padding-bottom: 25px;
+
+    background: url("../img/timer.svg") calc(50% - 190px) 54px / 238px 276px no-repeat, $basic-white;
+  }
+
+  @include for-desktop-up {
+    background-color: $basic-gray;
+    background-position: calc(50% - 320px) 15px;
+    background-size: 298px 345px;
+    padding-top: 90px;
+    padding-bottom: 111px;
+  }
+
   display: none;
+}
+
+.round-diagram__description-box {
+  @include content-position;
+
+  @include for-tablet-portrait-up {
+    padding-top: 18px;
+    padding-left: 330px;
+  }
+
+  @include for-desktop-up {
+    padding-left: 500px;
+  }
+}
+
+.round-diagram__title {
+  @include for-tablet-portrait-up {
+    width: 290px;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @include for-desktop-up {
+    width: 350px;
+    margin: 0 0 23px;
+  }
+}
+
+.round-diagram__text {
+  @include for-tablet-portrait-up {
+    margin-top: 5px;
+    margin-bottom: 11px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @include for-desktop-up {
+    width: 530px;
+    margin: 0 0 30px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.round-diagram__ref {
+  @include for-desktop-up {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $basic-red;
+
+  text-decoration-line: underline;
 }

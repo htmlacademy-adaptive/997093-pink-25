@@ -1,6 +1,16 @@
 .reviews {
-  padding-top: 9px;
-  padding-bottom: 62px;
+  @include for-tablet-portrait-up {
+    padding-bottom: 13px;
+  }
 
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='32'%3E%3Cpolygon points='0,32 320,0 320,32' fill='#{$basic-gray-svg}' /%3E%3C/svg%3E") bottom / 100% 32px no-repeat;
+  @include for-desktop-up {
+    padding-bottom: 14px;
+
+    background: url("../img/quotes.svg") 50% 74px  / 79px 63px no-repeat, $basic-white;
+  }
+
+  padding-top: 9px;
+  padding-bottom: 35px;
+
+  background-color: $basic-white;
 }

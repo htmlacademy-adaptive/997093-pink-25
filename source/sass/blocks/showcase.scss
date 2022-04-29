@@ -1,4 +1,17 @@
 .showcase {
+  @include for-tablet-portrait-up {
+    padding-bottom: 115px;
+
+    background: url("../img/hand-with-mobile--tablet.png") 50% bottom no-repeat, url("../img/back-tablet.jpg") left top / 100% no-repeat, $dark-cian;
+  }
+
+  @include for-desktop-up {
+    height: 737px;
+    padding-bottom: 115px;
+
+    background: url("../img/hand-with-mobile--desktop.png") calc(50% + 157px)  bottom no-repeat, url("../img/back-desktop.jpg") left top / 100% no-repeat, $dark-cian;
+  }
+
   padding-bottom: 32px;
 
   font-style: normal;
@@ -10,7 +23,7 @@
   color: $basic-white;
   letter-spacing: 0;
 
-  background: url("../img/back-mobile.jpg") left top / 100% no-repeat, $dark-cian;
+  background: url("../img/back-mobile.jpg") left top / 100% 462px no-repeat, $dark-cian;
 }
 
 .showcase__title {
@@ -23,15 +36,86 @@
   line-height: 33px;
 }
 
+.showcase__content-box {
+  @include content-position;
+
+  @include for-tablet-portrait-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 200px;
+    padding-right: 340px;
+
+    background: transparent;
+  }
+
+  @include for-desktop-up {
+    padding-top: 207px;
+    padding-right: 768px;
+  }
+
+  padding-top: 89px;
+
+  background: url("../img/hand-with-mobile--mobile.png") 50% 176px no-repeat;
+}
+
+.showcase__slogan-box {
+  @include for-tablet-portrait-up {
+    padding: 3px 20px 0;
+
+    background: transparent;
+  }
+
+  padding-bottom: 315px;
+}
+
+.showcase__slogan {
+  @include for-tablet-portrait-up {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @include for-desktop-up {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+    letter-spacing: 0;
+  }
+
+  margin: 0 10px 0;
+}
+
 .showcase__refs-block {
-  margin-top: 342px;
+  @include for-tablet-portrait-up {
+    padding-top: 29px;
+  }
+
+  @include for-desktop-up {
+    padding-top: 35px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 26px;
 }
 
 .showcase__default-ref {
+  @include for-tablet-portrait-up {
+    width: 300px;
+  }
+
+  @include for-desktop-up {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
   display: block;
   box-sizing: border-box;
   width: 280px;
-  margin-top: 26px;
   padding-top: 17px;
   padding-bottom: 15px;
 
@@ -46,6 +130,14 @@
 }
 
 .showcase__download-refs-box {
+  @include for-tablet-portrait-up {
+    margin: 47px auto 0;
+  }
+
+  @include for-desktop-up {
+    margin: 69px auto 0;
+  }
+
   display: grid;
   align-items: center;
   width: 240px;
@@ -55,8 +147,17 @@
 }
 
 .showcase__download-refs-description {
-  width: 230px;
-  margin: 14px auto 0;
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 27px 0 0;
+  }
+
+  @include for-desktop-up {
+    margin-top: 45px;
+  }
+
+  margin: 15px 0 0;
 
   font-size: 14px;
   line-height: 24px;

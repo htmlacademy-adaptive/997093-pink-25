@@ -2,6 +2,7 @@
 @import "common/fonts";
 @import "common/global";
 @import "common/variables";
+@import "mixins/mixins";
 @import "blocks/visually-hidden";
 @import "blocks/page";
 @import "blocks/page-header";
@@ -14,7 +15,6 @@
 @import "blocks/round-diagram";
 @import "blocks/reviews";
 @import "blocks/tariffs";
-@import "blocks/table-tariffs-wrapper";
 @import "blocks/main-nav";
 @import "blocks/content";
 @import "blocks/toggles-box";

@@ -1,6 +1,19 @@
+.main-nav {
+  @include for-desktop-up {
+    @include content-position;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-nav__toggle {
+  @include for-desktop-up {
+    display: none;
+  }
+
   position: relative;
 
+  align-self: end;
   width: 50px;
   height: 24px;
 
@@ -9,9 +22,23 @@
   cursor: pointer;
 }
 
-.main-nav__menu-box {
+.main-nav__content-box {
+  @include content-position;
+
+  @include for-tablet-portrait-up {
+    padding-top: 26px;
+    padding-bottom: 41px;
+  }
+
+  @include for-desktop-up {
+    padding: 26px 0 40px;
+    margin: 0;
+    width: auto;
+  }
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 21px;
   padding-bottom: 20px;
 }
@@ -59,16 +86,36 @@
 }
 
 .main-nav.main-nav--opened {
+  @include for-desktop-up {
+    background-color: transparent;
+  }
+
   background-color: $cian;
 }
 
 .main-nav.main-nav--opened .main-nav__menu-box {
-  height: 69px;
-
   border-bottom: 1px solid $basic-black;
 }
 
+.main-nav--opened .main-nav__site-nav-list {
+  @include for-desktop-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 618px;
+    margin-left: 44px;
+  }
+}
+
 .main-nav--closed .main-nav__site-nav-list {
+  @include for-desktop-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 618px;
+    margin-left: 44px;
+  }
+
   display: none;
 }
 
@@ -88,6 +135,18 @@
 }
 
 .main-nav__site-nav-link {
+  @include for-tablet-portrait-up {
+    padding: 15px 0;
+  }
+
+  @include for-desktop-up {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    border: none;
+  }
+
   display: block;
   padding: 10px 0;
 
@@ -100,4 +159,11 @@
 
   border-top: 1px solid transparentize($basic-white, 0.85);
   border-bottom: 1px solid $basic-black;
+}
+
+.main-nav__site-nav-item--active {
+  @include for-desktop-up {
+    box-sizing: border-box;
+    border-bottom: $basic-white solid 2px;
+  }
 }

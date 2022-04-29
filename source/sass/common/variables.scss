@@ -1,6 +1,10 @@
 $mobile-width: 320px;
-$tablet-width: "660px";
-$desktop-width: "1200px";
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+$content-padding--mobile: 20px;
+$content-padding--tablet: 20px;
+$content-padding--desktop: 130px;
 
 $basic-white: #ffffff;
 $basic-black: #000000;
@@ -9,6 +13,7 @@ $basic-gray: #f2f2f2;
 $basic-red:  #d22856;
 $basic-green: #2aab6d;
 $basic-gray-svg: "%23f2f2f2";
+$basic-white-svg: "%23ffffff";
 $dark-cian: #1d2631;
 $cian: #283645;
 

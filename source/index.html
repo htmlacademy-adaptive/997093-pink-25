@@ -20,18 +20,18 @@
     }
 
     /* Tablet */
-    @media ( min-width: 760px ) {
+    @media ( min-width: 660px ) {
       HTML {
         /* Tablet layout */
-        background-image: url("tools/pixel-glass/mobile-index--tablet.png");
+        background-image: url("tools/pixel-glass/tablet-index.png");
       }
     }
 
     /* Desktop */
-    @media ( min-width: 960px ) {
+    @media ( min-width: 1200px ) {
       HTML {
         /* Desktop layout */
-        background-image: url("tools/pixel-glass/mobile-index--desktop.png");
+        background-image: url("tools/pixel-glass/desktop-index.png");
       }
     }
   </style>
@@ -44,7 +44,7 @@
 <body class="page-body">
   <header class="page-header">
     <nav class="main-nav main-nav--nojs main-nav--opened">
-      <div class="main-nav__menu-box content">
+      <div class="main-nav__content-box">
         <a class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
@@ -80,38 +80,41 @@
   </header>
   <main class="page-main">
     <section class="showcase">
-      <h1 class="showcase__title visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
-      <figure class="illustration">
-        <figcaption class="illustration__caption">Взгляните на жизнь иначе!</figcaption>
-        <img class="illustration__picture" src="img/hand-with-mobile.png" width="320" height="286"
-          alt="Телефон, отображающий на экране картинку, обработанную при помощи приложения Пинк">
-      </figure>
-      <div class="showcase__refs-block content">
-        <a href="https://www.apple.com/ru/app-store/" class="showcase__default-ref"
-          aria-label="скачивание из источника по умолчанию">
-          Скачать приложение
-        </a>
-        <div class="showcase__download-refs-box">
-          <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
-            aria-label="скачивание из магазина эпл">
-            <img src="img/apple-logo.svg" alt="логотип эпл">
-          </a>
-          <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
-            aria-label="скачивание из магазина гугл">
-            <img src="img/android-logo.svg" alt="логотип андроид">
-          </a>
-          <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
-            aria-label="скачивание из магазина майкрософт">
-            <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
-          </a>
+      <div class="showcase__content-box">
+        <h1 class="showcase__title visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
+        <div class="showcase__slogan-box">
+          <p class="showcase__slogan">
+            Взгляните на жизнь иначе!
+          </p>
         </div>
-        <p class="showcase__download-refs-description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <div class="showcase__refs-block">
+          <a href="https://www.apple.com/ru/app-store/" class="showcase__default-ref"
+            aria-label="скачивание из источника по умолчанию">
+            Скачать приложение
+          </a>
+          <div class="showcase__download-refs-box">
+            <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
+              aria-label="скачивание из магазина эпл">
+              <img src="img/apple-logo.svg" alt="логотип эпл">
+            </a>
+            <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
+              aria-label="скачивание из магазина гугл">
+              <img src="img/android-logo.svg" alt="логотип андроид">
+            </a>
+            <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
+              aria-label="скачивание из магазина майкрософт">
+              <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
+            </a>
+          </div>
+          <p class="showcase__download-refs-description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </div>
+
     </section>
     <section class="slogans">
-      <div class="content">
+      <div class="slogans__content-box">
         <h2 class="visually-hidden">Наша миссия</h2>
         <p class="slogans__slogan">
           Устали от серости мегаполиса?
@@ -122,10 +125,9 @@
       </div>
     </section>
     <section class="features">
-      <div class="content">
+      <div class="features__content-box">
         <h2 class="visually-hidden">Для чего наше приложение</h2>
-        <div class="features__wrapper">
-          <article class="features__article">
+        <article class="features__article">
             <h3 class="features__feature-title">
               Поднимает настроение
             </h3>
@@ -149,23 +151,21 @@
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </article>
-        </div>
       </div>
     </section>
     <section class="round-diagram">
-      <div class="round-diagram__description-box content">
+      <div class="round-diagram__description-box">
         <h2 class="visually-hidden">Научные факты</h2>
         <h3 class="round-diagram__title">Эффект на&nbsp;24&nbsp;часа!</h3>
         <p class="round-diagram__text">
-          Британские ученые провели исследования
-          и доказали, что&nbsp;положительный эффект от использования&nbsp;приложения длится целые сутки!
+          Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!
         </p>
         <a href="#" class="round-diagram__ref">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы наших участников</h2>
-      <div class="content slider">
+      <div class="slider">
         <ul class="slider__list">
           <li class="slider__item">
             <blockquote class="slider__quote">
@@ -191,7 +191,7 @@
     </section>
     <section class="tariffs">
       <h2 class="visually-hidden">Стоимость сервиса</h2>
-      <div class="table-tariffs-wrapper">
+      <div class="table-tariffs__wrapper">
         <table class="table-tariffs">
           <thead>
           <tr class="table-tariffs__header-row">
@@ -266,7 +266,7 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты для связи</h2>
-      <div class="content">
+      <div class="contacts__content-box">
         <p class="contacts__text">
           Остались вопросы?
         </p>
@@ -303,14 +303,14 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Интерактивная карта Яндекс</h2>
-      <iframe
+      <iframe class="map__frame"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
         width="320" height="200">
       </iframe>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper content">
+    <div class="page-footer__content-box">
       <a class="page-footer__logo pink-logo pink-logo--whole-direct">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
