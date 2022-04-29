@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch-icon-iphone.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("tools/pixel-glass/mobile-catalog.png");
+    }
+
+    /* Tablet */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("tools/pixel-glass/mobile-catalog--tablet.png");
+      }
+    }
+
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("tools/pixel-glass/mobile-catalog--desktop.png");
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="tools/pixel-glass/styles.css">
+  <script src="tools/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
+  <base href="https://htmlacademy-adaptive.github.io/997093-pink-25/7/">
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <nav class="main-nav main-nav--nojs main-nav--opened ">
+      <div class="main-nav__menu-box content">
+        <a class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк" href="index.html">
+          <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8
+        7.36H2.53v6.8A1.28 1.28 0 011.27 23 1.27 1.27 0 010 21.61V1.55zm8.07 10.97c3.7 0
+        6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04zM21.6 1.39A1.28 1.28 0 0122.85
+        0a1.27 1.27 0 011.27 1.39V21.6A1.28 1.28 0 0122.86 23a1.27 1.27 0 01-1.27-1.39V1.4zM30.67 1.42A1.28
+        1.28 0 0131.93.17h.34a1.54 1.54 0 011.29.74l13.6 17.4V1.36A1.24 1.24 0 0148.39.12a1.23 1.23 0 011.23
+        1.24v20.3a1.14 1.14 0 01-1.15 1.17h-.13a1.7 1.7 0 01-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 01-1.2 1.25
+        1.23 1.23 0 01-1.2-1.25V1.42h-.05zM55.94 1.39A1.28 1.28 0 0157.2 0a1.27 1.27 0 011.26
+        1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 011.21 1.26 1.29 1.29 0 01-.41.9l-7.95 7.9 8.57
+        10.52c.23.26.35.6.35.94a1.31 1.31 0 01-1.34 1.28 1.23 1.23 0 01-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27
+        1.27 0 01-1.26 1.27 1.26 1.26 0 01-1.26-1.27V1.4h-.01z" fill="#fff"
+            />
+          </svg>
+        </a>
+        <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
+      </div>
+      <ul class="main-nav__site-nav-list">
+        <li class="main-nav__site-nav-item main-nav__site-nav-item--active">
+          <a href="index.html" class="main-nav__site-nav-link">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__site-nav-item">
+          <a class="main-nav__site-nav-link">
+            Фотографии
+          </a>
+        </li>
+        <li class="main-nav__site-nav-item">
+          <a href="form.html" class="main-nav__site-nav-link">
+            конкурс
+          </a>
+        </li>
+        <li class="main-nav__site-nav-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__site-nav-link">
+            html academy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="showcase">
+      <h1 class="showcase__title content">
+        Фотографии
+        пользователей
+      </h1>
+    </section>
+    <section class="terms">
+      <p class="terms__text">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как не хватает ваших?
+      </p>
+    </section>
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог фотографий</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <article class="product-card product-card--selected content">
+            <a class="product-card__img-wrapper" href="img/catalog/panorama-tablet.jpg">
+              <img src="img/catalog/panorama-tablet.jpg" class="product-card__image"
+                alt="Висячий мост через ущелье" width="320" height="137">
+            </a>
+            <div class="product-card__annotation">
+              <p class="product-card__summary">
+                <span class="product-card__author">Анна</span>
+                <span class="product-card__posted">(5 минут назад)</span>
+              </p>
+              <p class="product-card__full">
+                Прыгать или нет? Напишите в комментарии свой совет
+                и<br>смотрите прямую трансляцию в перископе, задавайте&nbsp;свои&nbsp;вопросы!
+              </p>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 215</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-1-mobile.jpg">
+              <img class="product-card__image" src="img/catalog/photo-1-mobile.jpg" alt="Белый автомобиль на съёмочной площадке"
+                width="280" height="180">
+            </a>
+            <div class="product-card__annotation">
+              <p class="product-card__summary">
+                <span class="product-card__author">Левон</span>
+                <span class="product-card__posted">(5 часов назад)</span>
+              </p>
+              <p class="product-card__full">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 356</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-2-mobile.jpg">
+              <img class="product-card__image" src="img/catalog/photo-2-mobile.jpg" alt="Ударная установка" width="280"
+                height="180">
+            </a>
+            <div class="product-card__annotation">
+              <p class="product-card__summary">
+                <span class="product-card__author">Антон</span>
+                <span class="product-card__posted">(12 часов назад)</span>
+              </p>
+              <p class="product-card__full">
+                Соседи будут рады!
+              </p>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 666</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-3-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-3-tablet.jpg" alt="Вид на небоскрёбы" width="280"
+                height="180">
+            </a>
+            <div class="product-card__annotation">
+              <p class="product-card__summary">
+                <span class="product-card__author">Борис</span>
+                <span class="product-card__posted">(20 часов назад)</span>
+              </p>
+              <p class="product-card__full">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 215</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-4-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-4-tablet.jpg" alt="Площадь ярмарки под ярким тентом"
+                width="280" height="180">
+            </a>
+            <div class="product-card__annotation">
+              <p class="product-card__summary">
+                <span class="product-card__author">Сергей</span>
+                <span class="product-card__posted">(25 часов назад)</span>
+              </p>
+              <p class="product-card__full">
+                Самая кубанская в мире!
+              </p>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 4</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-5-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-5-tablet.jpg" alt="Свешенные над обрывом ноги" width="280"
+                height="180">
+            </a>
+            <div class="product-card__annotation">
+              <p class="product-card__summary">
+                <span class="product-card__author">Максим</span>
+                <span class="product-card__posted">(40 часов назад)</span>
+              </p>
+              <p class="product-card__full">
+                Где снег-то?
+              </p>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 150</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card content">
+            <a class="product-card__img-wrapper" href="img/catalog/photo-6-tablet.jpg">
+              <img class="product-card__image" src="img/catalog/photo-6-tablet.jpg" alt="Крыло самолёта в лучах солнца"
+                width="280" height="180">
+            </a>
+            <div class="product-card__annotation">
+              <p class="product-card__summary">
+                <span class="product-card__author">Надежда</span>
+                <span class="product-card__posted">(45 часов назад)</span>
+              </p>
+              <p class="product-card__full">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 2560</span>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <div class="catalog-slogan">
+      <p class="catalog-slogan__text">
+        Затмите их всех!<br>Выкладывайте все, что накопилось в<br>телефоне!
+      </p>
+    </div>
+    <form class="image-editor">
+      <h2 class="visually-hidden">Редактор фотографии</h2>
+      <div class="image-editor__image-wrapper content">
+        <img src="img/catalog/photo-7-tablet.jpg" alt="Зимняя дорога" class="image-editor__modified-photo" width="280"
+          height="374">
+      </div>
+      <div class="image-editor__tools">
+        <div class="image-editor__tool-box">
+          <button class="image-editor-tool-button image-editor__crop-tool image-editor-tool-button--active"
+            type="button"
+            aria-label="выбор инструмента обрезки">
+          </button>
+          <button class="image-editor-tool-button image-editor__fill-tool-button" type="button"
+            aria-label="выбор инструмента заливки">
+          </button>
+          <button class="image-editor-tool-button image-editor__contrast-tool-button" type="button"
+            aria-label="выбор инструмента контрастность">
+          </button>
+        </div>
+        <div class="image-editor__sliders-box flex-column-center">
+          <div class="image-editor__crop-slider-box">
+            <label aria-label="инструмент обрезка" class="image-editor__slider-label">
+              <input type="range" class="image-editor__tool-slider image-editor__crop-tool-slider" min="0" max="100"
+                step="1" value="85">
+            </label>
+          </div>
+          <div class="image-editor__fill-slider-box flex-column-center">
+            <label aria-label="инструмент заливка" class="image-editor__slider-label visually-hidden">
+              <input type="range" class="image-editor__tool-slider image-editor__fill-tool-slider" min="0" max="100"
+                step="1" value="85">
+            </label>
+          </div>
+          <div class="image-editor__contrast-slider-box flex-column-center">
+            <label aria-label="инструмент контрастность" class="image-editor__slider-label visually-hidden">
+              <input type="range" class="image-editor__tool-slider image-editor__contrast-tool-slider" min="0" max="100"
+                step="1" value="85">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="image-editor__buttons-box content flex-column-center">
+        <button class="image-editor__button image-editor__button--upload" type="submit">Запостить</button>
+        <button class="image-editor__button image-editor__button--cancel" type="reset">Отмена</button>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo pink-logo pink-logo--whole-direct" href="index.html">
+        <svg width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M71 18.55a1.29 1.29 0 011.26-1.29h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0
+        4.85-4.04 7.36-8.8 7.36h-5.44v6.8A1.28 1.28 0 0172.27 40 1.27 1.27 0 0171
+        38.61V18.55zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H73.6v9.88l5.48.04zM92.6
+        18.39A1.28 1.28 0 0193.85 17a1.27 1.27 0 011.27 1.39V38.6A1.28 1.28 0 0193.86 40a1.27 1.27 0
+        01-1.27-1.39V18.4zM101.67 18.42a1.28 1.28 0 011.26-1.25h.34a1.53 1.53 0 011.29.74l13.6 17.4V18.36a1.24
+        1.24 0 011.23-1.24 1.23 1.23 0 011.23 1.24v20.3a1.16 1.16 0 01-.32.83 1.13 1.13 0 01-.83.34h-.13a1.69
+        1.69 0 01-1.31-.78l-13.91-17.8v17.4a1.26 1.26 0 01-1.2 1.25 1.23 1.23 0 01-1.2-1.25V18.42h-.05zM126.94
+        18.39A1.28 1.28 0 01128.2 17a1.27 1.27 0 011.26 1.39v12.3l12.76-13.14c.26-.27.62-.43 1-.45a1.27 1.27 0
+        011.21 1.26 1.3 1.3 0 01-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.33 1.33 0 01-.4.92 1.29 1.29 0
+        01-.94.36 1.23 1.23 0 01-1-.58l-8.36-10.46-4.83 4.85v4.88a1.28 1.28 0 01-.78 1.17 1.26 1.26 0
+        01-1.74-1.17V18.4h-.01z" fill="#283645"
+          />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9 6.59l5.03 21.14a1.42 1.42 0
+        01-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 01-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75
+        11.75 0 0116.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 01.3 29a1.42 1.42 0 01-.24-1.27L5.1 6.6C5.46
+        4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 010 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34
+        26.6h2.03a11.75 11.75 0 0111.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0111.47-10.19c5.89 0 10.75
+        4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0
+        010-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59zM25.66 29.56a9.12 9.12 0 00-.02-2.97 8.85 8.85 0
+        00-8.68-7.38 8.85 8.85 0 00-8.82 8.94 8.85 8.85 0 008.81 8.94c4.4 0 8.04-3.26 8.71-7.53zm24.94 0a8.75 8.75 0
+        00-8.58-10.23 8.75 8.75 0 00-8.58 10.23 8.73 8.73 0 008.58 7.4c4.33 0 7.91-3.2 8.58-7.4z" fill="#D22856"
+          />
+        </svg>
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"
+            aria-label="Мы в Твиттере"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy"
+            aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            aria-label="Мы в Ютьюбе"></a>
+        </li>
+      </ul>
+      <span class="page-footer__copyright copyright">
+      Разработано
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__copyright-ref"
+        aria-label="переход на страницу интенсива HTML Academy">
+        <img src="img/html-academy-logo.svg " width="27" height="34" alt="">
+      </a>
+    </span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
