@@ -23,5 +23,12 @@
 }
 
 .terms__text--additional {
+  @include content-position;
+
+  @include for-tablet-portrait-up {
+    display: inline;
+
+    font: inherit;
+  }
   display: none;
 }
