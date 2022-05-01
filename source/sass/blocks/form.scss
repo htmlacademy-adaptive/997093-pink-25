@@ -94,9 +94,11 @@
 }
 
 .form__achievements-field-box {
+  @include content-position;
+
   @include for-tablet-portrait-up {
     order: 4;
-    padding-top: 33px;
+    padding-top: 43px;
 
     background-color: $basic-white;
   }
@@ -112,6 +114,13 @@
 }
 
 .form__achievements-fields {
+  @include for-tablet-portrait-up {
+    padding: 0 0 54px 0px;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+
   padding: 0;
   font-family: "Open Sans", "Verdana", sans-serif;
 
@@ -119,6 +128,15 @@
 }
 
 .form__achievements-fields-legend {
+  @include for-tablet-portrait-up {
+    width: 432px;
+    margin: 0 auto 47px;
+  }
+
+  @include for-desktop-up {
+    margin: 0 192px 47px;
+  }
+
   width: 252px;
   margin: 0 auto 42px;
 
@@ -132,8 +150,20 @@
 }
 
 .form__achievements-fields-list {
+  @include for-tablet-portrait-up {
+    padding-left: 56px;
+  }
+
+  @include for-desktop-up {
+    display: grid;
+
+    grid-auto-flow: column;
+    grid-template-columns: 315px 295px 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
   margin: 0;
-  padding-left: 20px;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -145,6 +175,11 @@
 }
 
 .form__achievements-fields-checkbox:checked + .form__achievements-fields-label-text::before {
+  @include for-tablet-portrait-up {
+    width: 40px;
+    height: 40px;
+  }
+
   background: url("../img/checkbox-checked.svg") no-repeat;
 }
 
@@ -159,6 +194,11 @@
   line-height: 30px;
 
   &::before {
+    @include for-tablet-portrait-up {
+      width: 40px;
+      height: 40px;
+    }
+
     content: "";
     position: absolute;
     top: -6px;
@@ -381,9 +421,11 @@
 }
 
 .form__impressions-fields-box {
+  @include content-position;
+
   @include for-tablet-portrait-up {
     order: 5;
-    padding-top: 15px;
+    padding-top: 11px;
   }
 
   @include for-desktop-up {
@@ -397,6 +439,16 @@
 }
 
 .form__impressions-fields {
+  @include for-tablet-portrait-up {
+    padding: 0 58px 34px;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+  @include for-desktop-up {
+    padding: 0 58px 26px;
+  }
+
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 
@@ -406,6 +458,15 @@
 }
 
 .form__impressions-fields-legend {
+  @include for-tablet-portrait-up {
+    width: 257px;
+    margin: 0 auto 32px;
+  }
+
+  @include for-desktop-up {
+    margin: 0 auto 29px;
+  }
+
   width: 252px;
   margin: 0 auto 11px;
 
@@ -434,6 +495,24 @@
 }
 
 .form__impressions-fields-text-input {
+  @include for-tablet-portrait-up {
+    width: 456px;
+    margin: 5px auto 0;
+    padding: 13px 19px 5px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Open Sans", "Verdana", sans-serif;
+  }
+
+  @include for-desktop-up {
+    box-sizing: border-box;
+    width: 100%;
+    height: 128px;
+  }
+
   display: block;
   width: 236px;
   height: 171px;
