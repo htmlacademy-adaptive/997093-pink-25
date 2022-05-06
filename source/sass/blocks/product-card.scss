@@ -12,6 +12,10 @@
   padding: 0 0 18px 0;
 
   &::after {
+    @include for-tablet-portrait-up {
+      top: 58px;
+    }
+
     content: " ";
     position: absolute;
     right: 20px;
@@ -27,9 +31,15 @@
 }
 
 .product-card--selected img {
+  @include for-tablet-portrait-up {
+    height: 511px;
+
+  }
+
+  object-fit: cover;
+  height: 137px;
   position: relative;
   width: 100vw;
-  height: min-content;
 }
 
 .product-card--selected .product-card__annotation {

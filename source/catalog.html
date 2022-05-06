@@ -95,9 +95,13 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <article class="product-card product-card--selected content">
+
             <a class="product-card__img-wrapper" href="img/catalog/panorama-tablet.jpg">
-              <img src="img/catalog/panorama-tablet.jpg" class="product-card__image"
-                alt="Висячий мост через ущелье" width="320" height="137">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/catalog/panorama-desktop.jpg">
+                <source media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.jpg, img/catalog/panorama-desktop@2x.jpg 2x">
+                <img src="img/catalog/panorama-tablet.jpg" class="product-card__image"
+              </picture>
             </a>
             <div class="product-card__annotation">
               <p class="product-card__summary">
