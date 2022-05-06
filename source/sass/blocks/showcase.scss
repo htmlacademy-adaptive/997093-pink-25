@@ -1,5 +1,12 @@
 .showcase {
-  padding-bottom: 32px;
+  @include for-tablet-portrait-up {
+    height: 440px;
+  }
+
+  @include for-desktop-up {
+    height: 394px;
+  }
+  height: 237px;
 
   font-style: normal;
   font-weight: 300;
@@ -15,7 +22,7 @@
 
 .showcase--extra-background {
   @include for-tablet-portrait-up {
-    padding-bottom: 115px;
+    padding-bottom: 290px;
 
     background: url("../img/hand-with-mobile--tablet.png") 50% bottom no-repeat, url("../img/back-tablet.jpg") left top / 100% no-repeat, $dark-cian;
   }
@@ -26,18 +33,15 @@
 
     background: url("../img/hand-with-mobile--desktop.png") calc(50% + 157px)  bottom no-repeat, url("../img/back-desktop.jpg") left top / 100% no-repeat, $dark-cian;
   }
+  padding-bottom: 495px;
 }
 
 .showcase--simple-background {
   @include for-tablet-portrait-up {
-    padding-bottom: 58px;
-
     background: url("../img/back-tablet.jpg") left top / 100% no-repeat, $dark-cian;
   }
 
   @include for-desktop-up {
-    padding-bottom: 89px;
-
     background: url("../img/back-desktop.jpg") left top / 100% no-repeat, $dark-cian;
   }
 }
