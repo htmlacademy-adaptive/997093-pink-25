@@ -36,8 +36,7 @@
   }
 
   @include for-desktop-up {
-    height: 737px;
-    padding-bottom: 115px;
+    padding-bottom: 89px;
 
     background: url("../img/back-desktop.jpg") left top / 100% no-repeat, $dark-cian;
   }
@@ -51,6 +50,10 @@
     line-height: 68px;
     padding-top: 178px;
     padding-bottom: 0;
+  }
+
+  @include for-desktop-up {
+    padding-top: 169px;
   }
 
   padding-top: 94px;

@@ -47,7 +47,6 @@
 .contacts__address {
   @include for-tablet-portrait-up {
     display: grid;
-    //width: 642px;
     margin: 32px auto 0;
 
     grid-template-columns: 1fr 1fr;
