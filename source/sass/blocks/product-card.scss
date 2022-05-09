@@ -1,51 +1,16 @@
 .product-card {
-  padding-bottom: 19px;
+  width: $product-card-width--mobile;
 }
 
 .product-card__image {
   display: block;
-}
-
-.product-card--selected {
-  position: relative;
-  width: auto;
-  padding: 0 0 18px 0;
-
-  &::after {
-    @include for-tablet-portrait-up {
-      top: 58px;
-    }
-
-    content: " ";
-    position: absolute;
-    right: 20px;
-    top: 0;
-    width: 140px;
-    height: 36px;
-    background-image: url("../img/favorite-panarama.svg");
-  }
+  //object-fit: cover;
 }
 
 .product-card__img-wrapper {
   display: block;
 }
 
-.product-card--selected img {
-  @include for-tablet-portrait-up {
-    height: 511px;
-
-  }
-
-  object-fit: cover;
-  height: 137px;
-  position: relative;
-  width: 100vw;
-}
-
-.product-card--selected .product-card__annotation {
-  width: 280px;
-  margin: 0 auto;
-}
 
 .product-card__annotation {
   padding: 17px 0 21px 0;
@@ -58,6 +23,10 @@
 }
 
 .product-card__author {
+  @include for-tablet-portrait-up {
+    margin: 0;
+  }
+
   margin: 0 0 0 17px;
   font-style: normal;
   font-weight: 700;
@@ -75,7 +44,7 @@
 
 .product-card__full {
   margin: 0 0 0 17px;
-  width: 260px;
+  //width: $product-card-width--mobile;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -84,7 +53,6 @@
 
 .product-card__like-box {
   display: flex;
-  min-width: 280px;
   justify-content: flex-start;
   align-items: center;
   margin-top: 11px;
