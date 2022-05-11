@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .catalog {
   @include for-tablet-portrait-up {
     padding: 60px 0 0 0;
@@ -106,7 +108,7 @@
 .catalog__item:not(.catalog__item--selected) {
   @include for-tablet-portrait-up {
     width: $product-card-width--tablet;
-    margin: 0 $content-padding--tablet/2 20px;
+    margin: 0 math.div($content-padding--tablet, 2) 20px;
   }
   margin: 0 auto 19px;
 }
