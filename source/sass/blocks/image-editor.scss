@@ -10,10 +10,16 @@
 }
 
 .image-editor__tools {
+  @include for-tablet-portrait-up {
+    border-bottom: none;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  border-bottom: 2px solid transparentize($cian, 0.9);
 }
 
 .image-editor__tool-box {
@@ -116,8 +122,6 @@
 .image-editor__sliders-box {
   margin-top: 30px;
   padding-bottom: 22px;
-
-  border-bottom: 2px solid transparentize($cian, 0.9);
 }
 
 .image-editor__button {
