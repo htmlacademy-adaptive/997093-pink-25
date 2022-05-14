@@ -2,8 +2,8 @@
   @include for-tablet-portrait-up {
     width: $product-card-width--tablet;
     min-height: 100%;
-
   }
+
   display: flex;
   flex-direction: column;
   width: $product-card-width--mobile;

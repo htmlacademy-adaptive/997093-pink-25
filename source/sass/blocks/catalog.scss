@@ -1,3 +1,4 @@
+/* stylelint-disable-next-line at-rule-no-unknown  */
 @use "sass:math";
 
 .catalog {
@@ -54,7 +55,6 @@
 .catalog__item--selected img {
   @include for-tablet-portrait-up {
     height: 510px;
-
   }
 
   object-fit: cover;
@@ -112,6 +112,7 @@
   }
   margin: 0 auto 19px;
 }
+
 .catalog__item:not(.catalog__item--selected) .product-card {
   @include for-tablet-portrait-up {
     background-color: $basic-gray;

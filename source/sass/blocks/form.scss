@@ -5,7 +5,7 @@
   }
 
   @include for-desktop-up {
-    @include  content-position;
+    @include content-position;
 
     margin-bottom: 0;
 
@@ -16,7 +16,6 @@
 }
 
 .form__name-fields {
-
   @include for-tablet-portrait-up {
     padding-bottom: 0;
   }
@@ -36,6 +35,7 @@
     padding-top: 67px;
     padding-bottom: 0;
   }
+
   @include for-desktop-up {
     padding-top: 81px;
 
@@ -55,6 +55,7 @@
     align-items: center;
     margin: 0 0 52px 0;
   }
+
   @include for-desktop-up {
     margin: 0 0 53px;
   }
@@ -129,7 +130,7 @@
 
 .form__achievements-fields {
   @include for-tablet-portrait-up {
-    padding: 0 0 54px 0px;
+    padding: 0 0 54px 0;
 
     border: 2px solid #e5e5e5;
     border-radius: 1px;
@@ -248,9 +249,8 @@
 }
 
 .form__contacts-fields {
-
   @include for-tablet-portrait-up {
-    padding: 0px 54px 4px;
+    padding: 0 54px 4px;
     border: 3px solid $basic-smoky;
     border-radius: 1px;
   }
@@ -276,7 +276,7 @@
   }
 
   @include for-desktop-up {
-    margin: 0px auto 29px;
+    margin: 0 auto 29px;
   }
 
   display: none;
@@ -491,6 +491,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
+
   @include for-desktop-up {
     padding: 0 58px 26px;
   }
@@ -624,7 +625,6 @@
 .form__footnote {
   @include for-tablet-portrait-up {
     margin: 0;
-
   }
 
   margin-top: 34px;
