@@ -17,6 +17,10 @@
     object-fit: fill;
   }
 
+  @include for-desktop-up {
+    height: 400px;
+  }
+
   display: block;
 }
 
@@ -28,6 +32,10 @@
 .product-card__annotation {
   @include for-tablet-portrait-up {
     padding: 23px 30px;
+  }
+
+  @include for-desktop-up {
+    padding: 25px 30px 23px 27px;
   }
 
   display: flex;

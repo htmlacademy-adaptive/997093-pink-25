@@ -12,32 +12,32 @@
 
   <!-- Pixel Glass -->
   <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("tools/pixel-glass/form__mobile.png");
-    }
+    /*HTML {*/
+    /*  background-repeat: no-repeat;*/
+    /*  background-position: 50% 0;*/
+    /*  !* Mobile layout by default *!*/
+    /*  background-image: url("tools/pixel-glass/form__mobile.png");*/
+    /*}*/
 
     /* Tablet */
-    @media ( min-width: 660px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("tools/pixel-glass/form__tablet.png");
-      }
-    }
+    /*@media ( min-width: 660px ) {*/
+    /*  HTML {*/
+    /*    !* Tablet layout *!*/
+    /*    background-image: url("tools/pixel-glass/form__tablet.png");*/
+    /*  }*/
+    /*}*/
 
     /* Desktop */
-    @media ( min-width: 1200px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("tools/pixel-glass/form__desktop.png");
-      }
-    }
+    /*@media ( min-width: 1200px ) {*/
+    /*  HTML {*/
+    /*    !* Desktop layout *!*/
+    /*    background-image: url("tools/pixel-glass/form__desktop.png");*/
+    /*  }*/
+    /*}*/
   </style>
 
-  <link rel="stylesheet" href="tools/pixel-glass/styles.css">
-  <script src="tools/pixel-glass/script.js"></script>
+<!--  <link rel="stylesheet" href="tools/pixel-glass/styles.css">-->
+<!--  <script src="tools/pixel-glass/script.js"></script>-->
   <!-- // Pixel Glass -->
 
 </head>
@@ -61,7 +61,7 @@
           </a>
         </li>
         <li class="main-nav__site-nav-item">
-          <a class="main-nav__site-nav-link">
+          <a href="catalog.html" class="main-nav__site-nav-link">
             Фотографии
           </a>
         </li>
@@ -257,24 +257,32 @@
     </span>
     </div>
   </footer>
-  <section class="pop-up">
+  <section class="pop-up ">
     <h2 class="visually-hidden">Всплывающее окно успешной отправки формы</h2>
-    <p class="pop-up__message content">Ваша заявка отправлена</p>
-    <p class="pop-up__message-wide content">
-      Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.
-    </p>
-    <div class="pop-up__footer pop-up__footer--success content">
-      <button class="pop-up__button">закрыть окно</button>
+    <div class="pop-up__overlay">
+      <div class="pop-up__window">
+        <p class="pop-up__message pop-up__message--success">Ваша заявка отправлена</p>
+        <p class="pop-up__message-wide pop-up__message-wide--success">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.
+        </p>
+        <div class="pop-up__footer pop-up__footer--success">
+          <button class="pop-up__button">закрыть окно</button>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="pop-up">
+  <section class="pop-up pop-up--show">
     <h2 class="visually-hidden">Всплывающее возникновения ошибки при отправке формы</h2>
-    <p class="pop-up__message content">Что-то пошло не так!</p>
-    <p class="pop-up__message-wide content">
-      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-    </p>
-    <div class="pop-up__footer pop-up__footer--failure content">
-      <button class="pop-up__button">ок</button>
+    <div class="pop-up__overlay">
+      <div class="pop-up__window">
+        <p class="pop-up__message pop-up__message--failure">Что-то пошло не так!</p>
+        <p class="pop-up__message-wide pop-up__message-wide--failure">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <div class="pop-up__footer pop-up__footer--failure">
+          <button class="pop-up__button">ок</button>
+        </div>
+      </div>
     </div>
   </section>
   <script src="js/main.js"></script>

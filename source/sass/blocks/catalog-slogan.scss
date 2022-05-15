@@ -3,6 +3,10 @@
     padding: 25px 0 69px 0;
   }
 
+  @include for-desktop-up {
+    padding: 22px 0 65px 0;
+  }
+
   padding: 0 0 43px 0;
 
   background-color: $basic-white;

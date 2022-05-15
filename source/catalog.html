@@ -55,12 +55,12 @@
         <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
       </div>
       <ul class="main-nav__site-nav-list">
-        <li class="main-nav__site-nav-item main-nav__site-nav-item--active">
+        <li class="main-nav__site-nav-item">
           <a href="index.html" class="main-nav__site-nav-link">
             Главная
           </a>
         </li>
-        <li class="main-nav__site-nav-item">
+        <li class="main-nav__site-nav-item main-nav__site-nav-item--active">
           <a class="main-nav__site-nav-link">
             Фотографии
           </a>
@@ -81,13 +81,12 @@
   <main class="page-main">
     <section class="showcase showcase--simple-background">
       <h1 class="showcase__title">
-        Фотографии
-        пользователей
+        Фотографии <br>пользователей
       </h1>
     </section>
     <section class="terms">
       <p class="terms__text">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как не хватает ваших?
+        Взгляните на фотографии, которые выкладывают пользователи! <br>Видите,&nbsp;как не хватает ваших?
       </p>
     </section>
     <section class="catalog">
@@ -95,12 +94,11 @@
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--selected">
           <article class="product-card">
-
             <a class="product-card__img-wrapper" href="img/catalog/panorama-tablet.jpg">
               <picture>
-                <source media="(min-width: 660px)" srcset="img/catalog/panorama-desktop.jpg">
                 <source media="(min-width: 1200px)"
-                  srcset="img/catalog/panorama-desktop.jpg, img/catalog/panorama-desktop@2x.jpg 2x">
+                  srcset="img/catalog/panorama-desktop.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/panorama-desktop!.jpg">
                 <img src="img/catalog/panorama-tablet.jpg" class="product-card__image" width="280" height="180">
               </picture>
             </a>
@@ -126,6 +124,7 @@
           <article class="product-card">
             <a class="product-card__img-wrapper" href="img/catalog/photo-1-mobile.jpg">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg">
                 <source media="(min-width: 660px)" srcset="img/catalog/photo-1-tablet.jpg">
                 <img class="product-card__image" src="img/catalog/photo-1-mobile.jpg"
                   alt="Белый автомобиль на съёмочной площадке"
@@ -153,6 +152,7 @@
           <article class="product-card">
             <a class="product-card__img-wrapper" href="img/catalog/photo-2-mobile.jpg">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg">
                 <source media="(min-width: 660px)" srcset="img/catalog/photo-2-tablet.jpg">
                 <img class="product-card__image" src="img/catalog/photo-2-mobile.jpg" alt="Барабанная установкаа"
                   height="180">
@@ -178,6 +178,7 @@
         <li class="catalog__item">
           <article class="product-card">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg">
               <source media="(min-width: 660px)" srcset="img/catalog/photo-3-tablet.jpg">
               <img class="product-card__image" src="img/catalog/photo-3-mobile.jpg" alt="Вид на небоскрёбы"
                 height="180">
@@ -204,6 +205,7 @@
           <article class="product-card">
             <a class="product-card__img-wrapper" href="img/catalog/photo-4-tablet.jpg">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg">
                 <source media="(min-width: 660px)" srcset="img/catalog/photo-4-tablet.jpg">
                 <img class="product-card__image" src="img/catalog/photo-4-mobile.jpg"
                   alt="Площадь ярмарки под ярким тентом"
@@ -231,6 +233,7 @@
           <article class="product-card">
             <a class="product-card__img-wrapper" href="img/catalog/photo-5-tablet.jpg">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-5-desktop.jpg">
                 <source media="(min-width: 660px)" srcset="img/catalog/photo-5-tablet.jpg">
                 <img class="product-card__image" src="img/catalog/photo-5-mobile.jpg" alt="Свешенные над обрывом ноги"
                   height="180">
@@ -257,6 +260,7 @@
           <article class="product-card">
             <a class="product-card__img-wrapper" href="img/catalog/photo-6-tablet.jpg">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-6-desktop.jpg">
                 <source media="(min-width: 660px)" srcset="img/catalog/photo-6-tablet.jpg">
                 <img class="product-card__image" src="img/catalog/photo-6-mobile.jpg"
                   alt="Крыло самолёта в лучах солнца"

@@ -1,9 +1,10 @@
-/* stylelint-disable-next-line at-rule-no-unknown  */
-@use "sass:math";
-
 .catalog {
   @include for-tablet-portrait-up {
     padding: 60px 0 0 0;
+  }
+
+  @include for-desktop-up {
+    padding: 73px 0 0 0;
   }
 
   margin: 0 0 0 0;
@@ -15,6 +16,10 @@
 }
 
 .catalog__list {
+  @include for-desktop-up {
+    margin-bottom: 8px;
+  }
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +31,11 @@
 
 .catalog__item--selected {
   @include for-tablet-portrait-up {
-    padding: 0 0 48px 0;
+    padding: 0 0 49px 0;
+  }
+
+  @include for-desktop-up {
+    padding: 0 0 23px 0;
   }
 
   position: relative;
@@ -35,7 +44,12 @@
 
   &::after {
     @include for-tablet-portrait-up {
-      top: 58px;
+      top: 56px;
+    }
+
+    @include for-desktop-up {
+      top: 54px;
+      right: 129px;
     }
 
     content: " ";
@@ -57,6 +71,10 @@
     height: 510px;
   }
 
+  @include for-desktop-up {
+    height: 506px;
+  }
+
   object-fit: cover;
   height: 137px;
   position: relative;
@@ -69,6 +87,11 @@
     margin: 0 $content-padding--tablet;
     grid-template-columns: 50% 50%;
     padding: 24px 30px 26px;
+  }
+
+  @include for-desktop-up {
+    margin: 0 $content-padding--desktop;
+    padding: 24px 31px 0 27px;
   }
 
   width: auto;
@@ -110,6 +133,11 @@
     width: $product-card-width--tablet;
     margin: 0 math.div($content-padding--tablet, 2) 20px;
   }
+
+  @include for-desktop-up {
+    margin: 25px math.div($content-padding--tablet, 2) 28px;
+  }
+
   margin: 0 auto 19px;
 }
 
