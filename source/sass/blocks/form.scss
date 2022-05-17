@@ -18,6 +18,7 @@
 .form__name-fields {
   @include for-tablet-portrait-up {
     padding-bottom: 0;
+    max-width: 620px;
   }
 
   @include for-desktop-up {
@@ -27,6 +28,8 @@
 
   padding: 5px 18px 11px;
   border: none;
+  margin: 0 auto;
+  max-width: 280px;
 }
 
 .form__name-field-box {
@@ -106,8 +109,6 @@
 }
 
 .form__achievements-field-box {
-  @include content-position;
-
   @include for-tablet-portrait-up {
     order: 4;
     padding-top: 32px;
@@ -131,11 +132,19 @@
 .form__achievements-fields {
   @include for-tablet-portrait-up {
     padding: 0 0 54px 0;
+    max-width: 620px;
 
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
+  @include for-desktop-up {
+    padding: 0 0 7px 0;
+    max-width: 1120px;
+  }
+
+  max-width: 280px;
+  margin: 0 auto;
   padding: 0;
   font-family: "Open Sans", "Verdana", sans-serif;
 
@@ -145,11 +154,11 @@
 .form__achievements-fields-legend {
   @include for-tablet-portrait-up {
     width: 432px;
-    margin: 0 auto 47px;
+    margin: 0 auto 49px;
   }
 
   @include for-desktop-up {
-    margin: 0 250px 47px;
+    margin: 0 auto 47px;
   }
 
   width: 252px;
@@ -166,7 +175,7 @@
 
 .form__achievements-fields-list {
   @include for-tablet-portrait-up {
-    padding-left: 56px;
+    padding-left: 60px;
   }
 
   @include for-desktop-up {
@@ -190,12 +199,8 @@
 }
 
 .form__achievements-fields-checkbox:checked + .form__achievements-fields-label-text::before {
-  @include for-tablet-portrait-up {
-    width: 40px;
-    height: 40px;
-  }
-
-  background: url("../img/checkbox-checked.svg") no-repeat;
+  background: url("../img/tick.svg") 6px 9px no-repeat $basic-white;
+  border-radius: 1px;
 }
 
 .form__achievements-fields-label-text {
@@ -210,19 +215,21 @@
 
   &::before {
     @include for-tablet-portrait-up {
-      width: 40px;
-      height: 40px;
+      top: -5px;
+      left: 0;
     }
 
     content: "";
     position: absolute;
-    top: -6px;
-    left: 0;
+    top: -7px;
+    left: -1px;
 
     width: 35px;
     height: 35px;
 
-    background: url("../img/checkbox.svg") no-repeat;
+    background-color: $basic-white;
+    border: 2px solid $basic-smoky;
+    border-radius: 1px;
   }
 }
 
@@ -473,7 +480,7 @@
 
   @include for-desktop-up {
     width: 100%;
-    padding: 11px 0 0;
+    padding: 58px 0 0;
 
     grid-column: 1 / 3;
   }

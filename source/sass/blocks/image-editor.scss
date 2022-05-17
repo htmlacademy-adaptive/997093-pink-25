@@ -115,7 +115,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   @include for-desktop-up {
@@ -360,4 +360,5 @@
 
   width: 22px;
   height: 18px;
+  margin-top: -5px;
 }
