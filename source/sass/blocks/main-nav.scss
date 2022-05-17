@@ -140,6 +140,7 @@
   }
 
   @include for-desktop-up {
+    padding: 12px 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;

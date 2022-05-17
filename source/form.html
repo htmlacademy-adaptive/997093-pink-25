@@ -16,22 +16,22 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* Mobile layout by default */
-      background-image: url("tools/pixel-glass/mobile-form.png");
+      background-image: url("tools/pixel-glass/form__mobile.png");
     }
 
-    /* Tablet */
-    @media ( min-width: 760px ) {
+    /*Tablet*/
+    @media ( min-width: 660px ) {
       HTML {
         /* Tablet layout */
-        background-image: url("tools/pixel-glass/mobile-form--tablet.png");
+        background-image: url("tools/pixel-glass/form__tablet.png");
       }
     }
 
-    /* Desktop */
-    @media ( min-width: 960px ) {
+    /*Desktop*/
+    @media ( min-width: 1200px ) {
       HTML {
         /* Desktop layout */
-        background-image: url("tools/pixel-glass/mobile-form--desktop.png");
+        background-image: url("tools/pixel-glass/form__desktop.png");
       }
     }
   </style>
@@ -61,7 +61,7 @@
           </a>
         </li>
         <li class="main-nav__site-nav-item">
-          <a class="main-nav__site-nav-link">
+          <a href="catalog.html" class="main-nav__site-nav-link">
             Фотографии
           </a>
         </li>
@@ -79,14 +79,14 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="showcase">
+    <section class="showcase showcase--simple-background">
       <h1 class="showcase__title">
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
     </section>
     <section class="terms">
       <h2 class="visually-hidden">Условия участия</h2>
-      <p class="terms__text content">
+      <p class="terms__text">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         <span class="terms__text--additional">Пожалуйста, заполните форму ниже:</span>
       </p>
@@ -95,7 +95,7 @@
       <h2 class="visually-hidden">Анкета участника</h2>
       <form class="form " action="https://echo.htmlacademy.ru" method="post" target="_blank">
         <div class="form__name-field-box">
-          <fieldset class="form__name-fields content">
+          <fieldset class="form__name-fields">
             <legend class="visually-hidden form__legend">Поля ввода имени</legend>
             <label class="form__name-fields-label">
               <span class="form__name-fields-label-text">ФАМИЛИЯ:</span>
@@ -117,7 +117,7 @@
           </fieldset>
         </div>
         <div class="form__achievements-field-box">
-          <fieldset class="form__achievements-fields content">
+          <fieldset class="form__achievements-fields">
             <legend class="form__achievements-fields-legend form__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form__achievements-fields-list">
               <li class="form__achievements-fields-item">
@@ -164,7 +164,7 @@
           </fieldset>
         </div>
         <div class="form__contacts-fields-box">
-          <fieldset class="form__contacts-fields content">
+          <fieldset class="form__contacts-fields">
             <legend class="form__contacts-fields-legend form__legend">контактная информация</legend>
             <label class="form__contacts-fields-label form__contacts-fields-label--tel">
               <span class="form__contacts-fields-label-text">НОМЕР ТЕЛЕФОНА</span>
@@ -179,8 +179,8 @@
           </fieldset>
         </div>
         <div class="form__app-fields-box">
-          <fieldset class="form__app-fields content">
-            <legend class="form__app-fields-legend  form__legend">С каким приложением путешествовали?</legend>
+          <fieldset class="form__app-fields">
+            <legend class="form__app-fields-legend">С каким приложением путешествовали?</legend>
             <ul class="form__app-fields-list">
               <li class="form__app-fields-item">
                 <label class="form__app-fields-label">
@@ -204,7 +204,7 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__impressions-fields-box content">
+        <div class="form__impressions-fields-box">
           <fieldset class="form__impressions-fields">
             <legend class="form__impressions-fields-legend form__legend">опишите свои эмоции</legend>
             <label class="form__impressions-fields-label">
@@ -215,7 +215,7 @@
           </fieldset>
         </div>
         <div class="form__submit-btn-box">
-          <button type="submit" class="form__submit-btn content">Отправить форму</button>
+          <button type="submit" class="form__submit-btn">Отправить форму</button>
           <p class="form__footnote">
             <span class="form__footnote-tag">&#42;</span>
             <span class="form__footnote-text--short"> &#8212; обязательные поля</span>
@@ -223,11 +223,10 @@
           </p>
         </div>
       </form>
-
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__content-box">
       <a href="index.html" class="page-footer__logo pink-logo pink-logo--whole-direct">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
@@ -260,22 +259,30 @@
   </footer>
   <section class="pop-up">
     <h2 class="visually-hidden">Всплывающее окно успешной отправки формы</h2>
-    <p class="pop-up__message content">Ваша заявка отправлена</p>
-    <p class="pop-up__message-wide content">
-      Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.
-    </p>
-    <div class="pop-up__footer pop-up__footer--success content">
-      <button class="pop-up__button">закрыть окно</button>
+    <div class="pop-up__overlay">
+      <div class="pop-up__window">
+        <p class="pop-up__message pop-up__message--success">Ваша заявка отправлена</p>
+        <p class="pop-up__message-wide pop-up__message-wide--success">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.
+        </p>
+        <div class="pop-up__footer pop-up__footer--success">
+          <button class="pop-up__button">закрыть окно</button>
+        </div>
+      </div>
     </div>
   </section>
   <section class="pop-up">
     <h2 class="visually-hidden">Всплывающее возникновения ошибки при отправке формы</h2>
-    <p class="pop-up__message content">Что-то пошло не так!</p>
-    <p class="pop-up__message-wide content">
-      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-    </p>
-    <div class="pop-up__footer pop-up__footer--failure content">
-      <button class="pop-up__button">ок</button>
+    <div class="pop-up__overlay">
+      <div class="pop-up__window">
+        <p class="pop-up__message pop-up__message--failure">Что-то пошло не так!</p>
+        <p class="pop-up__message-wide pop-up__message-wide--failure">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <div class="pop-up__footer pop-up__footer--failure">
+          <button class="pop-up__button">ок</button>
+        </div>
+      </div>
     </div>
   </section>
   <script src="js/main.js"></script>

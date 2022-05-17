@@ -1,4 +1,25 @@
 .image-editor {
+  @include for-tablet-portrait-up {
+    @include content-position;
+    width: $tablet-width;
+    padding-right: $content-padding--mobile;
+    padding-left: $content-padding--mobile;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 57px;
+    padding-bottom: 52px;
+    align-items: start;
+  }
+
+  @include for-desktop-up {
+    width: $content-width--desktop;
+    padding-left: 80px;
+    padding-right: 60px;
+    grid-template-columns: 389px 1fr;
+    margin-bottom: 30px;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10,56 +31,111 @@
 }
 
 .image-editor__tools {
+  @include for-tablet-portrait-up {
+    border-bottom: none;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  border-bottom: 2px solid transparentize($cian, 0.9);
 }
 
 .image-editor__tool-box {
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding-right: 10px;
   align-items: center;
-  width: 206px;
+  width: 204px;
   margin-top: 38px;
 }
 
-.image-editor__crop-tool {
-  width: 44px;
-  height: 44px;
+.image-editor__tool-button {
+  @include for-tablet-portrait-up {
+    margin: 0;
+    width: 22px;
+    height: 22px;
+    border-bottom: 2px solid transparentize($cian, 0.9);
+  }
 
-  background: url("../img/crop.svg") 0 0 / 44px 44px $basic-gray;
+  background-color: $basic-gray;
   border: none;
   cursor: pointer;
+  display: block;
 }
 
-.image-editor__fill-tool-button {
-  width: 48px;
-  height: 43px;
-  margin-left: 35px;
+.image-editor__button-svg--contrast {
+  @include for-tablet-portrait-up {
+    width: 16px;
+    height: 16px;
+  }
 
-  background: url("../img/fill.svg") 0 0 / 48px 43px $basic-gray;
-  border: none;
-  cursor: pointer;
-}
-
-.image-editor__contrast-tool-button {
   width: 32px;
   height: 32px;
-  margin-left: 35px;
+}
 
-  background: url("../img/contrast.svg") 0 0 / 32px 32px $basic-gray;
-  border: none;
-  cursor: pointer;
+.image-editor__button-svg--fill {
+  @include for-tablet-portrait-up {
+    width: 24px;
+    height: 22px;
+  }
+
+  width: 48px;
+  height: 43px;
+}
+
+.image-editor__button-svg--crop {
+  @include for-tablet-portrait-up {
+    width: 22px;
+    height: 22px;
+  }
+
+  width: 44px;
+  height: 44px;
+}
+
+.image-editor__button-svg path {
+  @include for-tablet-portrait-up {
+    fill: transparentize($cian, 0.7);
+  }
+}
+
+.image-editor__tool-button--active svg path {
+  fill: $basic-red;
 }
 
 .image-editor__slider-label {
+  @include for-tablet-portrait-up {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include for-desktop-up {
+    align-items: center;
+  }
+
   display: block;
   width: 240px;
   height: 24px;
 }
 
 .image-editor__tool-slider {
+  @include for-tablet-portrait-up {
+    width: 202px;
+  }
+
+  @include for-desktop-up {
+    width: 288px;
+  }
+
   width: 100%;
 
   color: transparent;
@@ -95,7 +171,7 @@
 
   &::-webkit-slider-runnable-track {
     box-sizing: border-box;
-    width: 240px;
+    //width: 240px;
     height: 2px;
     margin-bottom: 5px;
 
@@ -105,7 +181,7 @@
 
   &::-moz-range-track {
     box-sizing: border-box;
-    width: 240px;
+    //width: 240px;
     height: 2px;
 
     background: $basic-black;
@@ -114,13 +190,28 @@
 }
 
 .image-editor__sliders-box {
-  margin-top: 30px;
-  padding-bottom: 22px;
+  @include for-tablet-portrait-up {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 
-  border-bottom: 2px solid transparentize($cian, 0.9);
+  margin-top: 25px;
+  padding-bottom: 22px;
 }
 
 .image-editor__button {
+  @include for-tablet-portrait-up {
+    width: 260px;
+  }
+
+  @include for-desktop-up {
+    width: 183px;
+    height: 55px;
+  }
+
   box-sizing: border-box;
   width: 280px;
   padding: 15px 10px;
@@ -133,18 +224,141 @@
 
   border: 3px solid;
   border-radius: 30px;
+}
 
-  &--upload {
-    color: $basic-red;
+.image-editor__button--upload {
+  color: $basic-red;
+}
+
+.image-editor__button--cancel {
+  @include for-tablet-portrait-up {
+    margin-top: 26px;
   }
 
-  &--cancel {
-    margin-top: 13px;
-
-    color: transparentize($cian, 0.9);
+  @include for-desktop-up {
+    margin: 0;
   }
+
+  margin-top: 13px;
+
+  color: transparentize($cian, 0.9);
 }
 
 .image-editor__buttons-box {
+  @include content-position;
+
+  @include for-tablet-portrait-up {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-top: 65px;
+    padding-left: 36px;
+    padding-right: 14px;
+  }
+
+  @include for-desktop-up {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    margin-top: 142px;
+  }
+
   margin-top: 37px;
+}
+
+.image-editor__image-wrapper {
+  grid-row: 1/3;
+}
+
+.image-editor__crop-slider-box {
+  @include for-tablet-portrait-up {
+    border-bottom: 2px solid rgba(40, 54, 69, 0.1);
+    padding: 7px 18px 22px 0;
+    margin: 2px 0 0 38px;
+  }
+
+  @include for-desktop-up {
+    padding: 7px 30px 21px 0;
+    margin: 2px 0 0 0;
+  }
+}
+
+.image-editor__fill-slider-box {
+  @include for-tablet-portrait-up {
+    display: block;
+    border-bottom: 2px solid rgba(40, 54, 69, 0.1);
+    padding: 24px 18px 21px 0;
+    margin: 2px 0 0 38px;
+  }
+
+  @include for-desktop-up {
+    padding: 23px 30px 21px 0;
+    margin: 2px 0 0 0;
+  }
+
+  display: none;
+}
+
+.image-editor__contrast-slider-box {
+  @include for-tablet-portrait-up {
+    display: block;
+    border-bottom: 2px solid rgba(40, 54, 69, 0.1);
+    padding: 21px 18px 21px 0;
+    margin: 2px 0 0 38px;
+  }
+
+  @include for-desktop-up {
+    padding: 23px 30px 21px 0;
+    margin: 2px 0 0 0;
+  }
+
+  display: none;
+}
+
+.image-editor__modified-photo {
+  @include for-tablet-portrait-up {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.image-editor__tool-slider-icon {
+  fill: $basic-red;
+}
+
+.image-editor__tool-slider-icon--crop {
+  @include for-tablet-portrait-up {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+
+  @include for-desktop-up {
+    width: 44px;
+    height: 44px;
+  }
+
+  display: none;
+}
+
+.image-editor__tool-slider-icon--fill {
+  @include for-desktop-up {
+    width: 48px;
+    height: 43px;
+  }
+
+  width: 24px;
+  height: 22px;
+}
+
+.image-editor__tool-slider-icon--contrast {
+  @include for-desktop-up {
+    width: 47px;
+    height: 32px;
+  }
+
+  width: 22px;
+  height: 18px;
+  margin-top: -5px;
 }

@@ -6,6 +6,22 @@ $content-padding--mobile: 20px;
 $content-padding--tablet: 20px;
 $content-padding--desktop: 130px;
 
+$content-width--desktop: $desktop-width - 2 * $content-padding--desktop;
+
+$pop-up-width--mobile:320px;
+$pop-up-width--tablet: 460px;
+$pop-up-width--desktop: 780px;
+
+$pop-up-padding--mobile: 20px;
+$pop-up-padding--tablet: 80px;
+
+$product-card-width--mobile: 280px;
+$product-card-width--tablet: 300px;
+$product-card-width--desktop: 300px;
+
+$product-card-height--tablet: 455px;
+$product-card-height--desktop: 555px;
+
 $basic-white: #ffffff;
 $basic-black: #000000;
 $basic-smoky: #e5e5e5;

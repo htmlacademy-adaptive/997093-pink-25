@@ -1,10 +1,42 @@
 .catalog-slogan {
+  @include for-tablet-portrait-up {
+    padding: 25px 0 69px 0;
+  }
+
+  @include for-desktop-up {
+    padding: 22px 0 65px 0;
+  }
+
   padding: 0 0 43px 0;
 
   background-color: $basic-white;
 }
 
-.catalog-slogan__text {
+.catalog-slogan__header {
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  width: 273px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+.catalog-slogan__lead {
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+    font-weight: 400;
+    width: 450px;
+  }
+
   width: 273px;
   margin: 0 auto;
   padding: 0;

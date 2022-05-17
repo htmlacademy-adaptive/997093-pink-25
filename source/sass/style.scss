@@ -1,3 +1,7 @@
+/* stylelint-disable-next-line at-rule-no-unknown  */
+@use "sass:math";
+
+/* stylelint-disable no-invalid-position-at-import-rule */
 @import "common/normalize";
 @import "common/fonts";
 @import "common/global";
@@ -27,6 +31,7 @@
 @import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/terms";
+@import "blocks/questionnaire";
 @import "blocks/form";
 @import "blocks/pop-up";
 @import "blocks/catalog";
