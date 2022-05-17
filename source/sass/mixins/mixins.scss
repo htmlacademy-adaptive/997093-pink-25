@@ -16,6 +16,12 @@
   }
 }
 
+@mixin for-retina {
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
 @mixin content-position {
   @include for-tablet-portrait-up {
     width: $tablet-width;
