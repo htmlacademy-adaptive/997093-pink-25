@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch-icon-iphone.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("tools/pixel-glass/mobile-index.png");
+    }
+
+    /* Tablet */
+    @media ( min-width: 660px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("tools/pixel-glass/tablet-index.png");
+      }
+    }
+
+    /* Desktop */
+    @media ( min-width: 1200px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("tools/pixel-glass/desktop-index.png");
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="tools/pixel-glass/styles.css">
+  <script src="tools/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
+  <base href="https://htmlacademy-adaptive.github.io/997093-pink-25/9/">
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <nav class="main-nav main-nav--nojs main-nav--opened">
+      <div class="main-nav__content-box">
+        <a class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <img src="img/pink-logo—text-only-direct.svg" alt="Логотип приложения PINK">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
+      </div>
+      <ul class="main-nav__site-nav-list">
+        <li class="main-nav__site-nav-item main-nav__site-nav-item--active">
+          <a class="main-nav__site-nav-link">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__site-nav-item">
+          <a href="catalog.html" class="main-nav__site-nav-link">
+            Фотографии
+          </a>
+        </li>
+        <li class="main-nav__site-nav-item">
+          <a href="form.html" class="main-nav__site-nav-link">
+            Конкурс
+          </a>
+        </li>
+        <li class="main-nav__site-nav-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__site-nav-link">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="showcase showcase--extra-background">
+      <div class="showcase__content-box">
+        <h1 class="showcase__title visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
+        <div class="showcase__slogan-box">
+          <p class="showcase__slogan">
+            Взгляните на жизнь иначе!
+          </p>
+        </div>
+        <div class="showcase__refs-block">
+          <a href="https://www.apple.com/ru/app-store/" class="showcase__default-ref"
+            aria-label="скачивание из источника по умолчанию">
+            Скачать приложение
+          </a>
+          <div class="showcase__download-refs-box">
+            <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
+              aria-label="скачивание из магазина эпл">
+              <img src="img/apple-logo.svg" alt="логотип эпл">
+            </a>
+            <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
+              aria-label="скачивание из магазина гугл">
+              <img src="img/android-logo.svg" alt="логотип андроид">
+            </a>
+            <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
+              aria-label="скачивание из магазина майкрософт">
+              <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
+            </a>
+          </div>
+          <p class="showcase__download-refs-description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
+
+    </section>
+    <section class="slogans">
+      <div class="slogans__content-box">
+        <h2 class="visually-hidden">Наша миссия</h2>
+        <p class="slogans__slogan">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="slogans__slogan">
+          Нам есть, что вам<br>предложить!
+        </p>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__content-box">
+        <h2 class="visually-hidden">Для чего наше приложение</h2>
+        <article class="features__article">
+            <h3 class="features__feature-title">
+              Поднимает настроение
+            </h3>
+            <p class="features__feature-description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </article>
+          <article class="features__article">
+            <h3 class="features__feature-title">
+              Меняет мир вокруг
+            </h3>
+            <p class="features__feature-description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
+            </p>
+          </article>
+          <article class="features__article">
+            <h3 class="features__feature-title">
+              Заводит новых друзей
+            </h3>
+            <p class="features__feature-description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </article>
+      </div>
+    </section>
+    <section class="round-diagram">
+      <div class="round-diagram__description-box">
+        <h2 class="visually-hidden">Научные факты</h2>
+        <h3 class="round-diagram__title">Эффект на&nbsp;24&nbsp;часа!</h3>
+        <p class="round-diagram__text">
+          Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!
+        </p>
+        <a href="#" class="round-diagram__ref">Узнать больше об исследовании</a>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы наших участников</h2>
+      <div class="slider">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <blockquote class="slider__quote">
+              <cite class="slider__cite">
+                <span class="slider__participant-name">Николай Петров</span>
+                <span class="slider__participant-extra">25 лет, водитель трамвая</span>
+              </cite>
+              <p class="slider__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </li>
+        </ul>
+        <div class="toggles-box">
+          <button class="toggles-box__toggle toggles-box__toggle--current" type="button"></button>
+          <button class="toggles-box__toggle" type="button"></button>
+          <button class="toggles-box__toggle" type="button"></button>
+        </div>
+        <button class="slider__left"></button>
+        <button class="slider__right"></button>
+      </div>
+    </section>
+    <section class="tariffs">
+      <h2 class="visually-hidden">Стоимость сервиса</h2>
+      <div class="table-tariffs__wrapper">
+        <table class="table-tariffs">
+          <thead>
+          <tr class="table-tariffs__header-row">
+            <th class="table-tariffs__table-header table-tariffs__table-header--up-to-mobile" scope="col">
+            </th>
+            <th class="table-tariffs__table-header" scope="col">
+              <span class="table-tariffs__tariff-name">БАЗА</span>
+              <span class="table-tariffs__rate">1,99&#8239;USD</span>
+            </th>
+            <th class="table-tariffs__table-header table-tariffs__table-header--badge">
+              <span class="table-tariffs__tariff-name">СТАНДАРТ</span>
+              <span class="table-tariffs__rate">3,99&#8239;USD</span>
+            </th>
+            <th class="table-tariffs__table-header">
+              <span class="table-tariffs__tariff-name">АНЛИМ</span>
+              <span class="table-tariffs__rate">9,99&#8239;USD</span>
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="table-tariffs__body-row">
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
+              Розовый фильтр
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Розовый фильтр</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Розовый фильтр</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Розовый фильтр</span>
+            </td>
+          </tr>
+          <tr class="table-tariffs__body-row">
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
+              Смайлики
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
+              <span class="table-tariffs__tariff-option">Смайлики</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Смайлики</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option">Смайлики</span>
+            </td>
+          </tr>
+          <tr class="table-tariffs__body-row">
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--up-to-mobile">
+              Комментарии
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
+              <span class="table-tariffs__tariff-option">Комментарии</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--unavailable">
+              <span class="table-tariffs__tariff-option">Комментарии</span>
+            </td>
+            <td class="table-tariffs__table-definition table-tariffs__table-definition--available">
+              <span class="table-tariffs__tariff-option ">Комментарии</span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="toggles-box">
+        <button class="toggles-box__toggle" type="button"></button>
+        <button class="toggles-box__toggle toggles-box__toggle--current" type="button"></button>
+        <button class="toggles-box__toggle" type="button"></button>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты для связи</h2>
+      <div class="contacts__content-box">
+        <p class="contacts__text">
+          Остались вопросы?
+        </p>
+        <p class="contacts__text">
+          Свяжитесь с нами!
+        </p>
+        <address class="contacts__address">
+          <div class="communication">
+            <span class="communication__appeal">
+              Звоните:
+            </span>
+            <span class="communication__attribute-text">
+              <a href="tel:+78125556666" class="communication__attribute-ref">+7 (812) 555-66-66</a>
+            </span>
+          </div>
+          <div class="communication">
+            <span class="communication__appeal">
+              Пишите:
+            </span>
+            <span class="communication__attribute-text">
+              <a href="mailto:mail@htmlacademy.ru" class="communication__attribute-ref">mail@htmlacademy.ru</a>
+            </span>
+          </div>
+          <div class="communication">
+            <span class="communication__appeal">
+              Приезжайте в гости:
+            </span>
+            <span class="communication__attribute-text">
+              ул. Большая<br>Конюшенная, 19/8
+            </span>
+          </div>
+        </address>
+      </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Интерактивная карта Яндекс</h2>
+      <iframe class="map__frame"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
+        width="320" height="200">
+      </iframe>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__content-box">
+      <a class="page-footer__logo pink-logo pink-logo--whole-direct">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-blue-tablet.svg">
+          <img src="img/logo-blue-tablet.svg" alt="Логотип приложения PINK">
+        </picture>
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"
+            aria-label="Мы в Контакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy"
+            aria-label="Мы в Телеграмме"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            aria-label="Мы в Ютьюбе"></a>
+        </li>
+      </ul>
+      <span class="page-footer__copyright copyright">
+      Разработано
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__copyright-ref"
+        aria-label="переход на страницу интенсива HTML Academy">
+        <img src="img/html-academy-logo.svg" width="27" height="34" alt="">
+      </a>
+    </span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
