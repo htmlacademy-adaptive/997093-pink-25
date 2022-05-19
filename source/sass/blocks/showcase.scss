@@ -18,6 +18,7 @@
   letter-spacing: 0;
 
   //background: url("../img/back-mobile.jpg") left top / 100% 462px no-repeat, $dark-cian;
+  background-color: $dark-cian;
 }
 
 .showcase--extra-background {
@@ -34,6 +35,7 @@
   @include for-desktop-up {
     height: 737px;
     padding-bottom: 115px;
+    z-index: 1;
 
     background: url("../img/hand-with-mobile--desktop@1x.png") calc(50% + 70px)  bottom no-repeat, url("../img/back-desktop@1x.jpg") left top / 100% no-repeat, $dark-cian;
 
@@ -41,8 +43,20 @@
       background: url("../img/hand-with-mobile--desktop@1x.png") calc(50% + 70px)  bottom no-repeat, url("../img/back-desktop@2x.jpg") left top / 100% no-repeat, $dark-cian;
     }
   }
+
   padding-bottom: 495px;
-  background: url("../img/hand-with-mobile--mobile.png") 50% 176px no-repeat, url("../img/back-mobile.jpg") left top / 100% 462px no-repeat, $dark-cian;
+  position: relative;
+  //background: url("../img/hand-with-mobile--mobile.png") 50% 176px no-repeat, url("../img/back-mobile.jpg") left top / 100% 462px no-repeat, $dark-cian;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 462px;
+    background: url("../img/back-mobile.jpg") center / cover no-repeat;
+    z-index: 0;
+  }
 
   @media (min-resolution: 2dppx) {
     //background: url("../img/hand-with-mobile--mobile@2x.png") 50% 176px / 100% 462px no-repeat, url("../img/back-mobile@2x.jpg") left top / 100% 462px no-repeat, $dark-cian;
@@ -155,7 +169,6 @@
   flex-direction: column;
   align-items: center;
   padding-top: 26px;
-  background-color: $dark-cian;
 }
 
 .showcase__default-ref {

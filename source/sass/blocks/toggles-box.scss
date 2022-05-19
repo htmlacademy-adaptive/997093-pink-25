@@ -23,6 +23,14 @@
   border-radius: 50% 50%;
   cursor: pointer;
 
+  &:hover {
+    background-color: transparentize($cian, 0.4);
+  }
+
+  &:active {
+    background-color: transparentize($cian, 0.9);
+  }
+
   &--current {
     background-color: $basic-white;
 
