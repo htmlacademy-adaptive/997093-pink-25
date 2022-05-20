@@ -103,14 +103,26 @@
     margin-bottom: 0;
 
     &:nth-of-type(1) {
+      @media (min-resolution: 2dppx) {
+        background: url("../img/basket-bw@2x.png") 50% top / 280px 300px no-repeat transparent;
+      }
+
       background: url("../img/basket-bw.png") 50% top no-repeat transparent;
     }
 
     &:nth-of-type(2) {
+      @media (min-resolution: 2dppx) {
+        background: url("../img/basket-pink@2x.png") 50% top / 280px 300px no-repeat transparent;
+      }
+
       background: url("../img/basket-pink.png") 50% top no-repeat transparent;
     }
 
     &:nth-of-type(3) {
+      @media (min-resolution: 2dppx) {
+        background: url("../img/basket-smile@2x.png") 50% top / 280px 300px no-repeat transparent;
+      }
+
       background: url("../img/basket-smile.png") 50% top no-repeat transparent;
     }
   }

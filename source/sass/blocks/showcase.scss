@@ -44,7 +44,7 @@
     background: url("../img/hand-with-mobile--tablet@1x.png") 50% bottom no-repeat, url("../img/back-tablet@1x.jpg") left top / 100% no-repeat, $dark-cian;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/hand-with-mobile--tablet@2x.png") 50% bottom no-repeat, url("../img/back-tablet@2x.jpg") left top / 100% no-repeat, $dark-cian;
+      background: url("../img/hand-with-mobile--tablet@2x.png") 50% bottom / 660px 545px no-repeat, url("../img/back-tablet@2x.jpg") left top / 100% no-repeat, $dark-cian;
     }
   }
 
