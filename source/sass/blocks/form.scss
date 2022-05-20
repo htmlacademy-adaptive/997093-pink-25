@@ -258,7 +258,7 @@
 .form__contacts-fields {
   @include for-tablet-portrait-up {
     padding: 0 54px 4px;
-    border: 3px solid $basic-smoky;
+    border: 2px solid $basic-smoky;
     border-radius: 1px;
   }
 
@@ -368,9 +368,9 @@
 }
 
 .form__app-fields-box {
-  @include content-position;
-
   @include for-tablet-portrait-up {
+    @include content-position;
+
     order: 2;
     padding-top: 5px;
     padding-bottom: 34px;
@@ -393,12 +393,15 @@
 
 .form__app-fields {
   @include for-tablet-portrait-up {
-    border: 3px solid $basic-smoky;
+    border: 2px solid $basic-smoky;
     border-radius: 1px;
+    max-width: 620px;
   }
 
   padding: 0;
   border: none;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .form__app-fields-legend {
