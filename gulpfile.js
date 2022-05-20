@@ -14,7 +14,7 @@ import del from 'del';
 import browser from 'browser-sync';
 
 // Styles
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -30,12 +30,14 @@ export const styles = () => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
 
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/main.js')
+    .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -54,7 +56,7 @@ export const copyImages = () => {
 
 // WebP
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicon/**/*.*'])
     .pipe(squoosh({
       webp: {}
     }))
