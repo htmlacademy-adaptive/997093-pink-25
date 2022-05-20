@@ -17,33 +17,71 @@
   color: $basic-white;
   letter-spacing: 0;
 
-  background: url("../img/back-mobile.jpg") left top / 100% 462px no-repeat, $dark-cian;
+  background-color: $dark-cian;
 }
 
 .showcase--extra-background {
+  @include for-phone-only {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 462px;
+      background: url("../img/hand-with-mobile--mobile.png") 50% 176px / 320px 286px no-repeat, url("../img/back-mobile.jpg") center / cover no-repeat, $dark-cian;
+      z-index: 0;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/hand-with-mobile--mobile@2x.png") 50% 176px / 320px 286px  no-repeat, url("../img/back-mobile@2x.jpg") left top / cover no-repeat, $dark-cian;
+      }
+    }
+  }
+
   @include for-tablet-portrait-up {
     padding-bottom: 290px;
 
-    background: url("../img/hand-with-mobile--tablet.png") 50% bottom no-repeat, url("../img/back-tablet.jpg") left top / 100% no-repeat, $dark-cian;
+    background: url("../img/hand-with-mobile--tablet@1x.png") 50% bottom no-repeat, url("../img/back-tablet@1x.jpg") left top / 100% no-repeat, $dark-cian;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/hand-with-mobile--tablet@2x.png") 50% bottom / 660px 545px no-repeat, url("../img/back-tablet@2x.jpg") left top / 100% no-repeat, $dark-cian;
+    }
   }
 
   @include for-desktop-up {
     height: 737px;
     padding-bottom: 115px;
+    z-index: 1;
 
-    background: url("../img/hand-with-mobile--desktop.png") calc(50% + 157px)  bottom no-repeat, url("../img/back-desktop.jpg") left top / 100% no-repeat, $dark-cian;
+    background: url("../img/hand-with-mobile--desktop@1x.png") calc(50% + 70px)  bottom no-repeat, url("../img/back-desktop@1x.jpg") left top / 100% no-repeat, $dark-cian;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/hand-with-mobile--desktop@2x.png") calc(50% + 70px) bottom / 1050px 645px no-repeat, url("../img/back-desktop@2x.jpg") left top / 100% no-repeat, $dark-cian;
+    }
   }
+
   padding-bottom: 495px;
+  position: relative;
 }
 
 .showcase--simple-background {
   @include for-tablet-portrait-up {
-    background: url("../img/back-tablet.jpg") left top / 100% no-repeat, $dark-cian;
+    background: url("../img/back-tablet@1x.jpg") left top / 100% no-repeat, $dark-cian;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-tablet@2x.jpg") left top / 100% no-repeat, $dark-cian;
+    }
   }
 
   @include for-desktop-up {
-    background: url("../img/back-desktop.jpg") left top / 100% no-repeat, $dark-cian;
+    background: url("../img/back-desktop@1x.jpg") left top / 100% no-repeat, $dark-cian;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-desktop@2x.jpg") left top / 100% no-repeat, $dark-cian;
+    }
   }
+
+  background: url("../img/back-mobile.jpg") left top / 100% 462px no-repeat, $dark-cian;
 }
 
 .showcase__title {
@@ -87,11 +125,14 @@
   }
 
   padding-top: 89px;
-
-  background: url("../img/hand-with-mobile--mobile.png") 50% 176px no-repeat;
 }
 
 .showcase__slogan-box {
+  @include for-phone-only {
+    position: relative;
+    z-index: 1;
+  }
+
   @include for-tablet-portrait-up {
     padding: 3px 20px 0;
 

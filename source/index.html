@@ -8,37 +8,7 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch-icon-iphone.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("tools/pixel-glass/mobile-index.png");
-    }
-
-    /* Tablet */
-    @media ( min-width: 660px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url("tools/pixel-glass/tablet-index.png");
-      }
-    }
-
-    /* Desktop */
-    @media ( min-width: 1200px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url("tools/pixel-glass/desktop-index.png");
-      }
-    }
-  </style>
-
-  <link rel="stylesheet" href="tools/pixel-glass/styles.css">
-  <script src="tools/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
+  <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body class="page-body">
@@ -81,7 +51,7 @@
   <main class="page-main">
     <section class="showcase showcase--extra-background">
       <div class="showcase__content-box">
-        <h1 class="showcase__title visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
+        <h1 class="visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
         <div class="showcase__slogan-box">
           <p class="showcase__slogan">
             Взгляните на жизнь иначе!
@@ -303,7 +273,8 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Интерактивная карта Яндекс</h2>
-      <iframe class="map__frame"
+      <iframe class="map__frame map__frame--no-js"
+        allowtransparency="true"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A2484e2d045fb19ef964a4a268b4f340cb7493c0bb8a6b770c2025d6de1212501&amp;source=constructor"
         width="320" height="200">
       </iframe>

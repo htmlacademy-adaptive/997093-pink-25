@@ -1,5 +1,8 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
+let mapFrame = document.querySelector('.map__frame')
+
+mapFrame.classList.remove('map__frame--no-js')
 
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.add('main-nav--closed');
