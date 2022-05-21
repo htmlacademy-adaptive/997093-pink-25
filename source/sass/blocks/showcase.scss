@@ -187,6 +187,15 @@
     line-height: 18px;
   }
 
+  &:hover {
+    color: $basic-red;
+    background-color: $basic-white;
+  }
+
+  &:active {
+    color: transparentize($basic-red, 0.7);
+  };
+
   display: block;
   box-sizing: border-box;
   width: 280px;
