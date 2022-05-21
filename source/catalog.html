@@ -16,11 +16,15 @@
     <nav class="main-nav main-nav--nojs main-nav--opened ">
       <div class="main-nav__content-box">
         <a href="index.html" class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
-            <img src="img/pink-logo—text-only-direct.svg" alt="Логотип сервиса">
-          </picture>
+          <svg width="145" height="40" class="main-nav__logo--desktop">
+            <use xlink:href="img/sprite.svg#logotype-white-desktop"></use>
+          </svg>
+          <svg width="145" height="40" class="main-nav__logo--tablet">
+            <use xlink:href="img/sprite.svg#logotype-white-tablet"></use>
+          </svg>
+          <svg width="74" height="23" class="main-nav__logo--mobile">
+            <use xlink:href="img/sprite.svg#pink-logo—text-only-direct"></use>
+          </svg>
         </a>
         <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
       </div>

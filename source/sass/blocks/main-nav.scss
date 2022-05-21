@@ -192,3 +192,42 @@
     border-bottom: currentColor solid 2px;
   }
 }
+
+.main-nav__pink-logo {
+  &:hover {
+    color: $basic-red;
+  }
+
+  &:active {
+    color: $basic-white;
+    opacity: 0.3;
+  }
+
+  color: $basic-white;
+}
+
+.main-nav__logo--desktop {
+  @include for-desktop-up {
+    display: block;
+  }
+
+  display: none;
+}
+
+.main-nav__logo--tablet {
+  @include for-tablet-portrait-up {
+    display: block;
+  }
+
+  @include for-desktop-up {
+    display: none;
+  }
+
+  display: none;
+}
+
+.main-nav__logo--mobile {
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+}

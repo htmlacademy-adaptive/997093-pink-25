@@ -138,6 +138,8 @@ export const build = gulp.series(
   ),
 );
 
+export const updateSvg = gulp.series(sprite, reload);
+
 
 export default gulp.series(
   clean,
