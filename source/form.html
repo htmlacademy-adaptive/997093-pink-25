@@ -72,19 +72,19 @@
             <legend class="visually-hidden form__legend">Поля ввода имени</legend>
             <label class="form__name-fields-label">
               <span class="form__name-fields-label-text">ФАМИЛИЯ:</span>
-              <input class="form__name-fields-text-input" type="text" name="family-name"
+              <input class="form__fields-text-input form__name-fields-text-input" type="text" name="family-name"
                 placeholder="Укажите фамилию &#42;"
                 aria-label="обязательное поле">
             </label>
             <label class="form__name-fields-label">
               <span class="form__name-fields-label-text">ИМЯ:</span>
-              <input class="form__name-fields-text-input" type="text" name="first-name"
+              <input class="form__fields-text-input form__name-fields-text-input" type="text" name="first-name"
                 placeholder="Введите ваше имя &#42;"
                 aria-label="обязательное поле">
             </label>
             <label class="form__name-fields-label">
               <span class="form__name-fields-label-text">ОТЧЕСТВО:</span>
-              <input class="form__name-fields-text-input" type="text" name="patronymic-name"
+              <input class="form__fields-text-input form__name-fields-text-input" type="text" name="patronymic-name"
                 placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
@@ -141,11 +141,11 @@
             <legend class="form__contacts-fields-legend form__legend">контактная информация</legend>
             <label class="form__contacts-fields-label form__contacts-fields-label--tel">
               <span class="form__contacts-fields-label-text">НОМЕР ТЕЛЕФОНА</span>
-              <input class="form__contacts-fields-text-input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <input class="form__fields-text-input form__contacts-fields-text-input" type="tel" name="phone" placeholder="Номер, пожалуйста">
             </label>
             <label class="form__contacts-fields-label form__contacts-fields-label--email">
               <span class="form__contacts-fields-label-text">АДРЕС ПОЧТЫ</span>
-              <input class="form__contacts-fields-text-input" type="email" name="phone"
+              <input class="form__fields-text-input form__contacts-fields-text-input" type="email" name="phone"
                 placeholder="Введите почту &#42;"
                 aria-label="обязательное поле">
             </label>
@@ -182,13 +182,13 @@
             <legend class="form__impressions-fields-legend form__legend">опишите свои эмоции</legend>
             <label class="form__impressions-fields-label">
               <span class="form__impressions-fields-label-text visually-hidden">опишите свои эмоции</span>
-              <textarea class="form__impressions-fields-text-input"
+              <textarea class="form__fields-text-input form__impressions-fields-text-input"
                 placeholder="Можно прям в красках, не стесняясь в выражениях" rows="10" cols="5"></textarea>
             </label>
           </fieldset>
         </div>
         <div class="form__submit-btn-box">
-          <button type="submit" class="form__submit-btn">Отправить форму</button>
+          <button type="submit" class="form__submit-btn form__submit-btn--active">Отправить форму</button>
           <p class="form__footnote">
             <span class="form__footnote-tag">&#42;</span>
             <span class="form__footnote-text--short"> &#8212; обязательные поля</span>
@@ -200,12 +200,13 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__content-box">
-      <a href="index.html" class="page-footer__logo pink-logo pink-logo--whole-direct">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-blue-tablet.svg">
-          <img src="img/logo-blue-tablet.svg" alt="Логотип сервиса">
-        </picture>
+      <a class="page-footer__logo" aria-label="Логотип сервиса Пинк">
+        <svg width="145" height="40" class="page-footer__logo-mobile-up">
+          <use xlink:href="img/sprite.svg#logo-blue-tablet"></use>
+        </svg>
+        <svg width="147" height="40" class="page-footer__logo-desktop">
+          <use xlink:href="img/sprite.svg#logo-for-desktop"></use>
+        </svg>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -225,8 +226,9 @@
       Разработано
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__copyright-ref"
         aria-label="переход на страницу интенсива HTML Academy">
-        <img src="img/html-academy-logo.svg " width="27" height="34" alt="">
-      </a>
+        <svg width="27" height="34">
+          <use xlink:href="img/sprite.svg#html-academy-logo"></use>
+        </svg>      </a>
     </span>
     </div>
   </footer>

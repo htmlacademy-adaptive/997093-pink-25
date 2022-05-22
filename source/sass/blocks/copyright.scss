@@ -16,3 +16,14 @@
   line-height: 18px;
   font-family: "Open Sans", "Verdana", sans-serif;
 }
+
+.copyright__copyright-ref {
+  &:hover {
+    color: $cian;
+  }
+  &:active {
+    color: transparentize($cian, 0.7);
+  }
+
+  color: $basic-red;
+}

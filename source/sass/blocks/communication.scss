@@ -51,4 +51,14 @@
 
 .communication__attribute-ref {
   color: inherit;
+
+  &:hover {
+    color: $cian;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: transparentize($cian, 0.7);
+    text-decoration: none;
+  }
 }

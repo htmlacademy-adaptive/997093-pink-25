@@ -68,15 +68,21 @@
           <div class="showcase__download-refs-box">
             <a href="https://www.apple.com/ru/app-store/" class="showcase__appstore-ref"
               aria-label="скачивание из магазина эпл">
-              <img src="img/apple-logo.svg" alt="логотип эпл">
+              <svg width="47" height="56">
+                <use xlink:href="img/sprite.svg#apple-logo"></use>
+              </svg>
             </a>
             <a href="https://play.google.com/store/apps" class="showcase__play-market-ref"
               aria-label="скачивание из магазина гугл">
-              <img src="img/android-logo.svg" alt="логотип андроид">
+              <svg width="43" height="47">
+                <use xlink:href="img/sprite.svg#android-logo"></use>
+              </svg>
             </a>
             <a href="https://www.microsoft.com/ru-RU/store/apps" class="showcase__ms-store-ref"
               aria-label="скачивание из магазина майкрософт">
-              <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
+              <svg width="44" height="41">
+                <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+              </svg>
             </a>
           </div>
           <p class="showcase__download-refs-description">
@@ -284,12 +290,13 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__content-box">
-      <a class="page-footer__logo pink-logo pink-logo--whole-direct">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-for-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-blue-tablet.svg">
-          <img src="img/logo-blue-tablet.svg" alt="Логотип приложения PINK">
-        </picture>
+      <a class="page-footer__logo" aria-label="Логотип сервиса Пинк">
+        <svg width="145" height="40" class="page-footer__logo-mobile-up">
+          <use xlink:href="img/sprite.svg#logo-blue-tablet"></use>
+        </svg>
+        <svg width="147" height="40" class="page-footer__logo-desktop">
+          <use xlink:href="img/sprite.svg#logo-for-desktop"></use>
+        </svg>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -309,7 +316,9 @@
       Разработано
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__copyright-ref"
         aria-label="переход на страницу интенсива HTML Academy">
-        <img src="img/html-academy-logo.svg" width="27" height="34" alt="">
+        <svg width="27" height="34">
+          <use xlink:href="img/sprite.svg#html-academy-logo"></use>
+        </svg>
       </a>
     </span>
     </div>

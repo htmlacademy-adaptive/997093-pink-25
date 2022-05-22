@@ -103,9 +103,6 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
-
-  border: 2px solid $basic-smoky;
-  border-radius: 3px;
 }
 
 .form__achievements-field-box {
@@ -230,6 +227,14 @@
     background-color: $basic-white;
     border: 2px solid $basic-smoky;
     border-radius: 1px;
+  }
+
+  &:hover::before {
+    border-color: $cian;
+  }
+
+  &:active::before {
+    border-color: $basic-red;
   }
 }
 
@@ -362,9 +367,6 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
-
-  border: 2px solid $basic-smoky;
-  border-radius: 3px;
 }
 
 .form__app-fields-box {
@@ -443,7 +445,7 @@
 }
 
 .form__app-fields-checkbox:checked + .form__app-fields-label-text::before {
-  background: url("../img/radio-selected.svg") no-repeat;
+  background: url("../img/circle.svg") center / 15px 15px no-repeat $basic-white;
 }
 
 .form__app-fields-label-text {
@@ -469,7 +471,17 @@
     width: 42px;
     height: 42px;
 
-    background: url("../img/radio.svg") no-repeat;
+    border: 2px solid $basic-smoky;
+    border-radius: 50% 50%;
+    background-color: $basic-white;
+  }
+
+  &:hover::before {
+    border-color: $cian;
+  }
+
+  &:active::before {
+    border-color: $basic-red;
   }
 }
 
@@ -581,9 +593,6 @@
   font-size: 18px;
   line-height: 30px;
 
-  border: 2px solid $basic-smoky;
-  border-radius: 3px;
-
   resize: none;
 }
 
@@ -626,10 +635,23 @@
   line-height: 30px;
   color: $basic-white;
   text-transform: uppercase;
+  background-color: $basic-smoky;
 
-  background-color: $basic-green;
   border: none;
   border-radius: 3px;
+}
+
+.form__submit-btn--active {
+  background-color: $basic-green;
+
+  &:hover {
+    background-color: $condensed-green;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+    background-color: $condensed-green;
+  }
 }
 
 .form__footnote {
@@ -666,4 +688,19 @@
   }
 
   display: inline;
+}
+
+.form__fields-text-input {
+  border: 2px solid $basic-smoky;
+  border-radius: 3px;
+
+
+  &:hover {
+    border-color: $cian;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-red;
+  }
 }

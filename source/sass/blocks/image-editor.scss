@@ -100,14 +100,26 @@
   height: 44px;
 }
 
-.image-editor__button-svg path {
-  @include for-tablet-portrait-up {
-    fill: transparentize($cian, 0.7);
+//.image-editor__button-svg path {
+//  @include for-tablet-portrait-up {
+//    fill: transparentize($cian, 0.7);
+//  }
+//}
+
+.image-editor__tool-button {
+  color: transparentize($cian, 0.7);
+
+  &:hover {
+    color: transparentize($cian, 0.5);
   }
 }
 
-.image-editor__tool-button--active svg path {
-  fill: $basic-red;
+.image-editor__tool-button--active {
+  color: transparentize($basic-red, 0.2);
+
+  &:hover {
+    color: $basic-red;
+  }
 }
 
 .image-editor__slider-label {
@@ -171,7 +183,6 @@
 
   &::-webkit-slider-runnable-track {
     box-sizing: border-box;
-    //width: 240px;
     height: 2px;
     margin-bottom: 5px;
 
@@ -186,6 +197,10 @@
 
     background: $basic-black;
     cursor: pointer;
+  }
+
+  &:focus::-moz-range-thumb,  &:focus::-webkit-slider-thumb{
+    background: $basic-red;
   }
 }
 
