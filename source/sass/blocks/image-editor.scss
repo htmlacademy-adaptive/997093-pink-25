@@ -56,20 +56,6 @@
   margin-top: 38px;
 }
 
-.image-editor__tool-button {
-  @include for-tablet-portrait-up {
-    margin: 0;
-    width: 22px;
-    height: 22px;
-    border-bottom: 2px solid transparentize($cian, 0.9);
-  }
-
-  background-color: $basic-gray;
-  border: none;
-  cursor: pointer;
-  display: block;
-}
-
 .image-editor__button-svg--contrast {
   @include for-tablet-portrait-up {
     width: 16px;
@@ -100,13 +86,18 @@
   height: 44px;
 }
 
-//.image-editor__button-svg path {
-//  @include for-tablet-portrait-up {
-//    fill: transparentize($cian, 0.7);
-//  }
-//}
-
 .image-editor__tool-button {
+  @include for-tablet-portrait-up {
+    margin: 0;
+    width: 22px;
+    height: 22px;
+    border-bottom: 2px solid transparentize($cian, 0.9);
+  }
+
+  background-color: $basic-gray;
+  border: none;
+  cursor: pointer;
+  display: block;
   color: transparentize($cian, 0.7);
 
   &:hover {
@@ -192,14 +183,14 @@
 
   &::-moz-range-track {
     box-sizing: border-box;
-    //width: 240px;
     height: 2px;
 
     background: $basic-black;
     cursor: pointer;
   }
 
-  &:focus::-moz-range-thumb,  &:focus::-webkit-slider-thumb{
+  &:focus::-moz-range-thumb,
+  &:focus::-webkit-slider-thumb {
     background: $basic-red;
   }
 }
