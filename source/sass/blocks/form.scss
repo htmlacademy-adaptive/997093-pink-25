@@ -103,9 +103,6 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
-
-  border: 2px solid $basic-smoky;
-  border-radius: 3px;
 }
 
 .form__achievements-field-box {
@@ -231,6 +228,14 @@
     border: 2px solid $basic-smoky;
     border-radius: 1px;
   }
+
+  &:hover::before {
+    border-color: $cian;
+  }
+
+  &:active::before {
+    border-color: $basic-red;
+  }
 }
 
 .form__contacts-fields-box {
@@ -258,7 +263,7 @@
 .form__contacts-fields {
   @include for-tablet-portrait-up {
     padding: 0 54px 4px;
-    border: 3px solid $basic-smoky;
+    border: 2px solid $basic-smoky;
     border-radius: 1px;
   }
 
@@ -362,15 +367,12 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
-
-  border: 2px solid $basic-smoky;
-  border-radius: 3px;
 }
 
 .form__app-fields-box {
-  @include content-position;
-
   @include for-tablet-portrait-up {
+    @include content-position;
+
     order: 2;
     padding-top: 5px;
     padding-bottom: 34px;
@@ -393,12 +395,15 @@
 
 .form__app-fields {
   @include for-tablet-portrait-up {
-    border: 3px solid $basic-smoky;
+    border: 2px solid $basic-smoky;
     border-radius: 1px;
+    max-width: 620px;
   }
 
   padding: 0;
   border: none;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .form__app-fields-legend {
@@ -440,7 +445,7 @@
 }
 
 .form__app-fields-checkbox:checked + .form__app-fields-label-text::before {
-  background: url("../img/radio-selected.svg") no-repeat;
+  background: url("../img/circle.svg") center / 15px 15px no-repeat $basic-white;
 }
 
 .form__app-fields-label-text {
@@ -466,7 +471,17 @@
     width: 42px;
     height: 42px;
 
-    background: url("../img/radio.svg") no-repeat;
+    border: 2px solid $basic-smoky;
+    border-radius: 50% 50%;
+    background-color: $basic-white;
+  }
+
+  &:hover::before {
+    border-color: $cian;
+  }
+
+  &:active::before {
+    border-color: $basic-red;
   }
 }
 
@@ -578,9 +593,6 @@
   font-size: 18px;
   line-height: 30px;
 
-  border: 2px solid $basic-smoky;
-  border-radius: 3px;
-
   resize: none;
 }
 
@@ -623,10 +635,23 @@
   line-height: 30px;
   color: $basic-white;
   text-transform: uppercase;
+  background-color: $basic-smoky;
 
-  background-color: $basic-green;
   border: none;
   border-radius: 3px;
+}
+
+.form__submit-btn--active {
+  background-color: $basic-green;
+
+  &:hover {
+    background-color: $condensed-green;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+    background-color: $condensed-green;
+  }
 }
 
 .form__footnote {
@@ -663,4 +688,19 @@
   }
 
   display: inline;
+}
+
+.form__fields-text-input {
+  border: 2px solid $basic-smoky;
+  border-radius: 3px;
+
+
+  &:hover {
+    border-color: $cian;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-red;
+  }
 }

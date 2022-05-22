@@ -37,6 +37,15 @@
   &--youtube {
     background: url("../img/youtube.svg") 50% 50% no-repeat;
   }
+
+  &:hover {
+    border: 3px solid $cian;
+  }
+
+  &:active {
+    border: 3px solid $cian;
+    opacity: 0.1;
+  }
 }
 
 .social__item {

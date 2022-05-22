@@ -52,3 +52,32 @@
   line-height: 18px;
   font-family: "Open Sans", "Verdana", sans-serif;
 }
+
+.page-footer__logo {
+  color: $cian;
+
+  &:hover {
+    color: $basic-red;
+  }
+
+  &:active {
+    color: $cian;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-desktop {
+  @include for-desktop-up {
+    display: block;
+  }
+
+  display: none;
+}
+
+.page-footer__logo-mobile-up {
+  @include for-desktop-up {
+    display: none;
+  }
+
+  display: block;
+}

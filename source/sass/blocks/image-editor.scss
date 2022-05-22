@@ -56,20 +56,6 @@
   margin-top: 38px;
 }
 
-.image-editor__tool-button {
-  @include for-tablet-portrait-up {
-    margin: 0;
-    width: 22px;
-    height: 22px;
-    border-bottom: 2px solid transparentize($cian, 0.9);
-  }
-
-  background-color: $basic-gray;
-  border: none;
-  cursor: pointer;
-  display: block;
-}
-
 .image-editor__button-svg--contrast {
   @include for-tablet-portrait-up {
     width: 16px;
@@ -100,14 +86,31 @@
   height: 44px;
 }
 
-.image-editor__button-svg path {
+.image-editor__tool-button {
   @include for-tablet-portrait-up {
-    fill: transparentize($cian, 0.7);
+    margin: 0;
+    width: 22px;
+    height: 22px;
+    border-bottom: 2px solid transparentize($cian, 0.9);
+  }
+
+  background-color: $basic-gray;
+  border: none;
+  cursor: pointer;
+  display: block;
+  color: transparentize($cian, 0.7);
+
+  &:hover {
+    color: transparentize($cian, 0.5);
   }
 }
 
-.image-editor__tool-button--active svg path {
-  fill: $basic-red;
+.image-editor__tool-button--active {
+  color: transparentize($basic-red, 0.2);
+
+  &:hover {
+    color: $basic-red;
+  }
 }
 
 .image-editor__slider-label {
@@ -171,7 +174,6 @@
 
   &::-webkit-slider-runnable-track {
     box-sizing: border-box;
-    //width: 240px;
     height: 2px;
     margin-bottom: 5px;
 
@@ -181,11 +183,15 @@
 
   &::-moz-range-track {
     box-sizing: border-box;
-    //width: 240px;
     height: 2px;
 
     background: $basic-black;
     cursor: pointer;
+  }
+
+  &:focus::-moz-range-thumb,
+  &:focus::-webkit-slider-thumb {
+    background: $basic-red;
   }
 }
 
@@ -224,11 +230,23 @@
 
   border: 3px solid;
   border-radius: 30px;
+  background-color: $basic-gray;
 }
 
 .image-editor__button--upload {
+
   color: $basic-red;
   cursor: pointer;
+
+  &:hover {
+    background-color: $basic-red;
+    color: $basic-white;
+    border-color: $basic-red;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+  }
 }
 
 .image-editor__button--cancel {
@@ -243,6 +261,17 @@
   margin-top: 13px;
 
   color: transparentize($cian, 0.9);
+
+  &:hover {
+    color: transparentize($cian, 0.7);
+    border-color: transparentize($cian, 0.7);
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+    background-color: transparentize($cian, 0.7);
+    border-color: transparentize($cian, 0.7);
+  }
 }
 
 .image-editor__buttons-box {

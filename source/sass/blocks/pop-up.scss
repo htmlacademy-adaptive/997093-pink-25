@@ -170,4 +170,13 @@
   background-color: $basic-green;
   border: none;
   border-radius: 3px;
+
+  &:hover {
+    background-color: $condensed-green;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+    background-color: $condensed-green;
+  }
 }
