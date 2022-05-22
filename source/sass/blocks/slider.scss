@@ -28,39 +28,36 @@
   list-style: none;
 }
 
-.slider__left {
+.slider__arrow {
   @include for-desktop-up {
-    position: absolute;
-    top: 204px;
-    left: 130px;
-
     display: block;
-    width: 22px;
-    height: 41px;
-
-    background: url("../img/left-arrow.svg") no-repeat transparent;
     border: none;
     cursor: pointer;
+    width: 22px;
+    height: 41px;
+  }
+  display: none;
+  color: transparentize($cian, 0.7);
+
+  &:hover {
+    color: transparentize($cian, 0.4);
   }
 
-  display: none;
+  &:active {
+    color: transparentize($cian, 0.9);
+  }
 }
 
-.slider__right {
-  @include for-desktop-up {
-    position: absolute;
-    top: 204px;
-    right: 130px;
+.slider__arrow--left {
+  position: absolute;
+  top: 204px;
+  left: 130px;
+}
 
-    display: block;
-    width: 22px;
-    height: 41px;
-
-    background: url("../img/right-arrow.svg") no-repeat transparent;
-    border: none;
-    cursor: pointer;
-  }
-  display: none;
+.slider__arrow--right {
+  position: absolute;
+  top: 204px;
+  right: 130px;
 }
 
 .slider__quote {

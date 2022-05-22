@@ -239,11 +239,23 @@
 
   border: 3px solid;
   border-radius: 30px;
+  background-color: $basic-gray;
 }
 
 .image-editor__button--upload {
+
   color: $basic-red;
   cursor: pointer;
+
+  &:hover {
+    background-color: $basic-red;
+    color: $basic-white;
+    border-color: $basic-red;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+  }
 }
 
 .image-editor__button--cancel {
@@ -258,6 +270,17 @@
   margin-top: 13px;
 
   color: transparentize($cian, 0.9);
+
+  &:hover {
+    color: transparentize($cian, 0.7);
+    border-color: transparentize($cian, 0.7);
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.7);
+    background-color: transparentize($cian, 0.7);
+    border-color: transparentize($cian, 0.7);
+  }
 }
 
 .image-editor__buttons-box {

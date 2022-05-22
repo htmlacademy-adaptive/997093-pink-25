@@ -7,7 +7,7 @@
 
   @include for-desktop-up {
     width: 940px;
-    min-height: 282px;
+    //min-height: 282px;
   }
 
   width: 832px;
@@ -107,6 +107,10 @@
 .table-tariffs__body-row {
   @include for-tablet-portrait-up {
     height: 46px;
+  }
+
+  @include for-desktop-up {
+    height: 61px;
   }
 
   height: 61px;
