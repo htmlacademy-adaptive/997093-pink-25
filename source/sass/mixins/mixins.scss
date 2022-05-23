@@ -22,6 +22,12 @@
   }
 }
 
+@mixin for-desktop-down {
+  @media (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
+
 @mixin content-position {
   @include for-tablet-portrait-up {
     width: $tablet-width;
