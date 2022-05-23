@@ -99,7 +99,7 @@ const copy = (done) => {
 
 const copyManifest = () => {
   return gulp.src('source/manifest.webmanifest')
-    .pipe(gulp.dest('build/manifest.webmanifest'))
+    .pipe(gulp.dest('build'))
 }
 
 // Clean

@@ -83,4 +83,12 @@
   color: $basic-red;
 
   text-decoration-line: underline;
+
+  &:hover {
+    color: $basic-black;
+  }
+
+  &:active {
+    color: transparentize($cian, 0.7);
+  }
 }

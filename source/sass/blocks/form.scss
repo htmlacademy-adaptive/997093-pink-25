@@ -643,6 +643,11 @@
 
   border: none;
   border-radius: 3px;
+
+  &:disabled {
+    color: $basic-white;
+    background-color: $basic-smoky;
+  }
 }
 
 .form__submit-btn--active {

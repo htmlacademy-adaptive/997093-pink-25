@@ -189,8 +189,8 @@
     cursor: pointer;
   }
 
-  &:focus::-moz-range-thumb,
-  &:focus::-webkit-slider-thumb {
+  &:active::-moz-range-thumb,
+  &:active::-webkit-slider-thumb {
     background: $basic-red;
   }
 }
