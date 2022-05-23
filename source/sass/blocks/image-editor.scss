@@ -270,7 +270,7 @@
   &:active {
     color: transparentize($basic-white, 0.7);
     background-color: transparentize($cian, 0.7);
-    border-color: transparentize($cian, 0.7);
+    border-color: transparent;
   }
 }
 
@@ -354,7 +354,7 @@
 }
 
 .image-editor__tool-slider-icon {
-  fill: $basic-red;
+  color: $basic-red;
 }
 
 .image-editor__tool-slider-icon--crop {

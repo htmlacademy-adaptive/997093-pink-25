@@ -97,6 +97,11 @@ const copy = (done) => {
   done();
 }
 
+const copyManifest = () => {
+  return gulp.src('source/manifest.webmanifest')
+    .pipe(gulp.dest('build/manifest.webmanifest'))
+}
+
 // Clean
 const clean = () => {
   return del('build');
@@ -140,7 +145,8 @@ export const build = gulp.series(
     svg,
     faviconSvg,
     sprite,
-    createWebp
+    createWebp,
+    copyManifest
   ),
 );
 
@@ -158,7 +164,8 @@ export default gulp.series(
     svg,
     faviconSvg,
     sprite,
-    createWebp
+    createWebp,
+    copyManifest
   ),
   gulp.series(
     server,
