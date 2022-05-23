@@ -18,16 +18,6 @@
   color: $basic-white;
 }
 
-.table-tariffs__wrapper {
-  @include content-position;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 320px;
-  overflow-x: clip;
-}
-
 .table-tariffs__table-header {
   @include for-tablet-portrait-up {
     width: 153px;

@@ -674,7 +674,7 @@
   color: $basic-red;
 }
 
-.form__footnote-text--comprehensive {
+.form__footnote-text-comprehensive {
   @include for-desktop-up {
     display: inline;
   }
@@ -682,7 +682,7 @@
   display: none;
 }
 
-.form__footnote-text--short {
+.form__footnote-text-short {
   @include for-desktop-up {
     display: none;
   }
