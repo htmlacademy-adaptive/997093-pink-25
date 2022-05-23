@@ -33,11 +33,12 @@
     display: block;
     border: none;
     cursor: pointer;
-    width: 22px;
-    height: 41px;
+    width: 30px;
+    height: 44px;
   }
   display: none;
   color: transparentize($cian, 0.7);
+  background-color: transparent;
 
   &:hover {
     color: transparentize($cian, 0.4);
@@ -90,6 +91,7 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
+  color: $basic-black;
 }
 
 .slider__participant-extra {
@@ -112,6 +114,7 @@
   }
 
   display: none;
+  color: $cian;
 }
 
 .slider__text {
@@ -136,6 +139,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  color: $cian;
 }
 
 .slider__cite {

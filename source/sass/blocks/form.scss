@@ -236,6 +236,8 @@
   &:active::before {
     border-color: $basic-red;
   }
+
+  color: $cian;
 }
 
 .form__contacts-fields-box {
@@ -468,8 +470,8 @@
     top: -7px;
     left: 0;
 
-    width: 42px;
-    height: 42px;
+    width: 37px;
+    height: 37px;
 
     border: 2px solid $basic-smoky;
     border-radius: 50% 50%;
@@ -483,6 +485,8 @@
   &:active::before {
     border-color: $basic-red;
   }
+
+  color: $cian;
 }
 
 .form__impressions-fields-box {
@@ -639,6 +643,11 @@
 
   border: none;
   border-radius: 3px;
+
+  &:disabled {
+    color: $basic-white;
+    background-color: $basic-smoky;
+  }
 }
 
 .form__submit-btn--active {
@@ -674,15 +683,16 @@
   color: $basic-red;
 }
 
-.form__footnote-text--comprehensive {
+.form__footnote-text-comprehensive {
   @include for-desktop-up {
     display: inline;
   }
 
   display: none;
+  color: $cian;
 }
 
-.form__footnote-text--short {
+.form__footnote-text-short {
   @include for-desktop-up {
     display: none;
   }
@@ -703,4 +713,10 @@
     outline: none;
     border-color: $basic-red;
   }
+
+  color: $cian;
+}
+
+.form__fields-text-input::placeholder {
+  color: $cian;
 }
