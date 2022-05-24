@@ -15,7 +15,7 @@
   }
 
   @include for-desktop-up {
-    padding: 47px 220px 0;
+    padding: 47px 270px 0;
   }
 
   padding: 0 21px 0;
@@ -26,14 +26,6 @@
   font-family: "Open Sans", "Verdana", sans-serif;
   text-align: center;
   color: $cian;
-}
-
-.terms__text br {
-  @include for-desktop-up {
-    display: inline;
-  }
-
-  display: none;
 }
 
 .terms__text-additional {
