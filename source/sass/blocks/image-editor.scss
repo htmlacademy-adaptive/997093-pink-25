@@ -364,7 +364,7 @@
 
 .image-editor__crop-slider-box {
   @include for-tablet-portrait-up {
-    border-bottom: 2px solid rgba(40,54,69,.1);
+    border-bottom: 2px solid transparentize($cian, 0.9);
     padding: 5px 18px 22px 0;
     margin: 2px 0 0 35px;
     position: static;
@@ -374,14 +374,14 @@
   }
 
   @include for-desktop-up {
-    padding: 0px 30px 11px 0;
+    padding: 0 30px 11px 0;
     margin: 0;
   }
 }
 
 .image-editor__fill-slider-box {
   @include for-tablet-portrait-up {
-    border-bottom: 2px solid rgba(40,54,69,.1);
+    border-bottom: 2px solid transparentize($cian, 0.9);
     padding: 22px 18px 21px 0;
     margin: 2px 0 0 35px;
     position: static;
@@ -399,7 +399,7 @@
 .image-editor__contrast-slider-box {
   @include for-tablet-portrait-up {
     display: block;
-    border-bottom: 2px solid rgba(40, 54, 69, 0.1);
+    border-bottom: 2px solid transparentize($cian, 0.9);
     padding: 21px 18px 21px 0;
     margin: 2px 0 0 38px;
   }
