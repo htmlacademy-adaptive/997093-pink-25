@@ -390,12 +390,15 @@
                   step="1" value="13">
               </label>
             </div>
-            <div class="image-editor__contrast-slider-box">
-              <label aria-label="инструмент контрастность" class="image-editor__slider-label">
+            <div class="image-editor__contrast-slider-box image-editor__control-box">
+              <button class="image-editor__tool-button image-editor__tool-button--contrast"
+                aria-label="Переключение инстумента контрастности">
                 <svg width="32" height="32"
                   class="image-editor__tool-slider-icon image-editor__tool-slider-icon--contrast" viewBox="0 0 32 32">
                   <use xlink:href="img/sprite.svg#contrast"></use>
                 </svg>
+              </button>
+              <label aria-label="инструмент контрастность" class="image-editor__slider-label">
                 <input type="range" class="image-editor__tool-slider image-editor__contrast-tool-slider" min="0"
                   max="100"
                   step="1" value="50">
