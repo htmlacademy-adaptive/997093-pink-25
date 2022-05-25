@@ -162,7 +162,8 @@
                   srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
                   srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
-                <img class="catalog__product-card-image" src="img/catalog/photo-2-mobile.jpg" alt="Барабанная установкаа"
+                <img class="catalog__product-card-image" src="img/catalog/photo-2-mobile.jpg"
+                  alt="Барабанная установкаа"
                   srcset="img/catalog/photo-2-mobile.jpg 1x, img/catalog/photo-2-mobile@2x.jpg 2x"
                   height="180">
               </picture>
@@ -277,7 +278,8 @@
                   srcset="img/catalog/photo-5-desktop.jpg 1x, img/catalog/photo-5-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
                   srcset="img/catalog/photo-5-tablet.jpg 1x, img/catalog/photo-5-tablet@2x.jpg 2x">
-                <img class="catalog__product-card-image" src="img/catalog/photo-5-mobile.jpg" alt="Свешенные над обрывом ноги"
+                <img class="catalog__product-card-image" src="img/catalog/photo-5-mobile.jpg"
+                  alt="Свешенные над обрывом ноги"
                   srcset="img/catalog/photo-5-mobile.jpg 1x, img/catalog/photo-5-mobile@2x.jpg 2x"
                   height="180">
               </picture>
@@ -349,69 +351,64 @@
         Выкладывайте все, что накопилось в телефоне!
       </p>
     </section>
-    <form class="image-editor">
+    <section class="editor">
       <h2 class="visually-hidden">Редактор фотографии</h2>
-      <div class="image-editor__image-wrapper">
-        <img src="img/catalog/photo-7-tablet.jpg" alt="Зимняя дорога" class="image-editor__modified-photo" width="280"
-          height="374">
-      </div>
-      <div class="image-editor__tools">
-        <div class="image-editor__tool-box">
-          <button class="image-editor__tool-button image-editor__tool-button--active"
-            type="button"
-            aria-label="выбор инструмента обрезки">
-            <svg width="44" height="44" class="image-editor__button-svg image-editor__button-svg--crop">
-              <use xlink:href="img/sprite.svg#crop"></use>
-            </svg>
-          </button>
-          <button class="image-editor__tool-button" type="button"
-            aria-label="выбор инструмента заливки">
-            <svg width="48" height="43" class="image-editor__button-svg image-editor__button-svg--fill">
-              <use xlink:href="img/sprite.svg#fill"></use>
-            </svg>
-          </button>
-          <button class="image-editor__tool-button" type="button"
-            aria-label="выбор инструмента контрастность">
-            <svg width="32" height="32" class="image-editor__button-svg image-editor__button-svg--contrast">
-              <use xlink:href="img/sprite.svg#contrast"></use>
-            </svg>
-          </button>
+
+      <form class="image-editor">
+        <div class="image-editor__image-wrapper">
+          <img src="img/catalog/photo-7-tablet.jpg" alt="Зимняя дорога" class="image-editor__modified-photo" width="280"
+            height="374">
         </div>
-        <div class="image-editor__sliders-box">
-          <div class="image-editor__crop-slider-box">
-            <label aria-label="инструмент обрезка" class="image-editor__slider-label">
-              <svg class="image-editor__tool-slider-icon image-editor__tool-slider-icon--crop" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#crop"></use>
-              </svg>
-              <input type="range" class="image-editor__tool-slider image-editor__crop-tool-slider" min="0" max="100"
-                step="1" value="85">
-            </label>
-          </div>
-          <div class="image-editor__fill-slider-box">
-            <label aria-label="инструмент заливка" class="image-editor__slider-label">
-              <svg class="image-editor__tool-slider-icon image-editor__tool-slider-icon--fill" viewBox="0 0 48 43">
-                <use xlink:href="img/sprite.svg#fill"></use>
-              </svg>
-              <input type="range" class="image-editor__tool-slider image-editor__fill-tool-slider" min="0" max="100"
-                step="1" value="15">
-            </label>
-          </div>
-          <div class="image-editor__contrast-slider-box">
-            <label aria-label="инструмент контрастность" class="image-editor__slider-label">
-              <svg class="image-editor__tool-slider-icon image-editor__tool-slider-icon--contrast" viewBox="0 0 32 32">
-                <use xlink:href="img/sprite.svg#contrast"></use>
-              </svg>
-              <input type="range" class="image-editor__tool-slider image-editor__contrast-tool-slider" min="0" max="100"
-                step="1" value="50">
-            </label>
+        <div class="image-editor__tools">
+          <div class="image-editor__sliders-box">
+            <div class="image-editor__crop-slider-box image-editor__control-box image-editor__control-box--active">
+              <button
+                class="image-editor__tool-button image-editor__tool-button--crop image-editor__tool-button--active"
+                aria-label="Переключение инстумента обрезки">
+                <svg width="44" height="44"
+                  class="image-editor__tool-slider-icon image-editor__tool-slider-icon--crop" viewBox="0 0 44 44"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#crop"></use>
+                </svg>
+              </button>
+              <label aria-label="инструмент обрезка" class="image-editor__slider-label">
+                <input type="range" class="image-editor__tool-slider image-editor__crop-tool-slider" min="0" max="100"
+                  step="1" value="85">
+              </label>
+            </div>
+            <div class="image-editor__fill-slider-box image-editor__control-box">
+              <button class="image-editor__tool-button image-editor__tool-button--fill"
+                aria-label="Переключение инстумента заливки">
+                <svg width="48" height="43" class="image-editor__tool-slider-icon image-editor__tool-slider-icon--fill"
+                  viewBox="0 0 48 43">
+                  <use xlink:href="img/sprite.svg#fill"></use>
+                </svg>
+              </button>
+              <label aria-label="инструмент заливка"
+                class="image-editor__slider-label image-editor__slider-label--fill">
+                <input type="range" class="image-editor__tool-slider image-editor__fill-tool-slider" min="0" max="100"
+                  step="1" value="13">
+              </label>
+            </div>
+            <div class="image-editor__contrast-slider-box">
+              <label aria-label="инструмент контрастность" class="image-editor__slider-label">
+                <svg width="32" height="32"
+                  class="image-editor__tool-slider-icon image-editor__tool-slider-icon--contrast" viewBox="0 0 32 32">
+                  <use xlink:href="img/sprite.svg#contrast"></use>
+                </svg>
+                <input type="range" class="image-editor__tool-slider image-editor__contrast-tool-slider" min="0"
+                  max="100"
+                  step="1" value="50">
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="image-editor__buttons-box">
-        <button class="image-editor__button image-editor__button--upload" type="submit">Запостить</button>
-        <button class="image-editor__button image-editor__button--cancel" type="reset">Отмена</button>
-      </div>
-    </form>
+        <div class="image-editor__buttons-box">
+          <button class="image-editor__button image-editor__button--upload" type="submit">Запостить</button>
+          <button class="image-editor__button image-editor__button--cancel" type="reset">Отмена</button>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__content-box">

@@ -1,0 +1,7 @@
+.editor {
+  @include for-desktop-up {
+    background-color: $basic-white;
+  }
+
+  background-color: $basic-gray;
+}
