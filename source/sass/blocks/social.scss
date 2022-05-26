@@ -1,11 +1,11 @@
 .social {
   @include for-tablet-portrait-up {
+    min-width: 180px;
     padding-right: 15px;
     gap: 11px;
   }
 
   @include for-desktop-up {
-    min-width: 180px;
     padding-right: 0;
     gap: 0;
   }

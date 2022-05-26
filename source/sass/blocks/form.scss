@@ -177,6 +177,7 @@
 
   @include for-desktop-up {
     display: grid;
+    padding: 0 30px 0 60px;
 
     grid-auto-flow: column;
     grid-template-columns: 315px 295px 1fr;
@@ -198,6 +199,10 @@
 .form__achievements-fields-checkbox:checked + .form__achievements-fields-label-text::before {
   background: url("../img/tick.svg") 6px 9px no-repeat $basic-white;
   border-radius: 1px;
+}
+
+.form__achievements-fields-checkbox:focus + .form__achievements-fields-label-text::before {
+  border-color: $basic-red;
 }
 
 .form__achievements-fields-label-text {
@@ -273,6 +278,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 55px 0;
+    flex-wrap: wrap;
 
     grid-template-columns: 50% 50%;
   }
@@ -448,6 +454,10 @@
 
 .form__app-fields-checkbox:checked + .form__app-fields-label-text::before {
   background: url("../img/circle.svg") center / 15px 15px no-repeat $basic-white;
+}
+
+.form__app-fields-checkbox:focus + .form__app-fields-label-text::before {
+  border-color: $basic-red;
 }
 
 .form__app-fields-label-text {
@@ -719,4 +729,5 @@
 
 .form__fields-text-input::placeholder {
   color: $cian;
+  opacity: 1;
 }
