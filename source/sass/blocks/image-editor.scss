@@ -382,6 +382,10 @@
   z-index: 1;
 }
 
+.image-editor__control-box--active input {
+  pointer-events: auto;
+}
+
 .image-editor__crop-slider-box {
   @include for-tablet-portrait-up {
     border-bottom: 2px solid transparentize($cian, 0.9);
