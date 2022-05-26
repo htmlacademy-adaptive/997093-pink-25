@@ -201,6 +201,10 @@
   border-radius: 1px;
 }
 
+.form__achievements-fields-checkbox:focus + .form__achievements-fields-label-text::before {
+  border-color: $basic-red;
+}
+
 .form__achievements-fields-label-text {
   position: relative;
 
@@ -450,6 +454,10 @@
 
 .form__app-fields-checkbox:checked + .form__app-fields-label-text::before {
   background: url("../img/circle.svg") center / 15px 15px no-repeat $basic-white;
+}
+
+.form__app-fields-checkbox:focus + .form__app-fields-label-text::before {
+  border-color: $basic-red;
 }
 
 .form__app-fields-label-text {
